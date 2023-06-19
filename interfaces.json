@@ -1,0 +1,39 @@
+{
+    "chains": [
+        {
+            "device_name": "virtual",
+            "namespace": "VirtualInterface",
+            "type": "virtual"
+        },
+        {
+            "type": "canfd",
+            "namespace": "ecu_A",
+            "device_name": "can0",
+            "database": "can/FIOCSystem_FIOC1CAN.dbc"
+        },
+        {
+            "type": "canfd",
+            "namespace": "FIOC_CANFD",
+            "device_name": "can1",
+            "database": "can/FIOCSystem_FIOC1CAN.dbc"
+        },
+        {
+            "namespace": "FIOC_MRCOM_VIU_TO_VCU",
+            "type": "udp",
+            "database": "can/FIOCSystem_FIOC1CAN(3).dbc",
+            "sub_type": 2,
+            "server_port": 2000,
+            "target_host": "127.0.0.1",
+            "target_port": 2001
+        },
+		{
+            "namespace": "FIOC_MRCOM_VCU_TO_VIU",
+            "type": "udp",
+            "database": "can/FIOCSystem_FIOC1CAN(3).dbc",
+            "sub_type": 2,
+            "server_port": 5006,
+            "target_host": "127.0.0.1",
+            "target_port": 2002
+        }
+    ]
+}
