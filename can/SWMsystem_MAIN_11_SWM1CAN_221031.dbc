@@ -1,0 +1,548 @@
+// *************************************************************************** *
+// *                                                                           *
+// * Description:         CANDB File                                           *
+// * Generated at:        2022-10-31 13:23                                     *
+// * System:              SWMsystem_MAIN_11                                    *
+// * Network:             SWM1CAN                                              *
+// *                                                                           *
+// *************************************************************************** *
+
+
+VERSION "SWM1CAN"
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_ :
+
+BU_ :  SWM SWMdp1 SWMdpHIB
+
+BO_ 1792 SwldpToSwlUdsDiagRequestFrame : 8 SWMdp1
+ SG_ SwmdpToSwmUdsSwm1canNPdu : 7|64@0+ (1,0) [0|0] "" SWM
+
+BO_ 1536 SwlToSwldpUdsDiagResponseFrame : 8 SWM
+ SG_ SwmToSwmdpUdsSwm1canNPdu : 7|64@0+ (1,0) [0|0] "" SWMdp1
+
+BO_ 1281 SWMdpNmFrame : 8 SWMdp1
+ SG_ NM_PNI_SWMdp1 : 14|1@0+ (1,0) [0|0] "" SWM
+ SG_ NM_AW_SWMdp1 : 12|1@0+ (1,0) [0|0] "" SWM
+ SG_ NM_CS_SWMdp1 : 11|1@0+ (1,0) [0|0] "" SWM
+ SG_ NM_RMR_SWMdp1 : 8|1@0+ (1,0) [0|0] "" SWM
+ SG_ NM_NodeID_SWMdp1 : 7|8@0+ (1,0) [0|0] "" SWM
+
+BO_ 48 SwmdpSwm1CanFrame01 : 8 SWMdp1
+ SG_ ActvnOfSwtIllmnSWM : 32|1@0+ (1,0) [0|1] "" SWM
+ SG_ ActvnOfSwtIllmnSWM_UB : 53|1@0+ (1,0) [0|1] "" SWM
+ SG_ SteerWhlHeatgOnCmd_UB : 46|1@0+ (1,0) [0|1] "" SWM
+ SG_ SteerWhlHeatgOnCmdChks : 41|2@0+ (1.0,0.0) [0.0|3.0] "Unitless" SWM
+ SG_ SteerWhlHeatgOnCmdCntr : 43|2@0+ (1.0,0.0) [0.0|3.0] "Unitless" SWM
+ SG_ SteerWhlHeatgOnCmdReq : 45|2@0+ (1,0) [0|3] "" SWM
+ SG_ SteerWhlT : 39|7@0- (1.0,0.0) [-64.0|63.0] "degC" SWM
+ SG_ SteerWhlT_UB : 47|1@0+ (1,0) [0|1] "" SWM
+ SG_ SteerWhlTTun : 51|4@0+ (1.0,-8.0) [-8.0|7.0] "degC" SWM
+ SG_ SteerWhlTTun_UB : 52|1@0+ (1,0) [0|1] "" SWM
+ SG_ VehicleSpeedGS : 63|8@0+ (1.0,0.0) [0.0|255.0] "Km/h" SWM
+ SG_ VehicleSpeedGS_UB : 55|1@0+ (1,0) [0|1] "" SWM
+
+BO_ 1104 SwmdpSwm1CanFrame02 : 8 SWMdp1
+ SG_ GlobalRealTimeGS : 7|32@0+ (1.0,0.0) [0.0|4294967295.0] "s" SWM
+ SG_ GlobalRealTimeGS_UB : 63|1@0+ (1,0) [0|1] "" SWM
+ SG_ OutsideTemperatureGS : 39|16@0- (0.1,0.0) [-3276.8|3276.7000000000003] "degC" SWM
+ SG_ OutsideTemperatureGS_UB : 62|1@0+ (1,0) [0|1] "" SWM
+ SG_ UsageModeGS : 55|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" SWM
+ SG_ UsageModeGS_UB : 61|1@0+ (1,0) [0|1] "" SWM
+
+BO_ 149 SwmdpSwm1CanFrame03 : 8 SWMdp1
+ SG_ TotalDistanceGS : 7|32@0+ (1.0,0.0) [0.0|4294967295.0] "km" SWM
+ SG_ TotalDistanceGS_UB : 47|1@0+ (1,0) [0|1] "" SWM
+ SG_ VehicleBatteryVoltageGS : 39|8@0+ (0.25,0.0) [0.0|63.75] "Volt" SWM
+ SG_ VehicleBatteryVoltageGS_UB : 46|1@0+ (1,0) [0|1] "" SWM
+
+BO_ 53 SwmdpSwm1CanFrame04 : 8 SWMdp1
+ SG_ AutoIllumReqSWM2_UB : 37|1@0+ (1,0) [0|1] "" SWM
+ SG_ AutoIllumReqSWM2DelayTime : 7|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" SWM
+ SG_ AutoIllumReqSWM2PWM : 15|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" SWM
+ SG_ AutoIllumReqSWM2Reserve1 : 23|4@0+ (1.0,0.0) [0.0|15.0] "Unitless" SWM
+ SG_ AutoIllumReqSWM2Reserve2 : 19|4@0+ (1.0,0.0) [0.0|15.0] "Unitless" SWM
+ SG_ AutoIllumReqSWM2TranBehavior : 39|2@0+ (1.0,0.0) [0.0|3.0] "Unitless" SWM
+ SG_ AutoIllumReqSWM2TranStep : 31|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" SWM
+ SG_ CarModeSWM_UB : 47|1@0+ (1,0) [0|1] "" SWM
+ SG_ CarModeSWMCarMode : 46|4@0+ (1,0) [0|15] "" SWM
+ SG_ CarModeSWMCarModeSubtype : 42|3@0+ (1,0) [0|7] "" SWM
+ SG_ CrashMode : 35|1@0+ (1,0) [0|1] "" SWM
+ SG_ CrashMode_UB : 36|1@0+ (1,0) [0|1] "" SWM
+ SG_ ServiceModeSWM : 33|1@0+ (1,0) [0|1] "" SWM
+ SG_ ServiceModeSWM_UB : 34|1@0+ (1,0) [0|1] "" SWM
+
+BO_ 2047 SwmdpToallUdsDiagRequestFrame : 8 SWMdp1
+ SG_ SwmdpToAllUdsSwm1canNPdu : 7|64@0+ (1,0) [0|0] "" SWM
+
+BO_ 1282 SWMNmFrame : 8 SWM
+ SG_ NM_PNI_SWM : 14|1@0+ (1,0) [0|0] "" SWMdp1
+ SG_ NM_AW_SWM : 12|1@0+ (1,0) [0|0] "" SWMdp1
+ SG_ NM_CS_SWM : 11|1@0+ (1,0) [0|0] "" SWMdp1
+ SG_ NM_RMR_SWM : 8|1@0+ (1,0) [0|0] "" SWMdp1
+ SG_ NM_NodeID_SWM : 7|8@0+ (1,0) [0|0] "" SWMdp1
+
+BO_ 55 SwmSwm1CanFrame02 : 8 SWM
+ SG_ DrvrEPBSwt_UB : 60|1@0+ (1,0) [0|1] "" SWMdp1,SWMdpHIB
+ SG_ DrvrEPBSwtEPBandPBrakeSwitch : 61|1@0+ (1,0) [0|1] "" SWMdp1,SWMdpHIB
+ SG_ DrvrGearShiftDirReq_UB : 32|1@0+ (1,0) [0|1] "" SWMdp1,SWMdpHIB
+ SG_ DrvrGearShiftDirReqChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" SWMdp1,SWMdpHIB
+ SG_ DrvrGearShiftDirReqCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" SWMdp1,SWMdpHIB
+ SG_ DrvrGearShiftDirReqPosn : 16|5@1+ (1,0) [0|31] "" SWMdp1,SWMdpHIB
+ SG_ DrvrGearShiftDirReqSts : 21|2@1+ (1,0) [0|3] "" SWMdp1,SWMdpHIB
+ SG_ HeatgMatOnOff : 63|2@0+ (1,0) [0|3] "" SWMdp1
+ SG_ HeatgMatOnOff_UB : 59|1@0+ (1,0) [0|1] "" SWMdp1
+
+BO_ 60 SwmSwm1CanFrame04 : 8 SWM
+ SG_ SWMWiprRearWshr_UB : 63|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SWMWiprRearWshrBtnSts : 62|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SWMWiprRearWshrQF : 61|2@0+ (1,0) [0|3] "" SWMdp1
+
+BO_ 64 SwmSwm1CanFrame05 : 8 SWM
+ SG_ DiagSigSWM_UB : 48|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ DiagSigSWMDiagnosticStatus : 43|3@0+ (1,0) [0|7] "" SWMdp1
+ SG_ SteerWhlHeatgDiagc : 34|3@0+ (1,0) [0|7] "" SWMdp1
+ SG_ SteerWhlHeatgDiagc_UB : 47|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SteerWhlHeatgPwrOn : 39|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SteerWhlHeatgPwrOn_UB : 46|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SWMLeLvrDiagnc_UB : 49|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SWMLeLvrDiagncLeLvrDiagns : 55|3@0+ (1,0) [0|7] "" SWMdp1
+ SG_ SWMRiLvrDiagnc_UB : 56|1@0+ (1,0) [0|1] "" SWMdp1,SWMdpHIB
+ SG_ SWMRiLvrDiagncSWMRiLvrStatus : 52|3@0+ (1,0) [0|7] "" SWMdp1,SWMdpHIB
+ SG_ SWMWiprScrlWhl_UB : 57|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SWMWiprScrlWhlChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" SWMdp1
+ SG_ SWMWiprScrlWhlCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" SWMdp1
+ SG_ SWMWiprScrlWhlQF : 20|2@1+ (1,0) [0|3] "" SWMdp1
+ SG_ SWMWiprScrlWhlVal : 16|4@1+ (1,0) [0|15] "" SWMdp1
+
+BO_ 69 SwmSwm1CanFrame06 : 8 SWM
+ SG_ DataSpclSWM_UB : 39|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ DataSpclSWMDataIdn : 7|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" SWMdp1
+ SG_ DataSpclSWMDataNrSpcl1 : 15|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" SWMdp1
+ SG_ DataSpclSWMDataNrSpcl2 : 23|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" SWMdp1
+ SG_ DataSpclSWMDataNrSpcl3 : 31|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" SWMdp1
+ SG_ SWMExtrLiHiBeam_UB : 38|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SWMExtrLiHiBeamLvrSts : 35|3@0+ (1,0) [0|7] "" SWMdp1
+ SG_ SWMExtrLiHiBeamQF : 37|2@0+ (1,0) [0|3] "" SWMdp1
+
+BO_ 128 SwmSwm1CanFrame07 : 8 SWM
+ SG_ SWMExtrLiTurnIndcr_UB : 48|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SWMExtrLiTurnIndcrChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" SWMdp1
+ SG_ SWMExtrLiTurnIndcrCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" SWMdp1
+ SG_ SWMExtrLiTurnIndcrLvrSts : 16|3@1+ (1,0) [0|7] "" SWMdp1
+ SG_ SWMExtrLiTurnIndcrQF : 19|2@1+ (1,0) [0|3] "" SWMdp1
+ SG_ SWMWiprFrntWshr_UB : 49|1@0+ (1,0) [0|1] "" SWMdp1
+ SG_ SWMWiprFrntWshrBtnSts : 40|1@1+ (1,0) [0|1] "" SWMdp1
+ SG_ SWMWiprFrntWshrChks : 24|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" SWMdp1
+ SG_ SWMWiprFrntWshrCntr : 32|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" SWMdp1
+ SG_ SWMWiprFrntWshrQF : 41|2@1+ (1,0) [0|3] "" SWMdp1
+
+BO_ 144 SwmSwm1CanFrame08 : 8 SWM
+ SG_ SWMSplyVtgHSWSupplyVoltage : 7|32@0+ (1.0,0.0) [-340282350000000000000000000000000000000.0|340282350000000000000000000000000000000.0] "Volt" SWMdp1
+ SG_ SWMSplyVtgSWMSupplyVoltage : 39|32@0+ (1.0,0.0) [-340282350000000000000000000000000000000.0|340282350000000000000000000000000000000.0] "Volt" SWMdp1
+
+
+// Node Comments
+CM_ BU_ SWMdpHIB "Device proxy 1 on HI for SWM (Steering Wheel Module).";
+
+// Signal Comments
+CM_ SG_ 48 SteerWhlHeatgOnCmdChks "Checksum";
+CM_ SG_ 48 SteerWhlHeatgOnCmdCntr "Counter";
+CM_ SG_ 48 SteerWhlHeatgOnCmdReq "Steering wheel heating request";
+CM_ SG_ 48 SteerWhlT "NOT A BUS SIGNAL! Analog value corresponding to the temperature in the steering wheel rim";
+CM_ SG_ 48 SteerWhlTTun "Offset signal to the steering wheel heating. Moves the target temp in the STW up or down. ";
+CM_ SG_ 1104 UsageModeGS "0x80	Awake
+0x40	Available
+0x20	Conveniance
+0x10	Movable
+0x08	Driving
+0x04	Responsive
+0x02	Reserved
+0x01	Service availability
+
+Note: multiple usage modes can be set at the same time.
+";
+CM_ SG_ 53 AutoIllumReqSWM2DelayTime "Delay Time";
+CM_ SG_ 53 AutoIllumReqSWM2PWM "PWM duty Steps";
+CM_ SG_ 53 AutoIllumReqSWM2Reserve1 "Reserved bit for future use";
+CM_ SG_ 53 AutoIllumReqSWM2Reserve2 "Reserved bit for future use";
+CM_ SG_ 53 AutoIllumReqSWM2TranBehavior "Transition Behavior";
+CM_ SG_ 53 AutoIllumReqSWM2TranStep "Transition Step";
+CM_ SG_ 53 CarModeSWMCarMode "Car mode in SPA2";
+CM_ SG_ 53 CarModeSWMCarModeSubtype "Substate for current carmode";
+CM_ SG_ 55 DrvrEPBSwtEPBandPBrakeSwitch "Status of EPB and PButton Switch";
+CM_ SG_ 55 DrvrGearShiftDirReqChks "Checksum";
+CM_ SG_ 55 DrvrGearShiftDirReqCntr "Counter";
+CM_ SG_ 55 DrvrGearShiftDirReqPosn "Gear Shifter Position on stalk";
+CM_ SG_ 55 DrvrGearShiftDirReqSts "Saftety level status";
+CM_ SG_ 55 HeatgMatOnOff "NOT A BUS SIGNAL!: On/Off state of the voltage to the heating mat";
+CM_ SG_ 60 SWMWiprRearWshrBtnSts "Rear Wiper Swipe and Washer Button Status";
+CM_ SG_ 60 SWMWiprRearWshrQF "Qaulity Factor";
+CM_ SG_ 64 DiagSigSWMDiagnosticStatus "Diagnostics for SWM";
+CM_ SG_ 64 SteerWhlHeatgDiagc "Diagnostic error signal for the heated steering wheel function in SWM";
+CM_ SG_ 64 SteerWhlHeatgPwrOn "Status of the heating mat in a given moment";
+CM_ SG_ 64 SWMLeLvrDiagncLeLvrDiagns "Left Lever Diagnostics";
+CM_ SG_ 64 SWMRiLvrDiagncSWMRiLvrStatus "Right Lever Status";
+CM_ SG_ 64 SWMWiprScrlWhlChks "Checksum";
+CM_ SG_ 64 SWMWiprScrlWhlCntr "Counter";
+CM_ SG_ 64 SWMWiprScrlWhlQF "Quality Factor";
+CM_ SG_ 64 SWMWiprScrlWhlVal "Wiper Scroll Wheel Value";
+CM_ SG_ 69 DataSpclSWMDataIdn "Identifier for following three bytes";
+CM_ SG_ 69 DataSpclSWMDataNrSpcl1 "First data byte";
+CM_ SG_ 69 DataSpclSWMDataNrSpcl2 "Second data byte";
+CM_ SG_ 69 DataSpclSWMDataNrSpcl3 "Third data byte";
+CM_ SG_ 69 SWMExtrLiHiBeamLvrSts "Exterior Light High Beam and Flash Light Lever Status";
+CM_ SG_ 69 SWMExtrLiHiBeamQF "Quality Factor";
+CM_ SG_ 128 SWMExtrLiTurnIndcrChks "Checksum";
+CM_ SG_ 128 SWMExtrLiTurnIndcrCntr "Counter";
+CM_ SG_ 128 SWMExtrLiTurnIndcrLvrSts "Exterior Light Turn Indicator Lever Status";
+CM_ SG_ 128 SWMExtrLiTurnIndcrQF "Quality Factor";
+CM_ SG_ 128 SWMWiprFrntWshrBtnSts "Wiper Front Swipe and Washer Button Status";
+CM_ SG_ 128 SWMWiprFrntWshrChks "Checksum";
+CM_ SG_ 128 SWMWiprFrntWshrCntr "Counter";
+CM_ SG_ 128 SWMWiprFrntWshrQF "Quality Factor";
+CM_ SG_ 144 SWMSplyVtgHSWSupplyVoltage "Heater Steering Wheel Supply Voltage (KL15)";
+CM_ SG_ 144 SWMSplyVtgSWMSupplyVoltage "SWM Supply Voltage(KL30)";
+
+// Attribute definitions
+BA_DEF_  "Baudrate" INT 1000 1000000; // [bps]
+BA_DEF_  "BusType" STRING;
+BA_DEF_  "DBName" STRING;
+BA_DEF_  "ProtocolType" STRING;
+BA_DEF_ BU_ "NmAsrNode" ENUM "No","Yes";
+BA_DEF_ BU_ "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65536; // [ms]
+BA_DEF_ BO_ "GenMsgCycleTimeFast" FLOAT 0 300000;
+BA_DEF_ BO_ "GenMsgDelayTime" INT 0 65536; // [ms]
+BA_DEF_ BO_ "GenMsgNrOfRepetition" INT 0 100000;
+BA_DEF_ BO_ "GenMsgSendType" ENUM "cyclic", "spontaneous", "not-used", "not-used", "not-used", "cyclicAndSpontaneous", "not-used", "cyclicIfActive", "NoMsgSendType"; // [us]
+BA_DEF_ BO_ "GenMsgStartDelayTime" INT 0 65536; // [ms]
+BA_DEF_ SG_ "GenSigSendType" ENUM "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_ "GenSigStartValue" HEX 0 80000000;
+BA_DEF_ BO_ "GenMsgILSupport" ENUM "No","Yes";
+BA_DEF_ BO_ "NmAsrMessage" ENUM "No","Yes";
+BA_DEF_  "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_  "NmAsrMessageCount" INT 0 255;
+BA_DEF_ BU_ "NodeLayerModules" STRING;
+BA_DEF_ BU_ "ILused" ENUM "No","Yes";
+BA_DEF_ SG_ "GenSigFuncType" ENUM "NoFunction","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","CHK","CNTR","n/a","n/a","n/a","CNTR_AR_01","CRC_AR_01_BOTH","CRC_AR_01_ALT","CRC_AR_01_LOW","CRC_AR_01_NIBBLE","CNTR_AR_04","CRC_AR_04A","CNTR_AR_05","CRC_AR_05";
+BA_DEF_ SG_ "GenSigDataID" STRING;
+BA_DEF_ SG_ "SigGroup" STRING;
+
+BA_DEF_DEF_ "BusType" "";
+BA_DEF_DEF_ "DBName" "";
+BA_DEF_DEF_ "ProtocolType" "";
+BA_DEF_DEF_ "NmAsrNode" "No";
+BA_DEF_DEF_ "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_DEF_DEF_ "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "GenMsgDelayTime" 0;
+BA_DEF_DEF_ "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_ "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_ "GenMsgILSupport" "Yes";
+BA_DEF_DEF_ "NmAsrMessage" "No";
+BA_DEF_DEF_ "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_ "NmAsrMessageCount" 64;
+BA_DEF_DEF_ "NodeLayerModules" "CANoeILNLSPA.dll";
+BA_DEF_DEF_ "ILused" "Yes";
+BA_DEF_DEF_ "GenSigFuncType" "NoFunction";
+BA_DEF_DEF_ "GenSigDataID" "";
+BA_DEF_DEF_ "SigGroup" "";
+
+
+BA_ "Baudrate" 500000;
+BA_ "BusType" "CAN";
+BA_ "DBName" "SWM1CAN";
+BA_ "ProtocolType" "CAN";
+// ECU: SWM
+BA_ "ILused" BU_ SWM 1;
+BA_ "NmAsrNode" BU_ SWM 1;
+BA_ "NodeLayerModules" BU_ SWM "CANoeILNLSPA.dll,AsrNM33.dll";
+// ECU: SWMdp1
+BA_ "ILused" BU_ SWMdp1 1;
+BA_ "NmAsrNode" BU_ SWMdp1 1;
+BA_ "NodeLayerModules" BU_ SWMdp1 "CANoeILNLSPA.dll,AsrNM33.dll";
+// ECU: SWMdpHIB
+BA_ "ILused" BU_ SWMdpHIB 0;
+BA_ "NodeLayerModules" BU_ SWMdpHIB "CANoeILNLSPA.dll";
+// Frame: SWMNmFrame
+BA_ "GenMsgDelayTime" BO_ 1282 20.000;
+BA_ "GenMsgSendType" BO_ 1282 1;
+// Frame: SWMdpNmFrame
+BA_ "GenMsgDelayTime" BO_ 1281 20.000;
+BA_ "GenMsgSendType" BO_ 1281 1;
+// Frame: SwlToSwldpUdsDiagResponseFrame
+BA_ "GenMsgDelayTime" BO_ 1536 5.000;
+BA_ "GenMsgSendType" BO_ 1536 1;
+// Frame: SwldpToSwlUdsDiagRequestFrame
+BA_ "GenMsgDelayTime" BO_ 1792 5.000;
+BA_ "GenMsgSendType" BO_ 1792 1;
+// Frame: SwmSwm1CanFrame02
+BA_ "GenMsgCycleTime" BO_ 55 90.000;
+BA_ "GenMsgSendType" BO_ 55 0;
+BA_ "GenMsgStartDelayTime" BO_ 55 0.000;
+// Frame: SwmSwm1CanFrame04
+BA_ "GenMsgCycleTime" BO_ 60 90.000;
+BA_ "GenMsgSendType" BO_ 60 0;
+BA_ "GenMsgStartDelayTime" BO_ 60 0.000;
+// Frame: SwmSwm1CanFrame05
+BA_ "GenMsgCycleTime" BO_ 64 90.000;
+BA_ "GenMsgSendType" BO_ 64 0;
+BA_ "GenMsgStartDelayTime" BO_ 64 0.000;
+// Frame: SwmSwm1CanFrame06
+BA_ "GenMsgCycleTime" BO_ 69 90.000;
+BA_ "GenMsgSendType" BO_ 69 0;
+BA_ "GenMsgStartDelayTime" BO_ 69 0.000;
+// Frame: SwmSwm1CanFrame07
+BA_ "GenMsgCycleTime" BO_ 128 90.000;
+BA_ "GenMsgSendType" BO_ 128 0;
+BA_ "GenMsgStartDelayTime" BO_ 128 0.000;
+// Frame: SwmSwm1CanFrame08
+BA_ "GenMsgCycleTime" BO_ 144 90.000;
+BA_ "GenMsgSendType" BO_ 144 0;
+BA_ "GenMsgStartDelayTime" BO_ 144 0.000;
+// Frame: SwmdpSwm1CanFrame01
+BA_ "GenMsgCycleTime" BO_ 48 10.000;
+BA_ "GenMsgSendType" BO_ 48 0;
+BA_ "GenMsgStartDelayTime" BO_ 48 0.000;
+// Frame: SwmdpSwm1CanFrame02
+BA_ "GenMsgCycleTime" BO_ 1104 470.000;
+BA_ "GenMsgSendType" BO_ 1104 0;
+BA_ "GenMsgStartDelayTime" BO_ 1104 0.000;
+// Frame: SwmdpSwm1CanFrame03
+BA_ "GenMsgCycleTime" BO_ 149 90.000;
+BA_ "GenMsgSendType" BO_ 149 0;
+BA_ "GenMsgStartDelayTime" BO_ 149 0.000;
+// Frame: SwmdpSwm1CanFrame04
+BA_ "GenMsgCycleTime" BO_ 53 10.000;
+BA_ "GenMsgSendType" BO_ 53 0;
+BA_ "GenMsgStartDelayTime" BO_ 53 0.000;
+// Frame: SwmdpToallUdsDiagRequestFrame
+BA_ "GenMsgDelayTime" BO_ 2047 5.000;
+BA_ "GenMsgSendType" BO_ 2047 1;
+BA_ "GenMsgILSupport" BO_ 1792 1;
+BA_ "GenMsgILSupport" BO_ 1536 1;
+BA_ "GenMsgILSupport" BO_ 1281 0;
+BA_ "GenMsgILSupport" BO_ 48 1;
+BA_ "GenMsgILSupport" BO_ 1104 1;
+BA_ "GenMsgILSupport" BO_ 149 1;
+BA_ "GenMsgILSupport" BO_ 53 1;
+BA_ "GenMsgILSupport" BO_ 2047 1;
+BA_ "GenMsgILSupport" BO_ 1282 0;
+BA_ "GenMsgILSupport" BO_ 55 1;
+BA_ "GenMsgILSupport" BO_ 60 1;
+BA_ "GenMsgILSupport" BO_ 64 1;
+BA_ "GenMsgILSupport" BO_ 69 1;
+BA_ "GenMsgILSupport" BO_ 128 1;
+BA_ "GenMsgILSupport" BO_ 144 1;
+BA_ "NmAsrMessage" BO_ 1792 0;
+BA_ "NmAsrMessage" BO_ 1536 0;
+BA_ "NmAsrMessage" BO_ 1281 1;
+BA_ "NmAsrMessage" BO_ 48 0;
+BA_ "NmAsrMessage" BO_ 1104 0;
+BA_ "NmAsrMessage" BO_ 149 0;
+BA_ "NmAsrMessage" BO_ 53 0;
+BA_ "NmAsrMessage" BO_ 2047 0;
+BA_ "NmAsrMessage" BO_ 1282 1;
+BA_ "NmAsrMessage" BO_ 55 0;
+BA_ "NmAsrMessage" BO_ 60 0;
+BA_ "NmAsrMessage" BO_ 64 0;
+BA_ "NmAsrMessage" BO_ 69 0;
+BA_ "NmAsrMessage" BO_ 128 0;
+BA_ "NmAsrMessage" BO_ 144 0;
+BA_ "GenSigSendType" SG_ 48 ActvnOfSwtIllmnSWM 0;
+BA_ "GenSigStartValue" SG_ 48 ActvnOfSwtIllmnSWM 0;
+BA_ "GenSigSendType" SG_ 53 AutoIllumReqSWM2DelayTime 0;
+BA_ "GenSigStartValue" SG_ 53 AutoIllumReqSWM2DelayTime 0;
+BA_ "GenSigSendType" SG_ 53 AutoIllumReqSWM2PWM 0;
+BA_ "GenSigStartValue" SG_ 53 AutoIllumReqSWM2PWM 0;
+BA_ "GenSigSendType" SG_ 53 AutoIllumReqSWM2Reserve1 0;
+BA_ "GenSigStartValue" SG_ 53 AutoIllumReqSWM2Reserve1 0;
+BA_ "GenSigSendType" SG_ 53 AutoIllumReqSWM2Reserve2 0;
+BA_ "GenSigStartValue" SG_ 53 AutoIllumReqSWM2Reserve2 0;
+BA_ "GenSigSendType" SG_ 53 AutoIllumReqSWM2TranBehavior 0;
+BA_ "GenSigStartValue" SG_ 53 AutoIllumReqSWM2TranBehavior 0;
+BA_ "GenSigSendType" SG_ 53 AutoIllumReqSWM2TranStep 0;
+BA_ "GenSigStartValue" SG_ 53 AutoIllumReqSWM2TranStep 0;
+BA_ "GenSigSendType" SG_ 53 CarModeSWMCarMode 0;
+BA_ "GenSigStartValue" SG_ 53 CarModeSWMCarMode 0;
+BA_ "GenSigSendType" SG_ 53 CarModeSWMCarModeSubtype 0;
+BA_ "GenSigStartValue" SG_ 53 CarModeSWMCarModeSubtype 0;
+BA_ "GenSigSendType" SG_ 53 CrashMode 0;
+BA_ "GenSigStartValue" SG_ 53 CrashMode 0;
+BA_ "GenSigSendType" SG_ 69 DataSpclSWMDataIdn 0;
+BA_ "GenSigStartValue" SG_ 69 DataSpclSWMDataIdn 0;
+BA_ "GenSigSendType" SG_ 69 DataSpclSWMDataNrSpcl1 0;
+BA_ "GenSigStartValue" SG_ 69 DataSpclSWMDataNrSpcl1 0;
+BA_ "GenSigSendType" SG_ 69 DataSpclSWMDataNrSpcl2 0;
+BA_ "GenSigStartValue" SG_ 69 DataSpclSWMDataNrSpcl2 0;
+BA_ "GenSigSendType" SG_ 69 DataSpclSWMDataNrSpcl3 0;
+BA_ "GenSigStartValue" SG_ 69 DataSpclSWMDataNrSpcl3 0;
+BA_ "GenSigSendType" SG_ 64 DiagSigSWMDiagnosticStatus 0;
+BA_ "GenSigStartValue" SG_ 64 DiagSigSWMDiagnosticStatus 0;
+BA_ "GenSigSendType" SG_ 55 DrvrEPBSwtEPBandPBrakeSwitch 0;
+BA_ "GenSigStartValue" SG_ 55 DrvrEPBSwtEPBandPBrakeSwitch 0;
+BA_ "GenSigDataID" SG_ 55 DrvrGearShiftDirReqChks "0x8C6";
+BA_ "GenSigFuncType" SG_ 55 DrvrGearShiftDirReqChks 21;
+BA_ "GenSigSendType" SG_ 55 DrvrGearShiftDirReqChks 0;
+BA_ "GenSigStartValue" SG_ 55 DrvrGearShiftDirReqChks 0;
+BA_ "GenSigFuncType" SG_ 55 DrvrGearShiftDirReqCntr 20;
+BA_ "GenSigSendType" SG_ 55 DrvrGearShiftDirReqCntr 0;
+BA_ "GenSigStartValue" SG_ 55 DrvrGearShiftDirReqCntr 0;
+BA_ "GenSigSendType" SG_ 55 DrvrGearShiftDirReqPosn 0;
+BA_ "GenSigStartValue" SG_ 55 DrvrGearShiftDirReqPosn 0;
+BA_ "GenSigSendType" SG_ 55 DrvrGearShiftDirReqSts 0;
+BA_ "GenSigStartValue" SG_ 55 DrvrGearShiftDirReqSts 0;
+BA_ "GenSigSendType" SG_ 1104 GlobalRealTimeGS 0;
+BA_ "GenSigStartValue" SG_ 1104 GlobalRealTimeGS 0;
+BA_ "GenSigSendType" SG_ 55 HeatgMatOnOff 0;
+BA_ "GenSigStartValue" SG_ 55 HeatgMatOnOff 0;
+BA_ "GenSigSendType" SG_ 1104 OutsideTemperatureGS 0;
+BA_ "GenSigStartValue" SG_ 1104 OutsideTemperatureGS 0;
+BA_ "GenSigSendType" SG_ 69 SWMExtrLiHiBeamLvrSts 0;
+BA_ "GenSigStartValue" SG_ 69 SWMExtrLiHiBeamLvrSts 0;
+BA_ "GenSigSendType" SG_ 69 SWMExtrLiHiBeamQF 0;
+BA_ "GenSigStartValue" SG_ 69 SWMExtrLiHiBeamQF 3;
+BA_ "GenSigDataID" SG_ 128 SWMExtrLiTurnIndcrChks "0x8C0";
+BA_ "GenSigFuncType" SG_ 128 SWMExtrLiTurnIndcrChks 21;
+BA_ "GenSigSendType" SG_ 128 SWMExtrLiTurnIndcrChks 0;
+BA_ "GenSigStartValue" SG_ 128 SWMExtrLiTurnIndcrChks 0;
+BA_ "GenSigFuncType" SG_ 128 SWMExtrLiTurnIndcrCntr 20;
+BA_ "GenSigSendType" SG_ 128 SWMExtrLiTurnIndcrCntr 0;
+BA_ "GenSigStartValue" SG_ 128 SWMExtrLiTurnIndcrCntr 0;
+BA_ "GenSigSendType" SG_ 128 SWMExtrLiTurnIndcrLvrSts 0;
+BA_ "GenSigStartValue" SG_ 128 SWMExtrLiTurnIndcrLvrSts 0;
+BA_ "GenSigSendType" SG_ 128 SWMExtrLiTurnIndcrQF 0;
+BA_ "GenSigStartValue" SG_ 128 SWMExtrLiTurnIndcrQF 3;
+BA_ "GenSigSendType" SG_ 64 SWMLeLvrDiagncLeLvrDiagns 0;
+BA_ "GenSigStartValue" SG_ 64 SWMLeLvrDiagncLeLvrDiagns 0;
+BA_ "GenSigSendType" SG_ 64 SWMRiLvrDiagncSWMRiLvrStatus 0;
+BA_ "GenSigStartValue" SG_ 64 SWMRiLvrDiagncSWMRiLvrStatus 0;
+BA_ "GenSigSendType" SG_ 144 SWMSplyVtgHSWSupplyVoltage 0;
+BA_ "GenSigStartValue" SG_ 144 SWMSplyVtgHSWSupplyVoltage 0;
+BA_ "GenSigSendType" SG_ 144 SWMSplyVtgSWMSupplyVoltage 0;
+BA_ "GenSigStartValue" SG_ 144 SWMSplyVtgSWMSupplyVoltage 0;
+BA_ "GenSigSendType" SG_ 128 SWMWiprFrntWshrBtnSts 0;
+BA_ "GenSigStartValue" SG_ 128 SWMWiprFrntWshrBtnSts 0;
+BA_ "GenSigDataID" SG_ 128 SWMWiprFrntWshrChks "0x8C8";
+BA_ "GenSigFuncType" SG_ 128 SWMWiprFrntWshrChks 21;
+BA_ "GenSigSendType" SG_ 128 SWMWiprFrntWshrChks 0;
+BA_ "GenSigStartValue" SG_ 128 SWMWiprFrntWshrChks 0;
+BA_ "GenSigFuncType" SG_ 128 SWMWiprFrntWshrCntr 20;
+BA_ "GenSigSendType" SG_ 128 SWMWiprFrntWshrCntr 0;
+BA_ "GenSigStartValue" SG_ 128 SWMWiprFrntWshrCntr 0;
+BA_ "GenSigSendType" SG_ 128 SWMWiprFrntWshrQF 0;
+BA_ "GenSigStartValue" SG_ 128 SWMWiprFrntWshrQF 3;
+BA_ "GenSigSendType" SG_ 60 SWMWiprRearWshrBtnSts 0;
+BA_ "GenSigStartValue" SG_ 60 SWMWiprRearWshrBtnSts 0;
+BA_ "GenSigSendType" SG_ 60 SWMWiprRearWshrQF 0;
+BA_ "GenSigStartValue" SG_ 60 SWMWiprRearWshrQF 3;
+BA_ "GenSigDataID" SG_ 64 SWMWiprScrlWhlChks "0x8CA";
+BA_ "GenSigFuncType" SG_ 64 SWMWiprScrlWhlChks 21;
+BA_ "GenSigSendType" SG_ 64 SWMWiprScrlWhlChks 0;
+BA_ "GenSigStartValue" SG_ 64 SWMWiprScrlWhlChks 0;
+BA_ "GenSigFuncType" SG_ 64 SWMWiprScrlWhlCntr 20;
+BA_ "GenSigSendType" SG_ 64 SWMWiprScrlWhlCntr 0;
+BA_ "GenSigStartValue" SG_ 64 SWMWiprScrlWhlCntr 0;
+BA_ "GenSigSendType" SG_ 64 SWMWiprScrlWhlQF 0;
+BA_ "GenSigStartValue" SG_ 64 SWMWiprScrlWhlQF 3;
+BA_ "GenSigSendType" SG_ 64 SWMWiprScrlWhlVal 0;
+BA_ "GenSigStartValue" SG_ 64 SWMWiprScrlWhlVal 0;
+BA_ "GenSigSendType" SG_ 53 ServiceModeSWM 0;
+BA_ "GenSigStartValue" SG_ 53 ServiceModeSWM 0;
+BA_ "GenSigSendType" SG_ 64 SteerWhlHeatgDiagc 0;
+BA_ "GenSigStartValue" SG_ 64 SteerWhlHeatgDiagc 0;
+BA_ "GenSigSendType" SG_ 48 SteerWhlHeatgOnCmdChks 0;
+BA_ "GenSigStartValue" SG_ 48 SteerWhlHeatgOnCmdChks 0;
+BA_ "GenSigSendType" SG_ 48 SteerWhlHeatgOnCmdCntr 0;
+BA_ "GenSigStartValue" SG_ 48 SteerWhlHeatgOnCmdCntr 0;
+BA_ "GenSigSendType" SG_ 48 SteerWhlHeatgOnCmdReq 0;
+BA_ "GenSigStartValue" SG_ 48 SteerWhlHeatgOnCmdReq 0;
+BA_ "GenSigSendType" SG_ 64 SteerWhlHeatgPwrOn 0;
+BA_ "GenSigStartValue" SG_ 64 SteerWhlHeatgPwrOn 0;
+BA_ "GenSigSendType" SG_ 48 SteerWhlT 0;
+BA_ "GenSigStartValue" SG_ 48 SteerWhlT 0;
+BA_ "GenSigSendType" SG_ 48 SteerWhlTTun 0;
+BA_ "GenSigStartValue" SG_ 48 SteerWhlTTun 8;
+BA_ "GenSigSendType" SG_ 149 TotalDistanceGS 0;
+BA_ "GenSigStartValue" SG_ 149 TotalDistanceGS 0;
+BA_ "GenSigSendType" SG_ 1104 UsageModeGS 0;
+BA_ "GenSigStartValue" SG_ 1104 UsageModeGS 0;
+BA_ "GenSigSendType" SG_ 149 VehicleBatteryVoltageGS 0;
+BA_ "GenSigStartValue" SG_ 149 VehicleBatteryVoltageGS 0;
+BA_ "GenSigSendType" SG_ 48 VehicleSpeedGS 0;
+BA_ "GenSigStartValue" SG_ 48 VehicleSpeedGS 0;
+
+VAL_ 48 ActvnOfSwtIllmnSWM 0 "Boolean_FALSE" 1 "Boolean_TRUE";
+VAL_ 48 SteerWhlHeatgOnCmdReq 0 "SteerWhlHeatgOnCmdTyp_Off" 1 "SteerWhlHeatgOnCmdTyp_Lo" 2 "SteerWhlHeatgOnCmdTyp_Med" 3 "SteerWhlHeatgOnCmdTyp_Hi";
+VAL_ 53 CarModeSWMCarMode 0 "CarMode_CarModeNormal" 1 "CarMode_CarModeTransport" 2 "CarMode_CarModeFactory" 3 "CarMode_CarModeDyno" 4 "CarMode_CarModeShow" 5 "CarMode_Spare2" 6 "CarMode_Undefined";
+VAL_ 53 CarModeSWMCarModeSubtype 0 "CarModeSubtype_Normal" 1 "CarModeSubtype_FactoryPaused" 2 "CarModeSubtype_FactoryDriving" 3 "CarModeSubtype_TransportDriving" 4 "CarModeSubtype_TwoWheelDyno" 5 "CarModeSubtype_FourWheelDyno" 6 "CarModeSubtype_Reserve1" 7 "CarModeSubtype_Reserve2";
+VAL_ 53 CrashMode 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 53 ServiceModeSWM 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 55 DrvrEPBSwtEPBandPBrakeSwitch 0 "PsdNotPsd_NotPsd" 1 "PsdNotPsd_Psd";
+VAL_ 55 DrvrGearShiftDirReqPosn 0 "DrvrGearShiftReqPosn_Zero" 1 "DrvrGearShiftReqPosn_Up1Step" 2 "DrvrGearShiftReqPosn_Up2Step" 3 "DrvrGearShiftReqPosn_Dn1Step" 4 "DrvrGearShiftReqPosn_Dn2Step";
+VAL_ 55 DrvrGearShiftDirReqSts 0 "DrvrGearShiftDirReqSts_Initialization" 1 "DrvrGearShiftDirReqSts_NotASILB" 2 "DrvrGearShiftDirReqSts_Reserved" 3 "DrvrGearShiftDirReqSts_ASILB";
+VAL_ 55 HeatgMatOnOff 0 "HeatgMatOnOffCoding_Off" 1 "HeatgMatOnOffCoding_Low" 2 "HeatgMatOnOffCoding_Mid" 3 "HeatgMatOnOffCoding_High";
+VAL_ 60 SWMWiprRearWshrBtnSts 0 "PsdNotPsd_NotPsd" 1 "PsdNotPsd_Psd";
+VAL_ 60 SWMWiprRearWshrQF 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 64 DiagSigSWMDiagnosticStatus 0 "DiagcSigType_OK" 1 "DiagcSigType_SWMIntFailr" 2 "DiagcSigType_HSSOpenStuck" 3 "DiagcSigType_HSSOverCurr" 4 "DiagcSigType_TBD1" 5 "DiagcSigType_TBD2" 6 "DiagcSigType_TBD3" 7 "DiagcSigType_TBD4";
+VAL_ 64 SteerWhlHeatgDiagc 0 "SteerWhlHeatgDiagcTyp1_OK" 1 "SteerWhlHeatgDiagcTyp1_CmnFailr" 2 "SteerWhlHeatgDiagcTyp1_NotEdgePres" 3 "SteerWhlHeatgDiagcTyp1_EdgeSho" 4 "SteerWhlHeatgDiagcTyp1_SnsrFltT" 5 "SteerWhlHeatgDiagcTyp1_FltPwrSplyErr" 6 "SteerWhlHeatgDiagcTyp1_FltSwtHiSide" 7 "SteerWhlHeatgDiagcTyp1_SigFailr";
+VAL_ 64 SteerWhlHeatgPwrOn 0 "Boolean_FALSE" 1 "Boolean_TRUE";
+VAL_ 64 SWMLeLvrDiagncLeLvrDiagns 0 "LeLvrDiagns_LeLvrConnected" 1 "LeLvrDiagns_LeLvrSnsrNotconnected" 2 "LeLvrDiagns_LeLvrBtnStk" 3 "LeLvrDiagns_LeLvrSwtUndef" 4 "LeLvrDiagns_LeLvrStuck" 5 "LeLvrDiagns_TBD1" 6 "LeLvrDiagns_TBD2" 7 "LeLvrDiagns_TBD3";
+VAL_ 64 SWMRiLvrDiagncSWMRiLvrStatus 0 "SWMRiLvrDiagncs_RiLvrConnected" 1 "SWMRiLvrDiagncs_RiLvrSnsrNotConnected" 2 "SWMRiLvrDiagncs_RiLvrBtnStuck" 3 "SWMRiLvrDiagncs_RiLvrUndef" 4 "SWMRiLvrDiagncs_RiLvrStuck" 5 "SWMRiLvrDiagncs_TBD1" 6 "SWMRiLvrDiagncs_TBD2" 7 "SWMRiLvrDiagncs_TBD3";
+VAL_ 64 SWMWiprScrlWhlQF 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 64 SWMWiprScrlWhlVal 0 "SWMWiprScrlWhlVal_Position0" 1 "SWMWiprScrlWhlVal_Position1" 2 "SWMWiprScrlWhlVal_Position2" 3 "SWMWiprScrlWhlVal_Position3" 4 "SWMWiprScrlWhlVal_Position4" 5 "SWMWiprScrlWhlVal_Position5" 6 "SWMWiprScrlWhlVal_Position6" 7 "SWMWiprScrlWhlVal_Position7" 8 "SWMWiprScrlWhlVal_Position8" 9 "SWMWiprScrlWhlVal_Position9" 10 "SWMWiprScrlWhlVal_Position10" 11 "SWMWiprScrlWhlVal_Position11" 12 "SWMWiprScrlWhlVal_Position12" 13 "SWMWiprScrlWhlVal_Position13" 14 "SWMWiprScrlWhlVal_Position14" 15 "SWMWiprScrlWhlVal_Position15";
+VAL_ 69 SWMExtrLiHiBeamLvrSts 0 "SWMExtrLiHiBeamLvrSts_Zero" 1 "SWMExtrLiHiBeamLvrSts_Xplus1Step" 2 "SWMExtrLiHiBeamLvrSts_Xminus1Step" 3 "SWMExtrLiHiBeamLvrSts_Xminus2Step";
+VAL_ 69 SWMExtrLiHiBeamQF 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 128 SWMExtrLiTurnIndcrLvrSts 0 "SWMExtrLiTurnIndcrLvrSts_Zero" 1 "SWMExtrLiTurnIndcrLvrSts_Up1Step" 2 "SWMExtrLiTurnIndcrLvrSts_Up2Step" 3 "SWMExtrLiTurnIndcrLvrSts_Dn1Step" 4 "SWMExtrLiTurnIndcrLvrSts_Dn2Step";
+VAL_ 128 SWMExtrLiTurnIndcrQF 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 128 SWMWiprFrntWshrBtnSts 0 "PsdNotPsd_NotPsd" 1 "PsdNotPsd_Psd";
+VAL_ 128 SWMWiprFrntWshrQF 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+SIG_GROUP_ 53 AutoIllumReqSWM2 1 : AutoIllumReqSWM2DelayTime AutoIllumReqSWM2PWM AutoIllumReqSWM2Reserve1 AutoIllumReqSWM2Reserve2 AutoIllumReqSWM2TranBehavior AutoIllumReqSWM2TranStep;
+SIG_GROUP_ 53 CarModeSWM 1 : CarModeSWMCarMode CarModeSWMCarModeSubtype;
+SIG_GROUP_ 69 DataSpclSWM 1 : DataSpclSWMDataIdn DataSpclSWMDataNrSpcl1 DataSpclSWMDataNrSpcl2 DataSpclSWMDataNrSpcl3;
+SIG_GROUP_ 64 DiagSigSWM 1 : DiagSigSWMDiagnosticStatus;
+SIG_GROUP_ 55 DrvrEPBSwt 1 : DrvrEPBSwtEPBandPBrakeSwitch;
+SIG_GROUP_ 55 DrvrGearShiftDirReq 1 : DrvrGearShiftDirReqChks DrvrGearShiftDirReqCntr DrvrGearShiftDirReqPosn DrvrGearShiftDirReqSts;
+SIG_GROUP_ 48 SteerWhlHeatgOnCmd 1 : SteerWhlHeatgOnCmdChks SteerWhlHeatgOnCmdCntr SteerWhlHeatgOnCmdReq;
+SIG_GROUP_ 69 SWMExtrLiHiBeam 1 : SWMExtrLiHiBeamLvrSts SWMExtrLiHiBeamQF;
+SIG_GROUP_ 128 SWMExtrLiTurnIndcr 1 : SWMExtrLiTurnIndcrChks SWMExtrLiTurnIndcrCntr SWMExtrLiTurnIndcrLvrSts SWMExtrLiTurnIndcrQF;
+SIG_GROUP_ 64 SWMLeLvrDiagnc 1 : SWMLeLvrDiagncLeLvrDiagns;
+SIG_GROUP_ 64 SWMRiLvrDiagnc 1 : SWMRiLvrDiagncSWMRiLvrStatus;
+SIG_GROUP_ 144 SWMSplyVtg 1 : SWMSplyVtgHSWSupplyVoltage SWMSplyVtgSWMSupplyVoltage;
+SIG_GROUP_ 128 SWMWiprFrntWshr 1 : SWMWiprFrntWshrBtnSts SWMWiprFrntWshrChks SWMWiprFrntWshrCntr SWMWiprFrntWshrQF;
+SIG_GROUP_ 60 SWMWiprRearWshr 1 : SWMWiprRearWshrBtnSts SWMWiprRearWshrQF;
+SIG_GROUP_ 64 SWMWiprScrlWhl 1 : SWMWiprScrlWhlChks SWMWiprScrlWhlCntr SWMWiprScrlWhlQF SWMWiprScrlWhlVal;
+
+
