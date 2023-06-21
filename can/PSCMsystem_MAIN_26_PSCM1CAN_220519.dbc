@@ -1,0 +1,1455 @@
+// *************************************************************************** *
+// *                                                                           *
+// * Description:         CANDB File                                           *
+// * Generated at:        2022-05-19 15:02                                     *
+// * System:              PSCMsystem_MAIN_26                                   *
+// * Network:             PSCM1CAN                                             *
+// *                                                                           *
+// *************************************************************************** *
+
+
+VERSION "PSCM1CAN"
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_ :
+
+BU_ :  PSCM PSCMdp PSCMdp1HI PSCMETC
+
+BO_ 124 PscmdpHIAPscmHIA1CanFrame01_20 : 64 PSCMdp1HI
+ SG_ VehSpdLgtforPSCM_UB : 110|1@0+ (1,0) [0|1] "" PSCM
+ SG_ VehSpdLgtforPSCMVehSpdLgt : 80|15@1+ (0.00391,0.0) [0.0|125.0027] "m/s" PSCM
+ SG_ VehSpdLgtforPSCMVehSpdLgtChks : 64|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ VehSpdLgtforPSCMVehSpdLgtCntr : 72|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ VehSpdLgtforPSCMVehSpdLgtQf : 96|2@1+ (1,0) [0|3] "" PSCM
+ SG_ VLgt_UB : 111|1@0+ (1,0) [0|1] "" PSCM
+ SG_ VLgtChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ VLgtCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ VLgtMax : 16|13@1- (0.02,0.0) [-81.9|81.9] "m/s" PSCM
+ SG_ VLgtMin : 29|13@1- (0.02,0.0) [-81.9|81.9] "m/s" PSCM
+ SG_ VLgtMinMaxQf : 42|3@1+ (1,0) [0|7] "" PSCM
+ SG_ VLgtNom : 45|13@1- (0.02,0.0) [-81.9|81.9] "m/s" PSCM
+ SG_ VLgtNomQf : 58|3@1+ (1,0) [0|7] "" PSCM
+
+BO_ 93 PscmdpHIAPscmHIA1CanFrame02 : 8 PSCMdp1HI
+ SG_ SteerADModReqPrim_UB : 31|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerADModReqPrimChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerADModReqPrimCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ SteerADModReqPrimRPCModActv : 16|1@1+ (1,0) [0|1] "" PSCM
+
+BO_ 36 PscmdpHIAPscmHIA1CanFrame03 : 64 PSCMdp1HI
+ SG_ SteerADRackPosReqPrim_UB : 47|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerADRackPosReqPrimChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerADRackPosReqPrimcntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ SteerADRackPosReqPrimReqConfidence : 32|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ SteerADRackPosReqPrimSteerRackPos : 16|15@1+ (0.0078125,-128.0) [-110.0|110.0] "mm" PSCM
+
+BO_ 61 PscmdpHIAPscmHIA1CanFrame04_5 : 16 PSCMdp1HI
+ SG_ DilTqLowrLim : 5|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCM
+ SG_ DilTqLowrLim_UB : 6|1@0+ (1,0) [0|1] "" PSCM
+ SG_ DilTqUpprLim : 21|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCM
+ SG_ DilTqUpprLim_UB : 22|1@0+ (1,0) [0|1] "" PSCM
+ SG_ RackPositionReqSafe_UB : 7|1@0+ (1,0) [0|1] "" PSCM
+ SG_ RackPositionReqSafeChks : 32|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ RackPositionReqSafeCntr : 40|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ RackPositionReqSafeRackPosRateLim : 48|14@1+ (0.05,-409.6) [-400.0|400.0] "mm/s" PSCM
+ SG_ RackPositionReqSafeSteerRackPosReq : 64|15@1+ (0.0078125,-128.0) [-110.0|110.0] "mm" PSCM
+ SG_ ScaleBw : 87|8@0+ (1.0,0.0) [0.0|100.0] "Unitless" PSCM
+ SG_ ScaleBw_UB : 23|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerLatCtrlModReq_UB : 119|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerLatCtrlModReqChks : 88|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerLatCtrlModReqCntr : 96|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ SteerLatCtrlModReqLatCtrlModReq : 104|4@1+ (1,0) [0|15] "" PSCM
+ SG_ SteerOvrlyMotTqReq : 117|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCM
+ SG_ SteerOvrlyMotTqReq_UB : 118|1@0+ (1,0) [0|1] "" PSCM
+
+BO_ 69 PscmdpPscm1CanFrame01_10 : 48 PSCMdp
+ SG_ AbsStsForSteer : 45|1@0+ (1,0) [0|1] "" PSCM
+ SG_ AbsStsForSteer_UB : 44|1@0+ (1,0) [0|1] "" PSCM
+ SG_ ADataForSteer_UB : 139|1@0+ (1,0) [0|1] "" PSCMETC
+ SG_ ADataForSteerALat : 63|16@0- (0.0009765625,0.0) [-18.0|18.0] "m/s^2" PSCMETC
+ SG_ ADataForSteerALat1Qf : 141|2@0+ (1,0) [0|3] "" PSCMETC
+ SG_ ADataForSteerALatWithCmp : 79|16@0- (0.0009765625,0.0) [-18.0|18.0] "m/s^2" PSCMETC
+ SG_ ADataForSteerALgt : 95|16@0- (0.0009765625,0.0) [-18.0|18.0] "m/s^2" PSCMETC
+ SG_ ADataForSteerALgt1Qf : 143|2@0+ (1,0) [0|3] "" PSCMETC
+ SG_ ADataForSteerAVert : 111|16@0- (0.0009765625,0.0) [-18.0|18.0] "m/s^2" PSCMETC
+ SG_ ADataForSteerAVertQf : 129|2@0+ (1,0) [0|3] "" PSCMETC
+ SG_ ADataForSteerGrdtOfALgt : 127|14@0- (0.00390625,0.0) [-30.0|30.0] "m/s^3" PSCMETC
+ SG_ EpbStsForSteer : 43|1@0+ (1,0) [0|1] "" PSCM
+ SG_ EpbStsForSteer_UB : 42|1@0+ (1,0) [0|1] "" PSCM
+ SG_ EscSptModStsForSteer : 41|1@0+ (1,0) [0|1] "" PSCM
+ SG_ EscSptModStsForSteer_UB : 40|1@0+ (1,0) [0|1] "" PSCM
+ SG_ ExtValForSteerAgOffsCmp : 138|15@0- (0.0009765625,0.0) [-14.5|14.5] "rad" PSCM
+ SG_ ExtValForSteerAgOffsCmp_UB : 155|1@0+ (1,0) [0|1] "" PSCM
+ SG_ MaxLimForSteerI : 167|8@0+ (1.0,0.0) [0.0|254.0] "A" PSCM
+ SG_ MaxLimForSteerI_UB : 154|1@0+ (1,0) [0|1] "" PSCM
+ SG_ MinLimForSteerI : 175|8@0+ (1.0,0.0) [0.0|254.0] "A" PSCM
+ SG_ MinLimForSteerI_UB : 153|1@0+ (1,0) [0|1] "" PSCM
+ SG_ RvsGearStsForSteer : 53|1@0+ (1,0) [0|1] "" PSCM
+ SG_ RvsGearStsForSteer_UB : 52|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerBBSpareRx_UB : 185|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerBBSpareRxByte0 : 247|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerBBSpareRxByte1 : 255|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerBBSpareRxByte2 : 263|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerBBSpareRxByte3 : 271|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerBBSpareRxByte4 : 279|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerBBSpareRxByte5 : 287|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerBBSpareRxByte6 : 295|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerBBSpareRxByte7 : 303|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ SteerOvrlySteerWhlTqReq : 183|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCM
+ SG_ SteerOvrlySteerWhlTqReq_UB : 152|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerWhlTqOvrlyReqScaler : 311|8@0+ (1.0,0.0) [0.0|200.0] "Unitless" PSCM
+ SG_ SteerWhlTqOvrlyReqScaler_UB : 319|1@0+ (1,0) [0|1] "" PSCM
+ SG_ TcsStsForSteer : 51|1@0+ (1,0) [0|1] "" PSCM
+ SG_ TcsStsForSteer_UB : 50|1@0+ (1,0) [0|1] "" PSCM
+
+BO_ 864 PscmdpPscm1CanFrame02_500 : 16 PSCMdp
+ SG_ AmbTRawForSteer : 74|11@0+ (0.1,-70.0) [-70.0|134.70000000000002] "degC" PSCM
+ SG_ AmbTRawForSteer_UB : 21|1@0+ (1,0) [0|1] "" PSCM
+ SG_ BkpOfDstTrvld2 : 36|21@0+ (1.0,0.0) [0.0|2000000.0] "km" PSCM
+ SG_ BkpOfDstTrvld2_UB : 6|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerExtdEndStop : 63|8@0+ (0.1,80.0) [80.0|105.5] "mm" PSCM
+ SG_ SteerExtdEndStop_UB : 39|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerNomEndStop : 71|8@0+ (0.1,80.0) [80.0|105.5] "mm" PSCM
+ SG_ SteerNomEndStop_UB : 7|1@0+ (1,0) [0|1] "" PSCM
+ SG_ TireCircumForSteer : 3|12@0+ (1.0,0.0) [0.0|4095.0] "mm" PSCM
+ SG_ TireCircumForSteer_UB : 4|1@0+ (1,0) [0|1] "" PSCM
+
+BO_ 288 PscmdpPscm1CanFrame03_100 : 8 PSCMdp
+ SG_ CarTimeGlbl : 39|32@0+ (0.1,0.0) [0.0|429496729.5] "s" PSCM
+ SG_ CarTimeGlbl_UB : 25|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerAssistModReq : 29|4@0+ (1,0) [0|15] "" PSCM
+ SG_ SteerAssistModReq_UB : 30|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerFeelTunSeln_UB : 15|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerFeelTunSelnSteerFeelTunMapSel : 7|4@0+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ SteerFeelTunSelnSteerFeelTunSetSeln : 3|4@0+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ UsgModStsforPSCM : 13|4@0+ (1,0) [0|15] "" PSCM
+ SG_ UsgModStsforPSCM_UB : 14|1@0+ (1,0) [0|1] "" PSCM
+ SG_ VehBatUSysU2ForSteer : 23|8@0+ (0.1,0.0) [0.0|25.0] "Volt" PSCM
+ SG_ VehBatUSysU2ForSteer_UB : 31|1@0+ (1,0) [0|1] "" PSCM
+
+BO_ 147 PscmdpPscm1CanFrame04_30 : 12 PSCMdp
+ SG_ EscStsForSteerSafe_UB : 2|1@0+ (1,0) [0|1] "" PSCM
+ SG_ EscStsForSteerSafeChks : 48|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ EscStsForSteerSafeCntr : 56|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCM
+ SG_ EscStsForSteerSafeEscStsForSteerSafe : 64|1@1+ (1,0) [0|1] "" PSCM
+ SG_ SteerWhlHptcWarn_UB : 1|1@0+ (1,0) [0|1] "" PSCM
+ SG_ SteerWhlHptcWarnAmp : 23|8@0+ (0.11765,0.0) [0.0|30.00075] "NewtonMeter" PSCM
+ SG_ SteerWhlHptcWarnFrq : 15|8@0+ (0.11765,0.0) [0.0|30.00075] "Hz" PSCM
+ SG_ SteerWhlHptcWarnReq : 0|1@0+ (1.0,0.0) [0.0|1.0] "Unitless" PSCM
+ SG_ YawRateForSteer_UB : 26|1@0+ (1,0) [0|1] "" PSCM
+ SG_ YawRateForSteerYawRate : 39|16@0- (0.000244140625,0.0) [-6.0|6.0] "rad/s" PSCM
+ SG_ YawRateForSteerYawRateQf : 25|2@0+ (1,0) [0|3] "" PSCM
+
+BO_ 96 PscmdpPscm1CanFrame05_20 : 32 PSCMdp
+ SG_ BlkExtDtc : 95|2@0+ (1,0) [0|3] "" PSCM
+ SG_ BlkExtDtc_UB : 93|1@0+ (1,0) [0|1] "" PSCM
+ SG_ BrkPedlPsdForSteer_UB : 83|1@0+ (1,0) [0|1] "" PSCM
+ SG_ BrkPedlPsdForSteerBrkPedlPsdForSteer : 82|1@0+ (1,0) [0|1] "" PSCM
+ SG_ BrkPedlPsdForSteerBrkPedlPsdQfForSteer : 81|2@0+ (1,0) [0|3] "" PSCM
+ SG_ SteerOvrlyActvReq : 86|3@0+ (1,0) [0|7] "" PSCM
+ SG_ SteerOvrlyActvReq_UB : 87|1@0+ (1,0) [0|1] "" PSCM
+ SG_ WhlSpdCircumFrntForSteer_UB : 4|1@0+ (1,0) [0|1] "" PSCM
+ SG_ WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLe : 14|15@0+ (0.00391,0.0) [0.0|125.0027] "m/s" PSCM
+ SG_ WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLeQf : 1|2@0+ (1,0) [0|3] "" PSCM
+ SG_ WhlSpdCircumFrntForSteerWhlSpdCircumlFrntri : 30|15@0+ (0.00391,0.0) [0.0|125.0027] "m/s" PSCM
+ SG_ WhlSpdCircumFrntForSteerWhlSpdCircumlFrntRiQf : 3|2@0+ (1,0) [0|3] "" PSCM
+ SG_ WhlSpdCircumReForSteer_UB : 100|1@0+ (1,0) [0|1] "" PSCM
+ SG_ WhlSpdCircumReForSteerWhlSpdCircumlReLe : 110|15@0+ (0.00391,0.0) [0.0|125.0027] "m/s" PSCM
+ SG_ WhlSpdCircumReForSteerWhlSpdCircumlReLeQf : 99|2@0+ (1,0) [0|3] "" PSCM
+ SG_ WhlSpdCircumReForSteerWhlSpdCircumlReRi : 126|15@0+ (0.00391,0.0) [0.0|125.0027] "m/s" PSCM
+ SG_ WhlSpdCircumReForSteerWhlSpdCircumlReRiQf : 97|2@0+ (1,0) [0|3] "" PSCM
+
+BO_ 2047 PscmdpToallUdsDiagRequestFrame : 64 PSCMdp
+ SG_ PscmdpToAllUdsPscm1canNPdu : 7|512@0+ (1,0) [0|0] "" PSCM
+
+BO_ 1797 PscmdpToPscmUdsDiagRequestFrame : 64 PSCMdp
+ SG_ PscmdpToPscmUdsPscm1canNPdu : 7|512@0+ (1,0) [0|0] "" PSCM
+
+BO_ 304 PscmEtcPscm1CanFrame01 : 8 PSCMETC
+ SG_ PSCMXCPL1ReqByte0 : 7|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL1ReqByte1 : 15|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL1ReqByte2 : 23|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL1ReqByte3 : 31|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL1ReqByte4 : 39|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL1ReqByte5 : 47|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL1ReqByte6 : 55|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL1ReqByte7 : 63|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+
+BO_ 310 PscmEtcPscm1CanFrame03 : 8 PSCMETC
+ SG_ PSCMXCPL2ReqByte0 : 7|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL2ReqByte1 : 15|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL2ReqByte2 : 23|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL2ReqByte3 : 31|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL2ReqByte4 : 39|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL2ReqByte5 : 47|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL2ReqByte6 : 55|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+ SG_ PSCMXCPL2ReqByte7 : 63|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCM
+
+BO_ 57 PscmPscm1CanFrame01_02 : 64 PSCM
+ SG_ PinionSteerAg2Group_UB : 63|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ PinionSteerAg2GroupChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ PinionSteerAg2GroupCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ PinionSteerAg2GroupPinionSteerAg2 : 16|15@1- (0.0009765625,0.0) [-14.5|14.5] "rad" PSCMdp1HI
+ SG_ PinionSteerAg2GroupPinionSteerAg2Qf : 46|2@1+ (1,0) [0|3] "" PSCMdp1HI
+ SG_ PinionSteerAg2GroupPinionSteerAg2Spd : 32|14@1- (0.0078125,0.0) [-50.0|50.0] "rad/s" PSCMdp1HI
+ SG_ PinionSteerAg2GroupPinionSteerAg2SpdQf : 48|2@1+ (1,0) [0|3] "" PSCMdp1HI
+
+BO_ 71 PscmPscm1CanFrame02_10 : 24 PSCM
+ SG_ FrntSteerFEstimd2 : 31|16@0- (1.0,0.0) [-32768.0|32767.0] "N" PSCMdp
+ SG_ FrntSteerFEstimd2_UB : 23|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ MotOverlayTqLimActvd : 22|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ MotOverlayTqLimActvd_UB : 7|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerBBSpareTx_UB : 20|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerBBSpareTxByte0 : 71|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp
+ SG_ SteerBBSpareTxByte1 : 79|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp
+ SG_ SteerBBSpareTxByte2 : 87|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp
+ SG_ SteerBBSpareTxByte3 : 95|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp
+ SG_ SteerBBSpareTxByte4 : 103|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp
+ SG_ SteerBBSpareTxByte5 : 111|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp
+ SG_ SteerBBSpareTxByte6 : 119|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp
+ SG_ SteerBBSpareTxByte7 : 127|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp
+ SG_ SteerOvrlyActvCmfd : 18|3@0+ (1,0) [0|7] "" PSCMdp
+ SG_ SteerOvrlyActvCmfd_UB : 19|1@0+ (1,0) [0|1] "" PSCMdp
+
+BO_ 112 PscmPscm1CanFrame03_20 : 8 PSCM
+ SG_ DrvrSteerWhlHldGroup2_UB : 30|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ DrvrSteerWhlHldGroup2DrvrSteerWhlHld : 29|2@0+ (1,0) [0|3] "" PSCMdp
+ SG_ DrvrSteerWhlHldGroup2DrvrSteerWhlHldQly : 27|4@0+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp
+ SG_ SteerAssistModeActv : 54|4@0+ (1,0) [0|15] "" PSCMdp
+ SG_ SteerAssistModeActv_UB : 55|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerDtcSet : 49|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerDtcSet_UB : 50|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerErrReq : 61|3@0+ (1,0) [0|7] "" PSCMdp
+ SG_ SteerErrReq_UB : 62|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerServoSts2 : 48|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerServoSts2_UB : 63|1@0+ (1,0) [0|1] "" PSCMdp
+
+BO_ 512 PscmPscm1CanFrame08_2000 : 8 PSCM
+ SG_ SteerLimpHomeIgnCntr : 23|4@0+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp
+ SG_ SteerLimpHomeIgnCntr_UB : 18|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerLimpHomeTmrVal : 7|16@0+ (2.0,0.0) [0.0|131070.0] "s" PSCMdp
+ SG_ SteerLimpHomeTmrVal_UB : 19|1@0+ (1,0) [0|1] "" PSCMdp
+
+BO_ 80 PscmPscm1CanFrame09 : 8 PSCM
+ SG_ LimdOverlayTq : 13|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMdp
+ SG_ LimdOverlayTq_UB : 14|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerAssiRednFac : 7|8@0+ (1.0,0.0) [0.0|100.0] "Unitless" PSCMdp
+ SG_ SteerAssiRednFac_UB : 15|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerTqTubeLowrLim : 29|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMdp
+ SG_ SteerTqTubeLowrLim_UB : 30|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerTqTubeUpprLim : 45|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMdp
+ SG_ SteerTqTubeUpprLim_UB : 46|1@0+ (1,0) [0|1] "" PSCMdp
+
+BO_ 59 PscmPscm1CanFrame12_05 : 8 PSCM
+ SG_ FrntWhlAngCtrlLimd : 7|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ FrntWhlAngCtrlLimd_UB : 6|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ FrntWhlAngCtrlLimdExt : 13|3@0+ (1,0) [0|7] "" PSCMdp
+ SG_ FrntWhlAngCtrlLimdExt_UB : 10|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ FrntWhlAngCtrlSts : 5|2@0+ (1,0) [0|3] "" PSCMdp
+ SG_ FrntWhlAngCtrlSts_UB : 15|1@0+ (1,0) [0|1] "" PSCMdp
+ SG_ SteerLatCtrlModReqCfmd : 3|4@0+ (1,0) [0|15] "" PSCMdp
+ SG_ SteerLatCtrlModReqCfmd_UB : 14|1@0+ (1,0) [0|1] "" PSCMdp
+
+BO_ 308 PscmPscm1CanFrame13_ev : 8 PSCM
+ SG_ PSCMXCPL1RespByte0 : 7|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL1RespByte1 : 15|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL1RespByte2 : 23|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL1RespByte3 : 31|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL1RespByte4 : 39|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL1RespByte5 : 47|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL1RespByte6 : 55|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL1RespByte7 : 63|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+
+BO_ 314 PscmPscm1CanFrame14_ev : 8 PSCM
+ SG_ PSCMXCPL2RespByte0 : 7|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL2RespByte1 : 15|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL2RespByte2 : 23|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL2RespByte3 : 31|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL2RespByte4 : 39|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL2RespByte5 : 47|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL2RespByte6 : 55|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+ SG_ PSCMXCPL2RespByte7 : 63|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMETC
+
+BO_ 24 PscmPscm1CanFrame16 : 64 PSCM
+ SG_ SteerWhlTqSafePrim_UB : 39|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerWhlTqSafePrimChecksum : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerWhlTqSafePrimCounter : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerWhlTqSafePrimSteerWhlTq : 16|14@1- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMdp1HI
+ SG_ SteerWhlTqSafePrimSteerWhlTqQf : 30|2@1+ (1,0) [0|3] "" PSCMdp1HI
+
+BO_ 34 PscmPscm1CanFrame17_20 : 64 PSCM
+ SG_ DrvrSteerActvGroup2_UB : 31|1@0+ (1,0) [0|1] "" PSCMdp,PSCMdp1HI
+ SG_ DrvrSteerActvGroup2Chks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp,PSCMdp1HI
+ SG_ DrvrSteerActvGroup2Cntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp,PSCMdp1HI
+ SG_ DrvrSteerActvGroup2DrvrSteerActv : 16|1@1+ (1,0) [0|1] "" PSCMdp,PSCMdp1HI
+
+BO_ 62 PscmPscm1CanFrame18_05 : 64 PSCM
+ SG_ SteerRackPosSafeGroup_UB : 63|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerRackPosSafeGroupChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerRackPosSafeGroupCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerRackPosSafeGroupSteerRackPos : 16|15@1+ (0.0078125,-128.0) [-110.0|110.0] "mm" PSCMdp1HI
+ SG_ SteerRackPosSafeGroupSteerRackPosQf : 46|2@1+ (1,0) [0|3] "" PSCMdp1HI
+ SG_ SteerRackPosSafeGroupSteerRackPosRate : 32|14@1+ (0.05,-409.6) [-400.0|400.0] "mm/s" PSCMdp1HI
+ SG_ SteerRackPosSafeGroupSteerRackPosRateQf : 48|2@1+ (1,0) [0|3] "" PSCMdp1HI
+
+BO_ 66 PscmPscm1CanFrame19_15 : 64 PSCM
+ SG_ SteerADFallbackAvailTimePrim_UB : 183|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADFallbackAvailTimePrimchks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADFallbackAvailTimePrimcntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADFallbackAvailTimePrimFallbackAvilTime : 16|10@1+ (1.0,0.0) [0.0|1023.0] "Unitless" PSCMdp1HI
+ SG_ SteerADFallbackPfmncPrim_UB : 182|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADFallbackPfmncPrimChks : 32|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADFallbackPfmncPrimCntr : 40|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADFallbackPfmncPrimFallbackPfmncLvl : 48|7@1+ (1.0,0.0) [0.0|100.0] "%" PSCMdp1HI
+ SG_ SteerADL1ComCfmdPrim_UB : 181|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADL1ComCfmdPrimChks : 56|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADL1ComCfmdPrimCntr : 64|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADL1ComCfmdPrimComConf : 72|1@1+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADModL1Prim_UB : 180|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADModL1PrimChks : 80|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADModL1PrimCntr : 88|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADModL1PrimRPCModActv : 96|1@1+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADModL2Prim_UB : 179|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADModL2PrimChks : 104|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADModL2PrimCntr : 112|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADModL2PrimRPCModActv : 120|1@1+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADPosReqUsedPrim_UB : 178|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADPosReqUsedPrimChks : 128|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADPosReqUsedPrimCntr : 136|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADPosReqUsedPrimSteerADReqUsed : 144|2@1+ (1,0) [0|3] "" PSCMdp1HI
+ SG_ SteerADRpcRampPrim_UB : 177|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADRpcRampPrimChks : 152|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADRpcRampPrimCntr : 160|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADRpcRampPrimRPCCtrlLvl : 168|7@1+ (1.0,0.0) [0.0|100.0] "%" PSCMdp1HI
+ SG_ SteerADSigAvlPrim : 185|2@0+ (1,0) [0|3] "" PSCMdp1HI
+ SG_ SteerADSigAvlPrim_UB : 176|1@0+ (1,0) [0|1] "" PSCMdp1HI
+
+BO_ 65 PscmPscm1CanFrame20 : 64 PSCM
+ SG_ SteerADModCfmdPrim_UB : 111|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADModCfmdPrimChks : 24|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADModCfmdPrimCntr : 32|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADModCfmdPrimSteerADMod : 40|3@1+ (1,0) [0|7] "" PSCMdp1HI
+ SG_ SteerADModRdy_UB : 110|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADModRdyChks : 48|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADModRdyCntr : 56|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADModRdySteerADModRdy : 64|1@1+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADPfmncPrim_UB : 109|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerADPfmncPrimChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerADPfmncPrimCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerADPfmncPrimCurrentPfmcLvl : 16|7@1+ (1.0,0.0) [0.0|100.0] "%" PSCMdp1HI
+ SG_ SteerDegradedModPrim_UB : 108|1@0+ (1,0) [0|1] "" PSCMdp1HI
+ SG_ SteerDegradedModPrimChks : 72|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" PSCMdp1HI
+ SG_ SteerDegradedModPrimCntr : 80|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" PSCMdp1HI
+ SG_ SteerDegradedModPrimSteerDegradedMod : 96|3@1+ (1,0) [0|7] "" PSCMdp1HI
+ SG_ SteerDegradedModPrimSteerDegradedSubinfo : 88|8@1+ (1,0) [0|255] "" PSCMdp1HI
+
+BO_ 117 PscmPscm1CanSporadicFrame15 : 24 PSCM
+ SG_ SteerTestMeasAncActive : 6|1@0+ (1,0) [0|1] "" PSCMETC
+ SG_ SteerTestMeasAncTqReq : 5|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMETC
+ SG_ SteerTestMeasAsscTqReq : 21|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMETC
+ SG_ SteerTestMeasEarTqReq : 37|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMETC
+ SG_ SteerTestMeasEstimdTotSplyI : 52|13@0- (0.05,0.0) [-200.0|200.0] "A" PSCMETC
+ SG_ SteerTestMeasIntT : 66|11@0+ (0.1,-70.0) [-70.0|134.70000000000002] "degC" PSCMETC
+ SG_ SteerTestMeasLimOverlayTq : 85|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMETC
+ SG_ SteerTestMeasPdcActv : 86|1@0+ (1,0) [0|1] "" PSCMETC
+ SG_ SteerTestMeasPdcTqReq : 101|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMETC
+ SG_ SteerTestMeasSplyU : 119|8@0+ (0.1,0.0) [0.0|25.0] "Volt" PSCMETC
+ SG_ SteerTestMeasSteerRackFEstimd : 127|16@0- (1.0,0.0) [-32768.0|32767.0] "N" PSCMETC
+ SG_ SteerTestMeasSteerWhlTq : 141|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMETC
+ SG_ SteerTestMeasTotMotTqReq : 157|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" PSCMETC
+
+BO_ 1541 PscmToPscmdpUdsDiagResponseFrame : 64 PSCM
+ SG_ PscmToPscmdpUdsPscm1canNPdu : 7|512@0+ (1,0) [0|0] "" PSCMdp
+
+
+// Node Comments
+CM_ BU_ PSCM "Power Steering Control Module";
+CM_ BU_ PSCMdp "Device Proxy for Power Steering Control Module";
+CM_ BU_ PSCMdp1HI "Device Proxy for PSCM for HI";
+
+// Signal Comments
+CM_ SG_ 124 VehSpdLgtforPSCMVehSpdLgt "Vehicle speed longitudinal";
+CM_ SG_ 124 VehSpdLgtforPSCMVehSpdLgtChks "Checksum for vehicle speed longitudinal";
+CM_ SG_ 124 VehSpdLgtforPSCMVehSpdLgtCntr "Counter for vehicle speed longitudinal checksum calculation";
+CM_ SG_ 124 VehSpdLgtforPSCMVehSpdLgtQf "Qf for vehicle speed longitudinal";
+CM_ SG_ 124 VLgtChks "Checksum";
+CM_ SG_ 124 VLgtCntr "Counter";
+CM_ SG_ 124 VLgtMax "Vehicle speed maximum";
+CM_ SG_ 124 VLgtMin "Vehicle speed minimum";
+CM_ SG_ 124 VLgtMinMaxQf "Quality factor for min and max signals";
+CM_ SG_ 124 VLgtNom "Vehicle speed nominal";
+CM_ SG_ 124 VLgtNomQf "Quality factor for nominal signal";
+CM_ SG_ 93 SteerADModReqPrimChks "E2E Checksum";
+CM_ SG_ 93 SteerADModReqPrimCntr "E2E Counter";
+CM_ SG_ 93 SteerADModReqPrimRPCModActv "Tells if RPC or SFC mode is actve";
+CM_ SG_ 36 SteerADRackPosReqPrimChks "Checksum for AD Rack Position Req";
+CM_ SG_ 36 SteerADRackPosReqPrimcntr "Counter for AD Rack Position Req";
+CM_ SG_ 36 SteerADRackPosReqPrimReqConfidence "Position Request Confidence ";
+CM_ SG_ 36 SteerADRackPosReqPrimSteerRackPos "Requsted Rack Position";
+CM_ SG_ 61 DilTqLowrLim "Driver In the Loop Torque Lower Limit";
+CM_ SG_ 61 DilTqUpprLim "Driver In Loop Torque Upper Limit";
+CM_ SG_ 61 RackPositionReqSafeChks "Checksum for RackPosReqSafe group";
+CM_ SG_ 61 RackPositionReqSafeCntr "Counter for RackPosReqSafe group";
+CM_ SG_ 61 RackPositionReqSafeRackPosRateLim "Steering Rack Position Rate limit for BlackBox";
+CM_ SG_ 61 RackPositionReqSafeSteerRackPosReq "Steering Rack Position Request for BlackBox";
+CM_ SG_ 61 ScaleBw "Scale the bandwidth of the controller in Percentage";
+CM_ SG_ 61 SteerLatCtrlModReqChks "Checksum";
+CM_ SG_ 61 SteerLatCtrlModReqCntr "Counter";
+CM_ SG_ 61 SteerLatCtrlModReqLatCtrlModReq "Mode request for controller mode of operation to BlackBox";
+CM_ SG_ 61 SteerOvrlyMotTqReq "Steering overlay motor torque request. 
+External request enabler.
+";
+CM_ SG_ 69 AbsStsForSteer "ABS status used by PSCM";
+CM_ SG_ 69 ADataForSteerALat "Lateral acceleration";
+CM_ SG_ 69 ADataForSteerALat1Qf "Quality factor for Lateral acceleration signal";
+CM_ SG_ 69 ADataForSteerALatWithCmp "Compensated Lateral acceleration";
+CM_ SG_ 69 ADataForSteerALgt "Longitudinal acceleration";
+CM_ SG_ 69 ADataForSteerALgt1Qf "Quality factor for Longitudinal acceleration";
+CM_ SG_ 69 ADataForSteerAVert "Vertical acceleration";
+CM_ SG_ 69 ADataForSteerAVertQf "Quality factor for Vertical acceleration";
+CM_ SG_ 69 ADataForSteerGrdtOfALgt "Derivative of Longitudinal acceleration";
+CM_ SG_ 69 EpbStsForSteer "EPB status for PSCM";
+CM_ SG_ 69 EscSptModStsForSteer "Esc sport mode Activation status
+";
+CM_ SG_ 69 ExtValForSteerAgOffsCmp "External Value For Steering Angle Offset Compensation";
+CM_ SG_ 69 MaxLimForSteerI "Maximum Limit For Steering Electric Current";
+CM_ SG_ 69 MinLimForSteerI "Minimum Limit For Steering Electric Current";
+CM_ SG_ 69 RvsGearStsForSteer "Reverse Gear Status for PSCM";
+CM_ SG_ 69 SteerBBSpareRxByte0 "Byte0";
+CM_ SG_ 69 SteerBBSpareRxByte1 "Byte1";
+CM_ SG_ 69 SteerBBSpareRxByte2 "Byte2";
+CM_ SG_ 69 SteerBBSpareRxByte3 "Byte3";
+CM_ SG_ 69 SteerBBSpareRxByte4 "Byte4";
+CM_ SG_ 69 SteerBBSpareRxByte5 "Byte5";
+CM_ SG_ 69 SteerBBSpareRxByte6 "Byte6";
+CM_ SG_ 69 SteerBBSpareRxByte7 "Byte7";
+CM_ SG_ 69 SteerOvrlySteerWhlTqReq "Steer Overlay Torque request primarily for DSR and EMA";
+CM_ SG_ 69 SteerWhlTqOvrlyReqScaler "scaling factor for steer wheel torque overlay request in percentage";
+CM_ SG_ 69 TcsStsForSteer "TCS active status for PSCM";
+CM_ SG_ 864 AmbTRawForSteer "Ambient Temperature";
+CM_ SG_ 864 BkpOfDstTrvld2 "Total Distance Travelled (Odometer)";
+CM_ SG_ 864 SteerExtdEndStop "Maximum allowed Extended rack travel settings";
+CM_ SG_ 864 SteerNomEndStop "Nominal rack stop position";
+CM_ SG_ 864 TireCircumForSteer "Tire Circumference in mm for use with Nibble Control / Shimmy Compensation";
+CM_ SG_ 288 CarTimeGlbl "Global time in car";
+CM_ SG_ 288 SteerAssistModReq "Mode request for Steering Assistance";
+CM_ SG_ 288 SteerFeelTunSelnSteerFeelTunMapSel "Steering Feel Tuning Map Selection";
+CM_ SG_ 288 SteerFeelTunSelnSteerFeelTunSetSeln "Steering Feel Tuning Set Selection";
+CM_ SG_ 288 UsgModStsforPSCM "Vehicle usage mode";
+CM_ SG_ 288 VehBatUSysU2ForSteer "System Voltage represented by Central ECU";
+CM_ SG_ 147 EscStsForSteerSafeChks "E2E checksum";
+CM_ SG_ 147 EscStsForSteerSafeCntr "E2E Counter";
+CM_ SG_ 147 EscStsForSteerSafeEscStsForSteerSafe "Satbility function on or off";
+CM_ SG_ 147 SteerWhlHptcWarnAmp "Steering Wheel Haptic Warning Amplitude";
+CM_ SG_ 147 SteerWhlHptcWarnFrq "Steering Wheel Haptic Warning Frequency";
+CM_ SG_ 147 SteerWhlHptcWarnReq "Steering Wheel Haptic Warning Request";
+CM_ SG_ 147 YawRateForSteerYawRate "Yaw Rate for Steering ";
+CM_ SG_ 147 YawRateForSteerYawRateQf "Quality factor for Yaw rate";
+CM_ SG_ 96 BlkExtDtc "Enabling and Disabling External DTCs";
+CM_ SG_ 96 BrkPedlPsdForSteerBrkPedlPsdForSteer "Brake Pedal pressed status";
+CM_ SG_ 96 BrkPedlPsdForSteerBrkPedlPsdQfForSteer "Brake Pedal pressed Quality Factor";
+CM_ SG_ 96 SteerOvrlyActvReq "Overlay activation request";
+CM_ SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLe "Wheel speed from front left wheel speed sensor using nominal value of wheel radius. ";
+CM_ SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLeQf "Qf for wheel speed sensor.";
+CM_ SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntri "Wheel speed from front right wheel speed sensor using nominal value of wheel radius. ";
+CM_ SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntRiQf "Qf for wheel speed sensor.";
+CM_ SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReLe "Wheel speed from rear left wheel speed sensor using nominal value of wheel radius. ";
+CM_ SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReLeQf "Qf for wheel speed sensor.";
+CM_ SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReRi "Wheel speed from rear right wheel speed sensor using nominal value of wheel radius. ";
+CM_ SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReRiQf "Qf for wheel speed sensor.";
+CM_ SG_ 304 PSCMXCPL1ReqByte0 "Byte0";
+CM_ SG_ 304 PSCMXCPL1ReqByte1 "Byte1";
+CM_ SG_ 304 PSCMXCPL1ReqByte2 "Byte2";
+CM_ SG_ 304 PSCMXCPL1ReqByte3 "Byte3";
+CM_ SG_ 304 PSCMXCPL1ReqByte4 "Byte4";
+CM_ SG_ 304 PSCMXCPL1ReqByte5 "Byte5";
+CM_ SG_ 304 PSCMXCPL1ReqByte6 "Byte6";
+CM_ SG_ 304 PSCMXCPL1ReqByte7 "Byte7";
+CM_ SG_ 310 PSCMXCPL2ReqByte0 "Byte0";
+CM_ SG_ 310 PSCMXCPL2ReqByte1 "Byte1";
+CM_ SG_ 310 PSCMXCPL2ReqByte2 "Byte2";
+CM_ SG_ 310 PSCMXCPL2ReqByte3 "Byte3";
+CM_ SG_ 310 PSCMXCPL2ReqByte4 "Byte4";
+CM_ SG_ 310 PSCMXCPL2ReqByte5 "Byte5";
+CM_ SG_ 310 PSCMXCPL2ReqByte6 "Byte6";
+CM_ SG_ 310 PSCMXCPL2ReqByte7 "Byte7";
+CM_ SG_ 57 PinionSteerAg2GroupChks "Checksum for Counter for Counter for PinionSteerAg2";
+CM_ SG_ 57 PinionSteerAg2GroupCntr "Counter for PinionSteerAg2";
+CM_ SG_ 57 PinionSteerAg2GroupPinionSteerAg2 "Pinion Steering Angle";
+CM_ SG_ 57 PinionSteerAg2GroupPinionSteerAg2Qf "Quality Factor for PinionSteerAg2";
+CM_ SG_ 57 PinionSteerAg2GroupPinionSteerAg2Spd "Rate of change for Pinion angle";
+CM_ SG_ 57 PinionSteerAg2GroupPinionSteerAg2SpdQf "Quality factor for PinionSteerAg2Spd";
+CM_ SG_ 71 FrntSteerFEstimd2 "Front Steer Rack Force Estimated ";
+CM_ SG_ 71 MotOverlayTqLimActvd "Motor Torque Overlay Limit activated ";
+CM_ SG_ 71 SteerBBSpareTxByte0 "Byte0";
+CM_ SG_ 71 SteerBBSpareTxByte1 "Byte1";
+CM_ SG_ 71 SteerBBSpareTxByte2 "Byte2";
+CM_ SG_ 71 SteerBBSpareTxByte3 "Byte3";
+CM_ SG_ 71 SteerBBSpareTxByte4 "Byte4";
+CM_ SG_ 71 SteerBBSpareTxByte5 "Byte5";
+CM_ SG_ 71 SteerBBSpareTxByte6 "Byte6";
+CM_ SG_ 71 SteerBBSpareTxByte7 "Byte7";
+CM_ SG_ 71 SteerOvrlyActvCmfd "Overlay activation confirmation";
+CM_ SG_ 112 DrvrSteerWhlHldGroup2DrvrSteerWhlHld "Signal indicating whether the driver has his hands on the steering wheel or not.";
+CM_ SG_ 112 DrvrSteerWhlHldGroup2DrvrSteerWhlHldQly "Confidence value for the DrvrSteerWhlHld estimation calculation, specifically indicating the confidence for the hands off state.";
+CM_ SG_ 112 SteerDtcSet "Set to 1 for a shortwhile when a DTC is set in PSCM";
+CM_ SG_ 112 SteerErrReq "Warning signal to driver";
+CM_ SG_ 112 SteerServoSts2 "Status Information of Steering Servo System";
+CM_ SG_ 512 SteerLimpHomeIgnCntr "Counts the number of Ignition cycle while in Limp Home Mode";
+CM_ SG_ 512 SteerLimpHomeTmrVal "Limp Home Duration timer";
+CM_ SG_ 80 LimdOverlayTq "Externally requested Motor Torque applied after limited by Torque Tube";
+CM_ SG_ 80 SteerAssiRednFac "Percentage Scaling used for Steering";
+CM_ SG_ 80 SteerTqTubeLowrLim "Torque Lower Limit applied by Torque Tube currently";
+CM_ SG_ 80 SteerTqTubeUpprLim "Torque Upper Limit applied by Torque Tube currently";
+CM_ SG_ 59 FrntWhlAngCtrlLimd "Rack position request is limited by controller.
+To be replaced by FrntWhlAngCtrlLimdExt ";
+CM_ SG_ 59 FrntWhlAngCtrlLimdExt "Overlay motor Torque limitation status";
+CM_ SG_ 59 FrntWhlAngCtrlSts "Status of front wheel angle control.";
+CM_ SG_ 59 SteerLatCtrlModReqCfmd "Confirmation from blackbox based on arbitration of LatCtrlModReq";
+CM_ SG_ 308 PSCMXCPL1RespByte0 "Byte0";
+CM_ SG_ 308 PSCMXCPL1RespByte1 "Byte1";
+CM_ SG_ 308 PSCMXCPL1RespByte2 "Byte2";
+CM_ SG_ 308 PSCMXCPL1RespByte3 "Byte3";
+CM_ SG_ 308 PSCMXCPL1RespByte4 "Byte4";
+CM_ SG_ 308 PSCMXCPL1RespByte5 "Byte5";
+CM_ SG_ 308 PSCMXCPL1RespByte6 "Byte6";
+CM_ SG_ 308 PSCMXCPL1RespByte7 "Byte7";
+CM_ SG_ 314 PSCMXCPL2RespByte0 "Byte0";
+CM_ SG_ 314 PSCMXCPL2RespByte1 "Byte1";
+CM_ SG_ 314 PSCMXCPL2RespByte2 "Byte2";
+CM_ SG_ 314 PSCMXCPL2RespByte3 "Byte3";
+CM_ SG_ 314 PSCMXCPL2RespByte4 "Byte4";
+CM_ SG_ 314 PSCMXCPL2RespByte5 "Byte5";
+CM_ SG_ 314 PSCMXCPL2RespByte6 "Byte6";
+CM_ SG_ 314 PSCMXCPL2RespByte7 "Byte7";
+CM_ SG_ 24 SteerWhlTqSafePrimChecksum "checksum for E2E protection";
+CM_ SG_ 24 SteerWhlTqSafePrimCounter "Counter used for E2E protection";
+CM_ SG_ 24 SteerWhlTqSafePrimSteerWhlTq "Torque on steering wheel";
+CM_ SG_ 24 SteerWhlTqSafePrimSteerWhlTqQf "Quality factor for SteerWhlTq";
+CM_ SG_ 34 DrvrSteerActvGroup2Chks "Checksum for DrvrSteerActv";
+CM_ SG_ 34 DrvrSteerActvGroup2Cntr "Counter for DrvrSteerActv";
+CM_ SG_ 34 DrvrSteerActvGroup2DrvrSteerActv "Indicates if the driver steers actively";
+CM_ SG_ 62 SteerRackPosSafeGroupChks "Checksum for Steering Rack Position";
+CM_ SG_ 62 SteerRackPosSafeGroupCntr "Counter for Steering Rack Position Group";
+CM_ SG_ 62 SteerRackPosSafeGroupSteerRackPos "Steering Rack Position";
+CM_ SG_ 62 SteerRackPosSafeGroupSteerRackPosQf "Quality Factor for Rack Position ";
+CM_ SG_ 62 SteerRackPosSafeGroupSteerRackPosRate "Steering Rack Pose Rate";
+CM_ SG_ 62 SteerRackPosSafeGroupSteerRackPosRateQf "Quality factor for Rack Position Speed";
+CM_ SG_ 66 SteerADFallbackAvailTimePrimchks "E2E Checksum";
+CM_ SG_ 66 SteerADFallbackAvailTimePrimcntr "E2E Counter";
+CM_ SG_ 66 SteerADFallbackAvailTimePrimFallbackAvilTime "Availability of Fallback Time in seconds";
+CM_ SG_ 66 SteerADFallbackPfmncPrimChks "E2E Checksum";
+CM_ SG_ 66 SteerADFallbackPfmncPrimCntr "E2E Counter";
+CM_ SG_ 66 SteerADFallbackPfmncPrimFallbackPfmncLvl "PErcentage of Fallback performance level";
+CM_ SG_ 66 SteerADL1ComCfmdPrimChks "E2E Ckecksum";
+CM_ SG_ 66 SteerADL1ComCfmdPrimCntr "E2E Counter";
+CM_ SG_ 66 SteerADL1ComCfmdPrimComConf "Confirm the Cominucation on the Bus and internally";
+CM_ SG_ 66 SteerADModL1PrimChks "E2E Checksum";
+CM_ SG_ 66 SteerADModL1PrimCntr "E2E Counter";
+CM_ SG_ 66 SteerADModL1PrimRPCModActv "Tells if RPC or SFC mode is actve";
+CM_ SG_ 66 SteerADModL2PrimChks "E2E Checksum";
+CM_ SG_ 66 SteerADModL2PrimCntr "E2E Counter";
+CM_ SG_ 66 SteerADModL2PrimRPCModActv "Tells if RPC or SFC mode is actve";
+CM_ SG_ 66 SteerADPosReqUsedPrimChks "E2E Checksum";
+CM_ SG_ 66 SteerADPosReqUsedPrimCntr "E2E Counter";
+CM_ SG_ 66 SteerADPosReqUsedPrimSteerADReqUsed "Shows which lane is in control";
+CM_ SG_ 66 SteerADRpcRampPrimChks "E2E Checksum";
+CM_ SG_ 66 SteerADRpcRampPrimCntr "E2E Counter";
+CM_ SG_ 66 SteerADRpcRampPrimRPCCtrlLvl "Percentage level of RPC Control vs SFC Control";
+CM_ SG_ 65 SteerADModCfmdPrimChks "E2E checksum";
+CM_ SG_ 65 SteerADModCfmdPrimCntr "E2E counter";
+CM_ SG_ 65 SteerADModCfmdPrimSteerADMod "Steering Mode indication, SFC or RPC mode";
+CM_ SG_ 65 SteerADModRdyChks "E2E checksum";
+CM_ SG_ 65 SteerADModRdyCntr "E2E counter";
+CM_ SG_ 65 SteerADModRdySteerADModRdy "If steering is ready for AD mode";
+CM_ SG_ 65 SteerADPfmncPrimChks "E2E checksum ";
+CM_ SG_ 65 SteerADPfmncPrimCntr "E2E counter";
+CM_ SG_ 65 SteerADPfmncPrimCurrentPfmcLvl "CurrentSteering performance level";
+CM_ SG_ 65 SteerDegradedModPrimChks "E2E check sum";
+CM_ SG_ 65 SteerDegradedModPrimCntr "E2E Counter";
+CM_ SG_ 65 SteerDegradedModPrimSteerDegradedMod "Degradation mode of the steering gear.";
+CM_ SG_ 65 SteerDegradedModPrimSteerDegradedSubinfo "Steering Degradation Cause info";
+CM_ SG_ 117 SteerTestMeasAncActive "Active Nibble Control active";
+CM_ SG_ 117 SteerTestMeasAncTqReq "Torque output from the Active Nobble Control function.";
+CM_ SG_ 117 SteerTestMeasAsscTqReq "Basic assist torque, output of the steer feel controller.";
+CM_ SG_ 117 SteerTestMeasEarTqReq "Enhance Active Return requested torque";
+CM_ SG_ 117 SteerTestMeasEstimdTotSplyI "Estimated total supply current (Motor and ECU)";
+CM_ SG_ 117 SteerTestMeasIntT "Internal temperature of the steering gear electronics";
+CM_ SG_ 117 SteerTestMeasLimOverlayTq "Overlay torque from BalckBox and external request after limitation by Torque Tube";
+CM_ SG_ 117 SteerTestMeasPdcActv "PDC active or not.";
+CM_ SG_ 117 SteerTestMeasPdcTqReq "Torque outout from the Pull and Drift function";
+CM_ SG_ 117 SteerTestMeasSplyU "Supply voltage at ECU";
+CM_ SG_ 117 SteerTestMeasSteerRackFEstimd "Estimated rack force in steering gear";
+CM_ SG_ 117 SteerTestMeasSteerWhlTq "Steering wheel torque, driver input";
+CM_ SG_ 117 SteerTestMeasTotMotTqReq "Total (internal) requested motor torque";
+
+// Attribute definitions
+BA_DEF_  "BaudRateCANFD" FLOAT 1000 10000000; // [bps]
+BA_DEF_  "Baudrate" INT 1000 1000000; // [bps]
+BA_DEF_  "BusType" STRING;
+BA_DEF_  "DBName" STRING;
+BA_DEF_  "ProtocolType" STRING;
+BA_DEF_ BU_ "NmAsrNode" ENUM "No","Yes";
+BA_DEF_ BU_ "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BO_ "CANFD_BRS" ENUM "0","1";
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65536; // [ms]
+BA_DEF_ BO_ "GenMsgCycleTimeFast" FLOAT 0 300000;
+BA_DEF_ BO_ "GenMsgDelayTime" INT 0 65536; // [ms]
+BA_DEF_ BO_ "GenMsgNrOfRepetition" INT 0 100000;
+BA_DEF_ BO_ "GenMsgSendType" ENUM "cyclic", "spontaneous", "not-used", "not-used", "not-used", "cyclicAndSpontaneous", "not-used", "cyclicIfActive", "NoMsgSendType"; // [us]
+BA_DEF_ BO_ "GenMsgStartDelayTime" INT 0 65536; // [ms]
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ SG_ "GenSigSendType" ENUM "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_ "GenSigStartValue" HEX 0 80000000;
+BA_DEF_ BO_ "GenMsgILSupport" ENUM "No","Yes";
+BA_DEF_ BO_ "NmAsrMessage" ENUM "No","Yes";
+BA_DEF_  "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_  "NmAsrMessageCount" INT 0 255;
+BA_DEF_ BU_ "NodeLayerModules" STRING;
+BA_DEF_ BU_ "ILused" ENUM "No","Yes";
+BA_DEF_ SG_ "GenSigFuncType" ENUM "NoFunction","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","CHK","CNTR","n/a","n/a","n/a","CNTR_AR_01","CRC_AR_01_BOTH","CRC_AR_01_ALT","CRC_AR_01_LOW","CRC_AR_01_NIBBLE","CNTR_AR_04","CRC_AR_04A","CNTR_AR_05","CRC_AR_05";
+BA_DEF_ SG_ "GenSigDataID" STRING;
+BA_DEF_ SG_ "SigGroup" STRING;
+
+BA_DEF_DEF_ "BusType" "";
+BA_DEF_DEF_ "DBName" "";
+BA_DEF_DEF_ "ProtocolType" "";
+BA_DEF_DEF_ "NmAsrNode" "No";
+BA_DEF_DEF_ "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_ "CANFD_BRS" "1";
+BA_DEF_DEF_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_DEF_DEF_ "VFrameFormat" "J1939PG";
+BA_DEF_DEF_ "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "GenMsgDelayTime" 0;
+BA_DEF_DEF_ "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_ "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_ "GenMsgILSupport" "Yes";
+BA_DEF_DEF_ "NmAsrMessage" "No";
+BA_DEF_DEF_ "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_ "NmAsrMessageCount" 64;
+BA_DEF_DEF_ "NodeLayerModules" "CANoeILNLSPA.dll";
+BA_DEF_DEF_ "ILused" "Yes";
+BA_DEF_DEF_ "GenSigFuncType" "NoFunction";
+BA_DEF_DEF_ "GenSigDataID" "";
+BA_DEF_DEF_ "SigGroup" "";
+
+
+BA_ "BaudRateCANFD" 2000000;
+BA_ "Baudrate" 500000;
+BA_ "BusType" "CAN FD";
+BA_ "DBName" "PSCM1CAN";
+BA_ "ProtocolType" "CAN";
+// ECU: PSCM
+BA_ "ILused" BU_ PSCM 0;
+BA_ "NodeLayerModules" BU_ PSCM "CANoeILNLSPA.dll";
+// ECU: PSCMETC
+BA_ "ILused" BU_ PSCMETC 0;
+BA_ "NodeLayerModules" BU_ PSCMETC "CANoeILNLSPA.dll";
+// ECU: PSCMdp
+BA_ "ILused" BU_ PSCMdp 0;
+BA_ "NodeLayerModules" BU_ PSCMdp "CANoeILNLSPA.dll";
+// ECU: PSCMdp1HI
+BA_ "ILused" BU_ PSCMdp1HI 0;
+BA_ "NodeLayerModules" BU_ PSCMdp1HI "CANoeILNLSPA.dll";
+// Frame: PscmEtcPscm1CanFrame01
+BA_ "GenMsgDelayTime" BO_ 304 2.000;
+BA_ "GenMsgSendType" BO_ 304 1;
+BA_ "VFrameFormat" BO_ 304 14;
+// Frame: PscmEtcPscm1CanFrame03
+BA_ "GenMsgDelayTime" BO_ 310 2.000;
+BA_ "GenMsgSendType" BO_ 310 1;
+BA_ "VFrameFormat" BO_ 310 14;
+// Frame: PscmPscm1CanFrame01_02
+BA_ "GenMsgCycleTime" BO_ 57 15.000;
+BA_ "GenMsgSendType" BO_ 57 0;
+BA_ "GenMsgStartDelayTime" BO_ 57 0.000;
+BA_ "VFrameFormat" BO_ 57 14;
+// Frame: PscmPscm1CanFrame02_10
+BA_ "GenMsgCycleTime" BO_ 71 15.000;
+BA_ "GenMsgSendType" BO_ 71 0;
+BA_ "GenMsgStartDelayTime" BO_ 71 0.000;
+BA_ "VFrameFormat" BO_ 71 14;
+// Frame: PscmPscm1CanFrame03_20
+BA_ "GenMsgCycleTime" BO_ 112 40.000;
+BA_ "GenMsgSendType" BO_ 112 0;
+BA_ "GenMsgStartDelayTime" BO_ 112 0.000;
+BA_ "VFrameFormat" BO_ 112 14;
+// Frame: PscmPscm1CanFrame08_2000
+BA_ "GenMsgCycleTime" BO_ 512 2000.000;
+BA_ "GenMsgSendType" BO_ 512 0;
+BA_ "GenMsgStartDelayTime" BO_ 512 0.000;
+BA_ "VFrameFormat" BO_ 512 14;
+// Frame: PscmPscm1CanFrame09
+BA_ "GenMsgCycleTime" BO_ 80 20.000;
+BA_ "GenMsgSendType" BO_ 80 0;
+BA_ "GenMsgStartDelayTime" BO_ 80 0.000;
+BA_ "VFrameFormat" BO_ 80 14;
+// Frame: PscmPscm1CanFrame12_05
+BA_ "GenMsgCycleTime" BO_ 59 5.000;
+BA_ "GenMsgSendType" BO_ 59 0;
+BA_ "GenMsgStartDelayTime" BO_ 59 0.000;
+BA_ "VFrameFormat" BO_ 59 14;
+// Frame: PscmPscm1CanFrame13_ev
+BA_ "GenMsgDelayTime" BO_ 308 1.000;
+BA_ "GenMsgSendType" BO_ 308 1;
+BA_ "VFrameFormat" BO_ 308 14;
+// Frame: PscmPscm1CanFrame14_ev
+BA_ "GenMsgDelayTime" BO_ 314 1.000;
+BA_ "GenMsgSendType" BO_ 314 1;
+BA_ "VFrameFormat" BO_ 314 14;
+// Frame: PscmPscm1CanFrame16
+BA_ "GenMsgCycleTime" BO_ 24 5.000;
+BA_ "GenMsgSendType" BO_ 24 0;
+BA_ "GenMsgStartDelayTime" BO_ 24 0.000;
+BA_ "VFrameFormat" BO_ 24 14;
+// Frame: PscmPscm1CanFrame17_20
+BA_ "GenMsgCycleTime" BO_ 34 5.000;
+BA_ "GenMsgSendType" BO_ 34 0;
+BA_ "GenMsgStartDelayTime" BO_ 34 0.000;
+BA_ "VFrameFormat" BO_ 34 14;
+// Frame: PscmPscm1CanFrame18_05
+BA_ "GenMsgCycleTime" BO_ 62 5.000;
+BA_ "GenMsgSendType" BO_ 62 0;
+BA_ "GenMsgStartDelayTime" BO_ 62 0.000;
+BA_ "VFrameFormat" BO_ 62 14;
+// Frame: PscmPscm1CanFrame19_15
+BA_ "GenMsgCycleTime" BO_ 66 15.000;
+BA_ "GenMsgSendType" BO_ 66 0;
+BA_ "GenMsgStartDelayTime" BO_ 66 0.000;
+BA_ "VFrameFormat" BO_ 66 14;
+// Frame: PscmPscm1CanFrame20
+BA_ "GenMsgCycleTime" BO_ 65 13.000;
+BA_ "GenMsgSendType" BO_ 65 0;
+BA_ "GenMsgStartDelayTime" BO_ 65 0.000;
+BA_ "VFrameFormat" BO_ 65 14;
+// Frame: PscmPscm1CanSporadicFrame15
+BA_ "GenMsgDelayTime" BO_ 117 5.000;
+BA_ "GenMsgSendType" BO_ 117 1;
+BA_ "VFrameFormat" BO_ 117 14;
+// Frame: PscmToPscmdpUdsDiagResponseFrame
+BA_ "GenMsgDelayTime" BO_ 1541 5.000;
+BA_ "GenMsgSendType" BO_ 1541 1;
+BA_ "VFrameFormat" BO_ 1541 14;
+// Frame: PscmdpHIAPscmHIA1CanFrame01_20
+BA_ "GenMsgCycleTime" BO_ 124 20.000;
+BA_ "GenMsgSendType" BO_ 124 0;
+BA_ "GenMsgStartDelayTime" BO_ 124 0.000;
+BA_ "VFrameFormat" BO_ 124 14;
+// Frame: PscmdpHIAPscmHIA1CanFrame02
+BA_ "GenMsgCycleTime" BO_ 93 15.000;
+BA_ "GenMsgSendType" BO_ 93 0;
+BA_ "GenMsgStartDelayTime" BO_ 93 0.000;
+BA_ "VFrameFormat" BO_ 93 14;
+// Frame: PscmdpHIAPscmHIA1CanFrame03
+BA_ "GenMsgCycleTime" BO_ 36 5.000;
+BA_ "GenMsgSendType" BO_ 36 0;
+BA_ "GenMsgStartDelayTime" BO_ 36 0.000;
+BA_ "VFrameFormat" BO_ 36 14;
+// Frame: PscmdpHIAPscmHIA1CanFrame04_5
+BA_ "GenMsgCycleTime" BO_ 61 5.000;
+BA_ "GenMsgSendType" BO_ 61 0;
+BA_ "GenMsgStartDelayTime" BO_ 61 0.000;
+BA_ "VFrameFormat" BO_ 61 14;
+// Frame: PscmdpPscm1CanFrame01_10
+BA_ "GenMsgCycleTime" BO_ 69 15.000;
+BA_ "GenMsgSendType" BO_ 69 0;
+BA_ "GenMsgStartDelayTime" BO_ 69 0.000;
+BA_ "VFrameFormat" BO_ 69 14;
+// Frame: PscmdpPscm1CanFrame02_500
+BA_ "GenMsgCycleTime" BO_ 864 480.000;
+BA_ "GenMsgSendType" BO_ 864 0;
+BA_ "GenMsgStartDelayTime" BO_ 864 0.000;
+BA_ "VFrameFormat" BO_ 864 14;
+// Frame: PscmdpPscm1CanFrame03_100
+BA_ "GenMsgCycleTime" BO_ 288 100.000;
+BA_ "GenMsgSendType" BO_ 288 0;
+BA_ "GenMsgStartDelayTime" BO_ 288 0.000;
+BA_ "VFrameFormat" BO_ 288 14;
+// Frame: PscmdpPscm1CanFrame04_30
+BA_ "GenMsgCycleTime" BO_ 147 30.000;
+BA_ "GenMsgSendType" BO_ 147 0;
+BA_ "GenMsgStartDelayTime" BO_ 147 0.000;
+BA_ "VFrameFormat" BO_ 147 14;
+// Frame: PscmdpPscm1CanFrame05_20
+BA_ "GenMsgCycleTime" BO_ 96 20.000;
+BA_ "GenMsgSendType" BO_ 96 0;
+BA_ "GenMsgStartDelayTime" BO_ 96 0.000;
+BA_ "VFrameFormat" BO_ 96 14;
+// Frame: PscmdpToPscmUdsDiagRequestFrame
+BA_ "GenMsgDelayTime" BO_ 1797 5.000;
+BA_ "GenMsgSendType" BO_ 1797 1;
+BA_ "VFrameFormat" BO_ 1797 14;
+// Frame: PscmdpToallUdsDiagRequestFrame
+BA_ "GenMsgDelayTime" BO_ 2047 5.000;
+BA_ "GenMsgSendType" BO_ 2047 1;
+BA_ "VFrameFormat" BO_ 2047 14;
+BA_ "GenMsgILSupport" BO_ 124 1;
+BA_ "GenMsgILSupport" BO_ 93 1;
+BA_ "GenMsgILSupport" BO_ 36 1;
+BA_ "GenMsgILSupport" BO_ 61 1;
+BA_ "GenMsgILSupport" BO_ 69 1;
+BA_ "GenMsgILSupport" BO_ 864 1;
+BA_ "GenMsgILSupport" BO_ 288 1;
+BA_ "GenMsgILSupport" BO_ 147 1;
+BA_ "GenMsgILSupport" BO_ 96 1;
+BA_ "GenMsgILSupport" BO_ 2047 1;
+BA_ "GenMsgILSupport" BO_ 1797 1;
+BA_ "GenMsgILSupport" BO_ 304 1;
+BA_ "GenMsgILSupport" BO_ 310 1;
+BA_ "GenMsgILSupport" BO_ 57 1;
+BA_ "GenMsgILSupport" BO_ 71 1;
+BA_ "GenMsgILSupport" BO_ 112 1;
+BA_ "GenMsgILSupport" BO_ 512 1;
+BA_ "GenMsgILSupport" BO_ 80 1;
+BA_ "GenMsgILSupport" BO_ 59 1;
+BA_ "GenMsgILSupport" BO_ 308 1;
+BA_ "GenMsgILSupport" BO_ 314 1;
+BA_ "GenMsgILSupport" BO_ 24 1;
+BA_ "GenMsgILSupport" BO_ 34 1;
+BA_ "GenMsgILSupport" BO_ 62 1;
+BA_ "GenMsgILSupport" BO_ 66 1;
+BA_ "GenMsgILSupport" BO_ 65 1;
+BA_ "GenMsgILSupport" BO_ 117 1;
+BA_ "GenMsgILSupport" BO_ 1541 1;
+BA_ "NmAsrMessage" BO_ 124 0;
+BA_ "NmAsrMessage" BO_ 93 0;
+BA_ "NmAsrMessage" BO_ 36 0;
+BA_ "NmAsrMessage" BO_ 61 0;
+BA_ "NmAsrMessage" BO_ 69 0;
+BA_ "NmAsrMessage" BO_ 864 0;
+BA_ "NmAsrMessage" BO_ 288 0;
+BA_ "NmAsrMessage" BO_ 147 0;
+BA_ "NmAsrMessage" BO_ 96 0;
+BA_ "NmAsrMessage" BO_ 2047 0;
+BA_ "NmAsrMessage" BO_ 1797 0;
+BA_ "NmAsrMessage" BO_ 304 0;
+BA_ "NmAsrMessage" BO_ 310 0;
+BA_ "NmAsrMessage" BO_ 57 0;
+BA_ "NmAsrMessage" BO_ 71 0;
+BA_ "NmAsrMessage" BO_ 112 0;
+BA_ "NmAsrMessage" BO_ 512 0;
+BA_ "NmAsrMessage" BO_ 80 0;
+BA_ "NmAsrMessage" BO_ 59 0;
+BA_ "NmAsrMessage" BO_ 308 0;
+BA_ "NmAsrMessage" BO_ 314 0;
+BA_ "NmAsrMessage" BO_ 24 0;
+BA_ "NmAsrMessage" BO_ 34 0;
+BA_ "NmAsrMessage" BO_ 62 0;
+BA_ "NmAsrMessage" BO_ 66 0;
+BA_ "NmAsrMessage" BO_ 65 0;
+BA_ "NmAsrMessage" BO_ 117 0;
+BA_ "NmAsrMessage" BO_ 1541 0;
+BA_ "GenSigSendType" SG_ 69 ADataForSteerALat 0;
+BA_ "GenSigStartValue" SG_ 69 ADataForSteerALat 0;
+BA_ "GenSigSendType" SG_ 69 ADataForSteerALat1Qf 0;
+BA_ "GenSigStartValue" SG_ 69 ADataForSteerALat1Qf 1;
+BA_ "GenSigSendType" SG_ 69 ADataForSteerALatWithCmp 0;
+BA_ "GenSigStartValue" SG_ 69 ADataForSteerALatWithCmp 0;
+BA_ "GenSigSendType" SG_ 69 ADataForSteerALgt 0;
+BA_ "GenSigStartValue" SG_ 69 ADataForSteerALgt 0;
+BA_ "GenSigSendType" SG_ 69 ADataForSteerALgt1Qf 0;
+BA_ "GenSigStartValue" SG_ 69 ADataForSteerALgt1Qf 1;
+BA_ "GenSigSendType" SG_ 69 ADataForSteerAVert 0;
+BA_ "GenSigStartValue" SG_ 69 ADataForSteerAVert 0;
+BA_ "GenSigSendType" SG_ 69 ADataForSteerAVertQf 0;
+BA_ "GenSigStartValue" SG_ 69 ADataForSteerAVertQf 1;
+BA_ "GenSigSendType" SG_ 69 ADataForSteerGrdtOfALgt 0;
+BA_ "GenSigStartValue" SG_ 69 ADataForSteerGrdtOfALgt 0;
+BA_ "GenSigSendType" SG_ 69 AbsStsForSteer 0;
+BA_ "GenSigStartValue" SG_ 69 AbsStsForSteer 0;
+BA_ "GenSigSendType" SG_ 864 AmbTRawForSteer 0;
+BA_ "GenSigStartValue" SG_ 864 AmbTRawForSteer 0;
+BA_ "GenSigSendType" SG_ 864 BkpOfDstTrvld2 0;
+BA_ "GenSigStartValue" SG_ 864 BkpOfDstTrvld2 0;
+BA_ "GenSigSendType" SG_ 96 BlkExtDtc 0;
+BA_ "GenSigStartValue" SG_ 96 BlkExtDtc 0;
+BA_ "GenSigSendType" SG_ 96 BrkPedlPsdForSteerBrkPedlPsdForSteer 0;
+BA_ "GenSigStartValue" SG_ 96 BrkPedlPsdForSteerBrkPedlPsdForSteer 0;
+BA_ "GenSigSendType" SG_ 96 BrkPedlPsdForSteerBrkPedlPsdQfForSteer 0;
+BA_ "GenSigStartValue" SG_ 96 BrkPedlPsdForSteerBrkPedlPsdQfForSteer 1;
+BA_ "GenSigSendType" SG_ 288 CarTimeGlbl 0;
+BA_ "GenSigStartValue" SG_ 288 CarTimeGlbl 0;
+BA_ "GenSigSendType" SG_ 61 DilTqLowrLim 0;
+BA_ "GenSigStartValue" SG_ 61 DilTqLowrLim 0;
+BA_ "GenSigSendType" SG_ 61 DilTqUpprLim 0;
+BA_ "GenSigStartValue" SG_ 61 DilTqUpprLim 0;
+BA_ "GenSigDataID" SG_ 34 DrvrSteerActvGroup2Chks "0x7F2";
+BA_ "GenSigFuncType" SG_ 34 DrvrSteerActvGroup2Chks 21;
+BA_ "GenSigSendType" SG_ 34 DrvrSteerActvGroup2Chks 0;
+BA_ "GenSigStartValue" SG_ 34 DrvrSteerActvGroup2Chks 0;
+BA_ "GenSigFuncType" SG_ 34 DrvrSteerActvGroup2Cntr 20;
+BA_ "GenSigSendType" SG_ 34 DrvrSteerActvGroup2Cntr 0;
+BA_ "GenSigStartValue" SG_ 34 DrvrSteerActvGroup2Cntr 0;
+BA_ "GenSigSendType" SG_ 34 DrvrSteerActvGroup2DrvrSteerActv 0;
+BA_ "GenSigStartValue" SG_ 34 DrvrSteerActvGroup2DrvrSteerActv 0;
+BA_ "GenSigSendType" SG_ 112 DrvrSteerWhlHldGroup2DrvrSteerWhlHld 0;
+BA_ "GenSigStartValue" SG_ 112 DrvrSteerWhlHldGroup2DrvrSteerWhlHld 0;
+BA_ "GenSigSendType" SG_ 112 DrvrSteerWhlHldGroup2DrvrSteerWhlHldQly 0;
+BA_ "GenSigStartValue" SG_ 112 DrvrSteerWhlHldGroup2DrvrSteerWhlHldQly 0;
+BA_ "GenSigSendType" SG_ 69 EpbStsForSteer 0;
+BA_ "GenSigStartValue" SG_ 69 EpbStsForSteer 0;
+BA_ "GenSigSendType" SG_ 69 EscSptModStsForSteer 0;
+BA_ "GenSigStartValue" SG_ 69 EscSptModStsForSteer 0;
+BA_ "GenSigDataID" SG_ 147 EscStsForSteerSafeChks "0xB43";
+BA_ "GenSigFuncType" SG_ 147 EscStsForSteerSafeChks 21;
+BA_ "GenSigSendType" SG_ 147 EscStsForSteerSafeChks 0;
+BA_ "GenSigStartValue" SG_ 147 EscStsForSteerSafeChks 0;
+BA_ "GenSigFuncType" SG_ 147 EscStsForSteerSafeCntr 20;
+BA_ "GenSigSendType" SG_ 147 EscStsForSteerSafeCntr 0;
+BA_ "GenSigStartValue" SG_ 147 EscStsForSteerSafeCntr 0;
+BA_ "GenSigSendType" SG_ 147 EscStsForSteerSafeEscStsForSteerSafe 0;
+BA_ "GenSigStartValue" SG_ 147 EscStsForSteerSafeEscStsForSteerSafe 0;
+BA_ "GenSigSendType" SG_ 69 ExtValForSteerAgOffsCmp 0;
+BA_ "GenSigStartValue" SG_ 69 ExtValForSteerAgOffsCmp 0;
+BA_ "GenSigSendType" SG_ 71 FrntSteerFEstimd2 0;
+BA_ "GenSigStartValue" SG_ 71 FrntSteerFEstimd2 0;
+BA_ "GenSigSendType" SG_ 59 FrntWhlAngCtrlLimd 0;
+BA_ "GenSigStartValue" SG_ 59 FrntWhlAngCtrlLimd 0;
+BA_ "GenSigSendType" SG_ 59 FrntWhlAngCtrlLimdExt 0;
+BA_ "GenSigStartValue" SG_ 59 FrntWhlAngCtrlLimdExt 0;
+BA_ "GenSigSendType" SG_ 59 FrntWhlAngCtrlSts 0;
+BA_ "GenSigStartValue" SG_ 59 FrntWhlAngCtrlSts 0;
+BA_ "GenSigSendType" SG_ 80 LimdOverlayTq 0;
+BA_ "GenSigStartValue" SG_ 80 LimdOverlayTq 0;
+BA_ "GenSigSendType" SG_ 69 MaxLimForSteerI 0;
+BA_ "GenSigStartValue" SG_ 69 MaxLimForSteerI 255;
+BA_ "GenSigSendType" SG_ 69 MinLimForSteerI 0;
+BA_ "GenSigStartValue" SG_ 69 MinLimForSteerI 255;
+BA_ "GenSigSendType" SG_ 71 MotOverlayTqLimActvd 0;
+BA_ "GenSigStartValue" SG_ 71 MotOverlayTqLimActvd 0;
+BA_ "GenSigSendType" SG_ 304 PSCMXCPL1ReqByte0 1;
+BA_ "GenSigStartValue" SG_ 304 PSCMXCPL1ReqByte0 0;
+BA_ "GenSigSendType" SG_ 304 PSCMXCPL1ReqByte1 1;
+BA_ "GenSigStartValue" SG_ 304 PSCMXCPL1ReqByte1 0;
+BA_ "GenSigSendType" SG_ 304 PSCMXCPL1ReqByte2 1;
+BA_ "GenSigStartValue" SG_ 304 PSCMXCPL1ReqByte2 0;
+BA_ "GenSigSendType" SG_ 304 PSCMXCPL1ReqByte3 1;
+BA_ "GenSigStartValue" SG_ 304 PSCMXCPL1ReqByte3 0;
+BA_ "GenSigSendType" SG_ 304 PSCMXCPL1ReqByte4 1;
+BA_ "GenSigStartValue" SG_ 304 PSCMXCPL1ReqByte4 0;
+BA_ "GenSigSendType" SG_ 304 PSCMXCPL1ReqByte5 1;
+BA_ "GenSigStartValue" SG_ 304 PSCMXCPL1ReqByte5 0;
+BA_ "GenSigSendType" SG_ 304 PSCMXCPL1ReqByte6 1;
+BA_ "GenSigStartValue" SG_ 304 PSCMXCPL1ReqByte6 0;
+BA_ "GenSigSendType" SG_ 304 PSCMXCPL1ReqByte7 1;
+BA_ "GenSigStartValue" SG_ 304 PSCMXCPL1ReqByte7 0;
+BA_ "GenSigSendType" SG_ 308 PSCMXCPL1RespByte0 1;
+BA_ "GenSigStartValue" SG_ 308 PSCMXCPL1RespByte0 0;
+BA_ "GenSigSendType" SG_ 308 PSCMXCPL1RespByte1 1;
+BA_ "GenSigStartValue" SG_ 308 PSCMXCPL1RespByte1 0;
+BA_ "GenSigSendType" SG_ 308 PSCMXCPL1RespByte2 1;
+BA_ "GenSigStartValue" SG_ 308 PSCMXCPL1RespByte2 0;
+BA_ "GenSigSendType" SG_ 308 PSCMXCPL1RespByte3 1;
+BA_ "GenSigStartValue" SG_ 308 PSCMXCPL1RespByte3 0;
+BA_ "GenSigSendType" SG_ 308 PSCMXCPL1RespByte4 1;
+BA_ "GenSigStartValue" SG_ 308 PSCMXCPL1RespByte4 0;
+BA_ "GenSigSendType" SG_ 308 PSCMXCPL1RespByte5 1;
+BA_ "GenSigStartValue" SG_ 308 PSCMXCPL1RespByte5 0;
+BA_ "GenSigSendType" SG_ 308 PSCMXCPL1RespByte6 1;
+BA_ "GenSigStartValue" SG_ 308 PSCMXCPL1RespByte6 0;
+BA_ "GenSigSendType" SG_ 308 PSCMXCPL1RespByte7 1;
+BA_ "GenSigStartValue" SG_ 308 PSCMXCPL1RespByte7 0;
+BA_ "GenSigSendType" SG_ 310 PSCMXCPL2ReqByte0 1;
+BA_ "GenSigStartValue" SG_ 310 PSCMXCPL2ReqByte0 0;
+BA_ "GenSigSendType" SG_ 310 PSCMXCPL2ReqByte1 1;
+BA_ "GenSigStartValue" SG_ 310 PSCMXCPL2ReqByte1 0;
+BA_ "GenSigSendType" SG_ 310 PSCMXCPL2ReqByte2 1;
+BA_ "GenSigStartValue" SG_ 310 PSCMXCPL2ReqByte2 0;
+BA_ "GenSigSendType" SG_ 310 PSCMXCPL2ReqByte3 1;
+BA_ "GenSigStartValue" SG_ 310 PSCMXCPL2ReqByte3 0;
+BA_ "GenSigSendType" SG_ 310 PSCMXCPL2ReqByte4 1;
+BA_ "GenSigStartValue" SG_ 310 PSCMXCPL2ReqByte4 0;
+BA_ "GenSigSendType" SG_ 310 PSCMXCPL2ReqByte5 1;
+BA_ "GenSigStartValue" SG_ 310 PSCMXCPL2ReqByte5 0;
+BA_ "GenSigSendType" SG_ 310 PSCMXCPL2ReqByte6 1;
+BA_ "GenSigStartValue" SG_ 310 PSCMXCPL2ReqByte6 0;
+BA_ "GenSigSendType" SG_ 310 PSCMXCPL2ReqByte7 1;
+BA_ "GenSigStartValue" SG_ 310 PSCMXCPL2ReqByte7 0;
+BA_ "GenSigSendType" SG_ 314 PSCMXCPL2RespByte0 1;
+BA_ "GenSigStartValue" SG_ 314 PSCMXCPL2RespByte0 0;
+BA_ "GenSigSendType" SG_ 314 PSCMXCPL2RespByte1 1;
+BA_ "GenSigStartValue" SG_ 314 PSCMXCPL2RespByte1 0;
+BA_ "GenSigSendType" SG_ 314 PSCMXCPL2RespByte2 1;
+BA_ "GenSigStartValue" SG_ 314 PSCMXCPL2RespByte2 0;
+BA_ "GenSigSendType" SG_ 314 PSCMXCPL2RespByte3 1;
+BA_ "GenSigStartValue" SG_ 314 PSCMXCPL2RespByte3 0;
+BA_ "GenSigSendType" SG_ 314 PSCMXCPL2RespByte4 1;
+BA_ "GenSigStartValue" SG_ 314 PSCMXCPL2RespByte4 0;
+BA_ "GenSigSendType" SG_ 314 PSCMXCPL2RespByte5 1;
+BA_ "GenSigStartValue" SG_ 314 PSCMXCPL2RespByte5 0;
+BA_ "GenSigSendType" SG_ 314 PSCMXCPL2RespByte6 1;
+BA_ "GenSigStartValue" SG_ 314 PSCMXCPL2RespByte6 0;
+BA_ "GenSigSendType" SG_ 314 PSCMXCPL2RespByte7 1;
+BA_ "GenSigStartValue" SG_ 314 PSCMXCPL2RespByte7 0;
+BA_ "GenSigDataID" SG_ 57 PinionSteerAg2GroupChks "0x942";
+BA_ "GenSigFuncType" SG_ 57 PinionSteerAg2GroupChks 21;
+BA_ "GenSigSendType" SG_ 57 PinionSteerAg2GroupChks 0;
+BA_ "GenSigStartValue" SG_ 57 PinionSteerAg2GroupChks 0;
+BA_ "GenSigFuncType" SG_ 57 PinionSteerAg2GroupCntr 20;
+BA_ "GenSigSendType" SG_ 57 PinionSteerAg2GroupCntr 0;
+BA_ "GenSigStartValue" SG_ 57 PinionSteerAg2GroupCntr 0;
+BA_ "GenSigSendType" SG_ 57 PinionSteerAg2GroupPinionSteerAg2 0;
+BA_ "GenSigStartValue" SG_ 57 PinionSteerAg2GroupPinionSteerAg2 0;
+BA_ "GenSigSendType" SG_ 57 PinionSteerAg2GroupPinionSteerAg2Qf 0;
+BA_ "GenSigStartValue" SG_ 57 PinionSteerAg2GroupPinionSteerAg2Qf 1;
+BA_ "GenSigSendType" SG_ 57 PinionSteerAg2GroupPinionSteerAg2Spd 0;
+BA_ "GenSigStartValue" SG_ 57 PinionSteerAg2GroupPinionSteerAg2Spd 0;
+BA_ "GenSigSendType" SG_ 57 PinionSteerAg2GroupPinionSteerAg2SpdQf 0;
+BA_ "GenSigStartValue" SG_ 57 PinionSteerAg2GroupPinionSteerAg2SpdQf 1;
+BA_ "GenSigDataID" SG_ 61 RackPositionReqSafeChks "0x98E";
+BA_ "GenSigFuncType" SG_ 61 RackPositionReqSafeChks 21;
+BA_ "GenSigSendType" SG_ 61 RackPositionReqSafeChks 0;
+BA_ "GenSigStartValue" SG_ 61 RackPositionReqSafeChks 0;
+BA_ "GenSigFuncType" SG_ 61 RackPositionReqSafeCntr 20;
+BA_ "GenSigSendType" SG_ 61 RackPositionReqSafeCntr 0;
+BA_ "GenSigStartValue" SG_ 61 RackPositionReqSafeCntr 0;
+BA_ "GenSigSendType" SG_ 61 RackPositionReqSafeRackPosRateLim 0;
+BA_ "GenSigStartValue" SG_ 61 RackPositionReqSafeRackPosRateLim 8192;
+BA_ "GenSigSendType" SG_ 61 RackPositionReqSafeSteerRackPosReq 0;
+BA_ "GenSigStartValue" SG_ 61 RackPositionReqSafeSteerRackPosReq 16384;
+BA_ "GenSigSendType" SG_ 69 RvsGearStsForSteer 0;
+BA_ "GenSigStartValue" SG_ 69 RvsGearStsForSteer 0;
+BA_ "GenSigSendType" SG_ 61 ScaleBw 0;
+BA_ "GenSigStartValue" SG_ 61 ScaleBw 0;
+BA_ "GenSigSendType" SG_ 66 SteerADFallbackAvailTimePrimFallbackAvilTime 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADFallbackAvailTimePrimFallbackAvilTime 0;
+BA_ "GenSigDataID" SG_ 66 SteerADFallbackAvailTimePrimchks "0xC47";
+BA_ "GenSigFuncType" SG_ 66 SteerADFallbackAvailTimePrimchks 21;
+BA_ "GenSigSendType" SG_ 66 SteerADFallbackAvailTimePrimchks 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADFallbackAvailTimePrimchks 0;
+BA_ "GenSigFuncType" SG_ 66 SteerADFallbackAvailTimePrimcntr 20;
+BA_ "GenSigSendType" SG_ 66 SteerADFallbackAvailTimePrimcntr 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADFallbackAvailTimePrimcntr 0;
+BA_ "GenSigDataID" SG_ 66 SteerADFallbackPfmncPrimChks "0xC45";
+BA_ "GenSigFuncType" SG_ 66 SteerADFallbackPfmncPrimChks 21;
+BA_ "GenSigSendType" SG_ 66 SteerADFallbackPfmncPrimChks 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADFallbackPfmncPrimChks 0;
+BA_ "GenSigFuncType" SG_ 66 SteerADFallbackPfmncPrimCntr 20;
+BA_ "GenSigSendType" SG_ 66 SteerADFallbackPfmncPrimCntr 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADFallbackPfmncPrimCntr 0;
+BA_ "GenSigSendType" SG_ 66 SteerADFallbackPfmncPrimFallbackPfmncLvl 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADFallbackPfmncPrimFallbackPfmncLvl 0;
+BA_ "GenSigDataID" SG_ 66 SteerADL1ComCfmdPrimChks "0xC41";
+BA_ "GenSigFuncType" SG_ 66 SteerADL1ComCfmdPrimChks 21;
+BA_ "GenSigSendType" SG_ 66 SteerADL1ComCfmdPrimChks 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADL1ComCfmdPrimChks 0;
+BA_ "GenSigFuncType" SG_ 66 SteerADL1ComCfmdPrimCntr 20;
+BA_ "GenSigSendType" SG_ 66 SteerADL1ComCfmdPrimCntr 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADL1ComCfmdPrimCntr 0;
+BA_ "GenSigSendType" SG_ 66 SteerADL1ComCfmdPrimComConf 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADL1ComCfmdPrimComConf 0;
+BA_ "GenSigDataID" SG_ 65 SteerADModCfmdPrimChks "0xB4C";
+BA_ "GenSigFuncType" SG_ 65 SteerADModCfmdPrimChks 21;
+BA_ "GenSigSendType" SG_ 65 SteerADModCfmdPrimChks 0;
+BA_ "GenSigStartValue" SG_ 65 SteerADModCfmdPrimChks 0;
+BA_ "GenSigFuncType" SG_ 65 SteerADModCfmdPrimCntr 20;
+BA_ "GenSigSendType" SG_ 65 SteerADModCfmdPrimCntr 0;
+BA_ "GenSigStartValue" SG_ 65 SteerADModCfmdPrimCntr 0;
+BA_ "GenSigSendType" SG_ 65 SteerADModCfmdPrimSteerADMod 0;
+BA_ "GenSigStartValue" SG_ 65 SteerADModCfmdPrimSteerADMod 0;
+BA_ "GenSigDataID" SG_ 66 SteerADModL1PrimChks "0xC3D";
+BA_ "GenSigFuncType" SG_ 66 SteerADModL1PrimChks 21;
+BA_ "GenSigSendType" SG_ 66 SteerADModL1PrimChks 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADModL1PrimChks 0;
+BA_ "GenSigFuncType" SG_ 66 SteerADModL1PrimCntr 20;
+BA_ "GenSigSendType" SG_ 66 SteerADModL1PrimCntr 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADModL1PrimCntr 0;
+BA_ "GenSigSendType" SG_ 66 SteerADModL1PrimRPCModActv 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADModL1PrimRPCModActv 0;
+BA_ "GenSigDataID" SG_ 66 SteerADModL2PrimChks "0xC3F";
+BA_ "GenSigFuncType" SG_ 66 SteerADModL2PrimChks 21;
+BA_ "GenSigSendType" SG_ 66 SteerADModL2PrimChks 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADModL2PrimChks 0;
+BA_ "GenSigFuncType" SG_ 66 SteerADModL2PrimCntr 20;
+BA_ "GenSigSendType" SG_ 66 SteerADModL2PrimCntr 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADModL2PrimCntr 0;
+BA_ "GenSigSendType" SG_ 66 SteerADModL2PrimRPCModActv 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADModL2PrimRPCModActv 0;
+BA_ "GenSigDataID" SG_ 65 SteerADModRdyChks "0xB4B";
+BA_ "GenSigFuncType" SG_ 65 SteerADModRdyChks 21;
+BA_ "GenSigSendType" SG_ 65 SteerADModRdyChks 0;
+BA_ "GenSigStartValue" SG_ 65 SteerADModRdyChks 0;
+BA_ "GenSigFuncType" SG_ 65 SteerADModRdyCntr 20;
+BA_ "GenSigSendType" SG_ 65 SteerADModRdyCntr 0;
+BA_ "GenSigStartValue" SG_ 65 SteerADModRdyCntr 0;
+BA_ "GenSigSendType" SG_ 65 SteerADModRdySteerADModRdy 0;
+BA_ "GenSigStartValue" SG_ 65 SteerADModRdySteerADModRdy 0;
+BA_ "GenSigDataID" SG_ 93 SteerADModReqPrimChks "0xB3C";
+BA_ "GenSigFuncType" SG_ 93 SteerADModReqPrimChks 21;
+BA_ "GenSigSendType" SG_ 93 SteerADModReqPrimChks 0;
+BA_ "GenSigStartValue" SG_ 93 SteerADModReqPrimChks 0;
+BA_ "GenSigFuncType" SG_ 93 SteerADModReqPrimCntr 20;
+BA_ "GenSigSendType" SG_ 93 SteerADModReqPrimCntr 0;
+BA_ "GenSigStartValue" SG_ 93 SteerADModReqPrimCntr 0;
+BA_ "GenSigSendType" SG_ 93 SteerADModReqPrimRPCModActv 0;
+BA_ "GenSigStartValue" SG_ 93 SteerADModReqPrimRPCModActv 0;
+BA_ "GenSigDataID" SG_ 65 SteerADPfmncPrimChks "0xC95";
+BA_ "GenSigFuncType" SG_ 65 SteerADPfmncPrimChks 21;
+BA_ "GenSigSendType" SG_ 65 SteerADPfmncPrimChks 0;
+BA_ "GenSigStartValue" SG_ 65 SteerADPfmncPrimChks 0;
+BA_ "GenSigFuncType" SG_ 65 SteerADPfmncPrimCntr 20;
+BA_ "GenSigSendType" SG_ 65 SteerADPfmncPrimCntr 0;
+BA_ "GenSigStartValue" SG_ 65 SteerADPfmncPrimCntr 0;
+BA_ "GenSigSendType" SG_ 65 SteerADPfmncPrimCurrentPfmcLvl 0;
+BA_ "GenSigStartValue" SG_ 65 SteerADPfmncPrimCurrentPfmcLvl 0;
+BA_ "GenSigDataID" SG_ 66 SteerADPosReqUsedPrimChks "0xC49";
+BA_ "GenSigFuncType" SG_ 66 SteerADPosReqUsedPrimChks 21;
+BA_ "GenSigSendType" SG_ 66 SteerADPosReqUsedPrimChks 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADPosReqUsedPrimChks 0;
+BA_ "GenSigFuncType" SG_ 66 SteerADPosReqUsedPrimCntr 20;
+BA_ "GenSigSendType" SG_ 66 SteerADPosReqUsedPrimCntr 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADPosReqUsedPrimCntr 0;
+BA_ "GenSigSendType" SG_ 66 SteerADPosReqUsedPrimSteerADReqUsed 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADPosReqUsedPrimSteerADReqUsed 0;
+BA_ "GenSigDataID" SG_ 36 SteerADRackPosReqPrimChks "0xB3E";
+BA_ "GenSigFuncType" SG_ 36 SteerADRackPosReqPrimChks 21;
+BA_ "GenSigSendType" SG_ 36 SteerADRackPosReqPrimChks 0;
+BA_ "GenSigStartValue" SG_ 36 SteerADRackPosReqPrimChks 0;
+BA_ "GenSigSendType" SG_ 36 SteerADRackPosReqPrimReqConfidence 0;
+BA_ "GenSigStartValue" SG_ 36 SteerADRackPosReqPrimReqConfidence 0;
+BA_ "GenSigSendType" SG_ 36 SteerADRackPosReqPrimSteerRackPos 0;
+BA_ "GenSigStartValue" SG_ 36 SteerADRackPosReqPrimSteerRackPos 16384;
+BA_ "GenSigFuncType" SG_ 36 SteerADRackPosReqPrimcntr 20;
+BA_ "GenSigSendType" SG_ 36 SteerADRackPosReqPrimcntr 0;
+BA_ "GenSigStartValue" SG_ 36 SteerADRackPosReqPrimcntr 0;
+BA_ "GenSigDataID" SG_ 66 SteerADRpcRampPrimChks "0xC43";
+BA_ "GenSigFuncType" SG_ 66 SteerADRpcRampPrimChks 21;
+BA_ "GenSigSendType" SG_ 66 SteerADRpcRampPrimChks 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADRpcRampPrimChks 0;
+BA_ "GenSigFuncType" SG_ 66 SteerADRpcRampPrimCntr 20;
+BA_ "GenSigSendType" SG_ 66 SteerADRpcRampPrimCntr 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADRpcRampPrimCntr 0;
+BA_ "GenSigSendType" SG_ 66 SteerADRpcRampPrimRPCCtrlLvl 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADRpcRampPrimRPCCtrlLvl 0;
+BA_ "GenSigSendType" SG_ 66 SteerADSigAvlPrim 0;
+BA_ "GenSigStartValue" SG_ 66 SteerADSigAvlPrim 0;
+BA_ "GenSigSendType" SG_ 80 SteerAssiRednFac 0;
+BA_ "GenSigStartValue" SG_ 80 SteerAssiRednFac 0;
+BA_ "GenSigSendType" SG_ 288 SteerAssistModReq 0;
+BA_ "GenSigStartValue" SG_ 288 SteerAssistModReq 1;
+BA_ "GenSigSendType" SG_ 112 SteerAssistModeActv 0;
+BA_ "GenSigStartValue" SG_ 112 SteerAssistModeActv 1;
+BA_ "GenSigSendType" SG_ 69 SteerBBSpareRxByte0 0;
+BA_ "GenSigStartValue" SG_ 69 SteerBBSpareRxByte0 0;
+BA_ "GenSigSendType" SG_ 69 SteerBBSpareRxByte1 0;
+BA_ "GenSigStartValue" SG_ 69 SteerBBSpareRxByte1 0;
+BA_ "GenSigSendType" SG_ 69 SteerBBSpareRxByte2 0;
+BA_ "GenSigStartValue" SG_ 69 SteerBBSpareRxByte2 0;
+BA_ "GenSigSendType" SG_ 69 SteerBBSpareRxByte3 0;
+BA_ "GenSigStartValue" SG_ 69 SteerBBSpareRxByte3 0;
+BA_ "GenSigSendType" SG_ 69 SteerBBSpareRxByte4 0;
+BA_ "GenSigStartValue" SG_ 69 SteerBBSpareRxByte4 0;
+BA_ "GenSigSendType" SG_ 69 SteerBBSpareRxByte5 0;
+BA_ "GenSigStartValue" SG_ 69 SteerBBSpareRxByte5 0;
+BA_ "GenSigSendType" SG_ 69 SteerBBSpareRxByte6 0;
+BA_ "GenSigStartValue" SG_ 69 SteerBBSpareRxByte6 0;
+BA_ "GenSigSendType" SG_ 69 SteerBBSpareRxByte7 0;
+BA_ "GenSigStartValue" SG_ 69 SteerBBSpareRxByte7 0;
+BA_ "GenSigSendType" SG_ 71 SteerBBSpareTxByte0 0;
+BA_ "GenSigStartValue" SG_ 71 SteerBBSpareTxByte0 0;
+BA_ "GenSigSendType" SG_ 71 SteerBBSpareTxByte1 0;
+BA_ "GenSigStartValue" SG_ 71 SteerBBSpareTxByte1 0;
+BA_ "GenSigSendType" SG_ 71 SteerBBSpareTxByte2 0;
+BA_ "GenSigStartValue" SG_ 71 SteerBBSpareTxByte2 0;
+BA_ "GenSigSendType" SG_ 71 SteerBBSpareTxByte3 0;
+BA_ "GenSigStartValue" SG_ 71 SteerBBSpareTxByte3 0;
+BA_ "GenSigSendType" SG_ 71 SteerBBSpareTxByte4 0;
+BA_ "GenSigStartValue" SG_ 71 SteerBBSpareTxByte4 0;
+BA_ "GenSigSendType" SG_ 71 SteerBBSpareTxByte5 0;
+BA_ "GenSigStartValue" SG_ 71 SteerBBSpareTxByte5 0;
+BA_ "GenSigSendType" SG_ 71 SteerBBSpareTxByte6 0;
+BA_ "GenSigStartValue" SG_ 71 SteerBBSpareTxByte6 0;
+BA_ "GenSigSendType" SG_ 71 SteerBBSpareTxByte7 0;
+BA_ "GenSigStartValue" SG_ 71 SteerBBSpareTxByte7 0;
+BA_ "GenSigDataID" SG_ 65 SteerDegradedModPrimChks "0xB52";
+BA_ "GenSigFuncType" SG_ 65 SteerDegradedModPrimChks 21;
+BA_ "GenSigSendType" SG_ 65 SteerDegradedModPrimChks 0;
+BA_ "GenSigStartValue" SG_ 65 SteerDegradedModPrimChks 0;
+BA_ "GenSigFuncType" SG_ 65 SteerDegradedModPrimCntr 20;
+BA_ "GenSigSendType" SG_ 65 SteerDegradedModPrimCntr 0;
+BA_ "GenSigStartValue" SG_ 65 SteerDegradedModPrimCntr 0;
+BA_ "GenSigSendType" SG_ 65 SteerDegradedModPrimSteerDegradedMod 0;
+BA_ "GenSigStartValue" SG_ 65 SteerDegradedModPrimSteerDegradedMod 0;
+BA_ "GenSigSendType" SG_ 65 SteerDegradedModPrimSteerDegradedSubinfo 0;
+BA_ "GenSigStartValue" SG_ 65 SteerDegradedModPrimSteerDegradedSubinfo 0;
+BA_ "GenSigSendType" SG_ 112 SteerDtcSet 0;
+BA_ "GenSigStartValue" SG_ 112 SteerDtcSet 0;
+BA_ "GenSigSendType" SG_ 112 SteerErrReq 0;
+BA_ "GenSigStartValue" SG_ 112 SteerErrReq 0;
+BA_ "GenSigSendType" SG_ 864 SteerExtdEndStop 0;
+BA_ "GenSigStartValue" SG_ 864 SteerExtdEndStop 255;
+BA_ "GenSigSendType" SG_ 288 SteerFeelTunSelnSteerFeelTunMapSel 0;
+BA_ "GenSigStartValue" SG_ 288 SteerFeelTunSelnSteerFeelTunMapSel 0;
+BA_ "GenSigSendType" SG_ 288 SteerFeelTunSelnSteerFeelTunSetSeln 0;
+BA_ "GenSigStartValue" SG_ 288 SteerFeelTunSelnSteerFeelTunSetSeln 0;
+BA_ "GenSigSendType" SG_ 59 SteerLatCtrlModReqCfmd 0;
+BA_ "GenSigStartValue" SG_ 59 SteerLatCtrlModReqCfmd 0;
+BA_ "GenSigDataID" SG_ 61 SteerLatCtrlModReqChks "0x984";
+BA_ "GenSigFuncType" SG_ 61 SteerLatCtrlModReqChks 21;
+BA_ "GenSigSendType" SG_ 61 SteerLatCtrlModReqChks 0;
+BA_ "GenSigStartValue" SG_ 61 SteerLatCtrlModReqChks 0;
+BA_ "GenSigFuncType" SG_ 61 SteerLatCtrlModReqCntr 20;
+BA_ "GenSigSendType" SG_ 61 SteerLatCtrlModReqCntr 0;
+BA_ "GenSigStartValue" SG_ 61 SteerLatCtrlModReqCntr 0;
+BA_ "GenSigSendType" SG_ 61 SteerLatCtrlModReqLatCtrlModReq 0;
+BA_ "GenSigStartValue" SG_ 61 SteerLatCtrlModReqLatCtrlModReq 0;
+BA_ "GenSigSendType" SG_ 512 SteerLimpHomeIgnCntr 0;
+BA_ "GenSigStartValue" SG_ 512 SteerLimpHomeIgnCntr 0;
+BA_ "GenSigSendType" SG_ 512 SteerLimpHomeTmrVal 0;
+BA_ "GenSigStartValue" SG_ 512 SteerLimpHomeTmrVal 0;
+BA_ "GenSigSendType" SG_ 864 SteerNomEndStop 0;
+BA_ "GenSigStartValue" SG_ 864 SteerNomEndStop 255;
+BA_ "GenSigSendType" SG_ 71 SteerOvrlyActvCmfd 0;
+BA_ "GenSigStartValue" SG_ 71 SteerOvrlyActvCmfd 0;
+BA_ "GenSigSendType" SG_ 96 SteerOvrlyActvReq 0;
+BA_ "GenSigStartValue" SG_ 96 SteerOvrlyActvReq 0;
+BA_ "GenSigSendType" SG_ 61 SteerOvrlyMotTqReq 0;
+BA_ "GenSigStartValue" SG_ 61 SteerOvrlyMotTqReq 0;
+BA_ "GenSigSendType" SG_ 69 SteerOvrlySteerWhlTqReq 0;
+BA_ "GenSigStartValue" SG_ 69 SteerOvrlySteerWhlTqReq 0;
+BA_ "GenSigDataID" SG_ 62 SteerRackPosSafeGroupChks "0x7F1";
+BA_ "GenSigFuncType" SG_ 62 SteerRackPosSafeGroupChks 21;
+BA_ "GenSigSendType" SG_ 62 SteerRackPosSafeGroupChks 0;
+BA_ "GenSigStartValue" SG_ 62 SteerRackPosSafeGroupChks 0;
+BA_ "GenSigFuncType" SG_ 62 SteerRackPosSafeGroupCntr 20;
+BA_ "GenSigSendType" SG_ 62 SteerRackPosSafeGroupCntr 0;
+BA_ "GenSigStartValue" SG_ 62 SteerRackPosSafeGroupCntr 0;
+BA_ "GenSigSendType" SG_ 62 SteerRackPosSafeGroupSteerRackPos 0;
+BA_ "GenSigStartValue" SG_ 62 SteerRackPosSafeGroupSteerRackPos 16384;
+BA_ "GenSigSendType" SG_ 62 SteerRackPosSafeGroupSteerRackPosQf 0;
+BA_ "GenSigStartValue" SG_ 62 SteerRackPosSafeGroupSteerRackPosQf 1;
+BA_ "GenSigSendType" SG_ 62 SteerRackPosSafeGroupSteerRackPosRate 0;
+BA_ "GenSigStartValue" SG_ 62 SteerRackPosSafeGroupSteerRackPosRate 8192;
+BA_ "GenSigSendType" SG_ 62 SteerRackPosSafeGroupSteerRackPosRateQf 0;
+BA_ "GenSigStartValue" SG_ 62 SteerRackPosSafeGroupSteerRackPosRateQf 1;
+BA_ "GenSigSendType" SG_ 112 SteerServoSts2 0;
+BA_ "GenSigStartValue" SG_ 112 SteerServoSts2 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasAncActive 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasAncActive 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasAncTqReq 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasAncTqReq 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasAsscTqReq 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasAsscTqReq 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasEarTqReq 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasEarTqReq 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasEstimdTotSplyI 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasEstimdTotSplyI 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasIntT 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasIntT 700;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasLimOverlayTq 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasLimOverlayTq 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasPdcActv 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasPdcActv 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasPdcTqReq 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasPdcTqReq 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasSplyU 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasSplyU 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasSteerRackFEstimd 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasSteerRackFEstimd 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasSteerWhlTq 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasSteerWhlTq 0;
+BA_ "GenSigSendType" SG_ 117 SteerTestMeasTotMotTqReq 1;
+BA_ "GenSigStartValue" SG_ 117 SteerTestMeasTotMotTqReq 0;
+BA_ "GenSigSendType" SG_ 80 SteerTqTubeLowrLim 0;
+BA_ "GenSigStartValue" SG_ 80 SteerTqTubeLowrLim 0;
+BA_ "GenSigSendType" SG_ 80 SteerTqTubeUpprLim 0;
+BA_ "GenSigStartValue" SG_ 80 SteerTqTubeUpprLim 0;
+BA_ "GenSigSendType" SG_ 147 SteerWhlHptcWarnAmp 0;
+BA_ "GenSigStartValue" SG_ 147 SteerWhlHptcWarnAmp 0;
+BA_ "GenSigSendType" SG_ 147 SteerWhlHptcWarnFrq 0;
+BA_ "GenSigStartValue" SG_ 147 SteerWhlHptcWarnFrq 0;
+BA_ "GenSigSendType" SG_ 147 SteerWhlHptcWarnReq 0;
+BA_ "GenSigStartValue" SG_ 147 SteerWhlHptcWarnReq 0;
+BA_ "GenSigSendType" SG_ 69 SteerWhlTqOvrlyReqScaler 0;
+BA_ "GenSigStartValue" SG_ 69 SteerWhlTqOvrlyReqScaler 100;
+BA_ "GenSigDataID" SG_ 24 SteerWhlTqSafePrimChecksum "0xB4E";
+BA_ "GenSigFuncType" SG_ 24 SteerWhlTqSafePrimChecksum 21;
+BA_ "GenSigSendType" SG_ 24 SteerWhlTqSafePrimChecksum 0;
+BA_ "GenSigStartValue" SG_ 24 SteerWhlTqSafePrimChecksum 0;
+BA_ "GenSigFuncType" SG_ 24 SteerWhlTqSafePrimCounter 20;
+BA_ "GenSigSendType" SG_ 24 SteerWhlTqSafePrimCounter 0;
+BA_ "GenSigStartValue" SG_ 24 SteerWhlTqSafePrimCounter 0;
+BA_ "GenSigSendType" SG_ 24 SteerWhlTqSafePrimSteerWhlTq 0;
+BA_ "GenSigStartValue" SG_ 24 SteerWhlTqSafePrimSteerWhlTq 0;
+BA_ "GenSigSendType" SG_ 24 SteerWhlTqSafePrimSteerWhlTqQf 0;
+BA_ "GenSigStartValue" SG_ 24 SteerWhlTqSafePrimSteerWhlTqQf 1;
+BA_ "GenSigSendType" SG_ 69 TcsStsForSteer 0;
+BA_ "GenSigStartValue" SG_ 69 TcsStsForSteer 0;
+BA_ "GenSigSendType" SG_ 864 TireCircumForSteer 0;
+BA_ "GenSigStartValue" SG_ 864 TireCircumForSteer 0;
+BA_ "GenSigSendType" SG_ 288 UsgModStsforPSCM 0;
+BA_ "GenSigStartValue" SG_ 288 UsgModStsforPSCM 0;
+BA_ "GenSigDataID" SG_ 124 VLgtChks "0xC04";
+BA_ "GenSigFuncType" SG_ 124 VLgtChks 21;
+BA_ "GenSigSendType" SG_ 124 VLgtChks 0;
+BA_ "GenSigStartValue" SG_ 124 VLgtChks 0;
+BA_ "GenSigFuncType" SG_ 124 VLgtCntr 20;
+BA_ "GenSigSendType" SG_ 124 VLgtCntr 0;
+BA_ "GenSigStartValue" SG_ 124 VLgtCntr 0;
+BA_ "GenSigSendType" SG_ 124 VLgtMax 0;
+BA_ "GenSigStartValue" SG_ 124 VLgtMax 0;
+BA_ "GenSigSendType" SG_ 124 VLgtMin 0;
+BA_ "GenSigStartValue" SG_ 124 VLgtMin 0;
+BA_ "GenSigSendType" SG_ 124 VLgtMinMaxQf 0;
+BA_ "GenSigStartValue" SG_ 124 VLgtMinMaxQf 1;
+BA_ "GenSigSendType" SG_ 124 VLgtNom 0;
+BA_ "GenSigStartValue" SG_ 124 VLgtNom 0;
+BA_ "GenSigSendType" SG_ 124 VLgtNomQf 0;
+BA_ "GenSigStartValue" SG_ 124 VLgtNomQf 1;
+BA_ "GenSigSendType" SG_ 288 VehBatUSysU2ForSteer 0;
+BA_ "GenSigStartValue" SG_ 288 VehBatUSysU2ForSteer 0;
+BA_ "GenSigSendType" SG_ 124 VehSpdLgtforPSCMVehSpdLgt 0;
+BA_ "GenSigStartValue" SG_ 124 VehSpdLgtforPSCMVehSpdLgt 0;
+BA_ "GenSigDataID" SG_ 124 VehSpdLgtforPSCMVehSpdLgtChks "0x7F0";
+BA_ "GenSigFuncType" SG_ 124 VehSpdLgtforPSCMVehSpdLgtChks 21;
+BA_ "GenSigSendType" SG_ 124 VehSpdLgtforPSCMVehSpdLgtChks 0;
+BA_ "GenSigStartValue" SG_ 124 VehSpdLgtforPSCMVehSpdLgtChks 0;
+BA_ "GenSigFuncType" SG_ 124 VehSpdLgtforPSCMVehSpdLgtCntr 20;
+BA_ "GenSigSendType" SG_ 124 VehSpdLgtforPSCMVehSpdLgtCntr 0;
+BA_ "GenSigStartValue" SG_ 124 VehSpdLgtforPSCMVehSpdLgtCntr 0;
+BA_ "GenSigSendType" SG_ 124 VehSpdLgtforPSCMVehSpdLgtQf 0;
+BA_ "GenSigStartValue" SG_ 124 VehSpdLgtforPSCMVehSpdLgtQf 1;
+BA_ "GenSigSendType" SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLe 0;
+BA_ "GenSigStartValue" SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLe 0;
+BA_ "GenSigSendType" SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLeQf 0;
+BA_ "GenSigStartValue" SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLeQf 1;
+BA_ "GenSigSendType" SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntRiQf 0;
+BA_ "GenSigStartValue" SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntRiQf 1;
+BA_ "GenSigSendType" SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntri 0;
+BA_ "GenSigStartValue" SG_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntri 0;
+BA_ "GenSigSendType" SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReLe 0;
+BA_ "GenSigStartValue" SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReLe 0;
+BA_ "GenSigSendType" SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReLeQf 0;
+BA_ "GenSigStartValue" SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReLeQf 1;
+BA_ "GenSigSendType" SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReRi 0;
+BA_ "GenSigStartValue" SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReRi 0;
+BA_ "GenSigSendType" SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReRiQf 0;
+BA_ "GenSigStartValue" SG_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReRiQf 1;
+BA_ "GenSigSendType" SG_ 147 YawRateForSteerYawRate 0;
+BA_ "GenSigStartValue" SG_ 147 YawRateForSteerYawRate 0;
+BA_ "GenSigSendType" SG_ 147 YawRateForSteerYawRateQf 0;
+BA_ "GenSigStartValue" SG_ 147 YawRateForSteerYawRateQf 1;
+
+VAL_ 124 VehSpdLgtforPSCMVehSpdLgtQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 124 VLgtMinMaxQf 0 "Qly_Err" 1 "Qly_Ukwn" 2 "Qly_Lo" 3 "Qly_Med" 4 "Qly_Hi" 5 "Qly_Full";
+VAL_ 124 VLgtNomQf 0 "Qly_Err" 1 "Qly_Ukwn" 2 "Qly_Lo" 3 "Qly_Med" 4 "Qly_Hi" 5 "Qly_Full";
+VAL_ 93 SteerADModReqPrimRPCModActv 0 "TrueFalse_False" 1 "TrueFalse_True";
+VAL_ 61 SteerLatCtrlModReqLatCtrlModReq 0 "LatCtrlMod5_NoReq" 1 "LatCtrlMod5_Mode1" 2 "LatCtrlMod5_Mode2" 3 "LatCtrlMod5_Mode3" 4 "LatCtrlMod5_Mode4" 5 "LatCtrlMod5_Mode5" 6 "LatCtrlMod5_Mode6" 7 "LatCtrlMod5_Mode7" 8 "LatCtrlMod5_Mode8" 9 "LatCtrlMod5_Mode9" 10 "LatCtrlMod5_Mode10";
+VAL_ 69 AbsStsForSteer 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 69 ADataForSteerALat1Qf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 69 ADataForSteerALgt1Qf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 69 ADataForSteerAVertQf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 69 EpbStsForSteer 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 69 EscSptModStsForSteer 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 69 RvsGearStsForSteer 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 69 TcsStsForSteer 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 288 SteerAssistModReq 0 "SteerAssistMod_Off" 1 "SteerAssistMod_Standby" 2 "SteerAssistMod_FullAssist" 3 "SteerAssistMod_LimtedAssist" 4 "SteerAssistMod_Unused1" 5 "SteerAssistMod_Unused2" 6 "SteerAssistMod_Unused3" 7 "SteerAssistMod_Unused4" 8 "SteerAssistMod_FltOperStandby" 9 "SteerAssistMod_FltOperIntFlt" 10 "SteerAssistMod_FltOperLimpHome" 11 "SteerAssistMod_FltOperLimpAside" 12 "SteerAssistMod_FltOperUnused1" 13 "SteerAssistMod_FltOperUnused2" 14 "SteerAssistMod_FltOperUnused3" 15 "SteerAssistMod_Inoperable";
+VAL_ 288 UsgModStsforPSCM 0 "UsgModSts1_UsgModAbdnd" 1 "UsgModSts1_UsgModInActv" 2 "UsgModSts1_UsgModCnvinc" 11 "UsgModSts1_UsgModActv" 13 "UsgModSts1_UsgModDrvg";
+VAL_ 147 EscStsForSteerSafeEscStsForSteerSafe 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 147 YawRateForSteerYawRateQf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 96 BlkExtDtc 0 "BlkExtDtc_NoBlkDtc" 1 "BlkExtDtc_BlkCanDtc" 2 "BlkExtDtc_BlkSplyUDtc" 3 "BlkExtDtc_BlkCanAndSplyUDtc";
+VAL_ 96 BrkPedlPsdForSteerBrkPedlPsdForSteer 0 "NoYes1_No" 1 "NoYes1_Yes";
+VAL_ 96 BrkPedlPsdForSteerBrkPedlPsdQfForSteer 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 96 SteerOvrlyActvReq 0 "SteerOvrlyActvReq_NoReq" 1 "SteerOvrlyActvReq_OvrlyMotTqActv" 2 "SteerOvrlyActvReq_SteerWhlOvrlyTqActv" 3 "SteerOvrlyActvReq_OvrlyMotTrqActvWithWd" 4 "SteerOvrlyActvReq_spare4" 5 "SteerOvrlyActvReq_spare5" 6 "SteerOvrlyActvReq_spare6" 7 "SteerOvrlyActvReq_spare7";
+VAL_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLeQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 96 WhlSpdCircumFrntForSteerWhlSpdCircumlFrntRiQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReLeQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 96 WhlSpdCircumReForSteerWhlSpdCircumlReRiQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 57 PinionSteerAg2GroupPinionSteerAg2Qf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 57 PinionSteerAg2GroupPinionSteerAg2SpdQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 71 MotOverlayTqLimActvd 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 71 SteerOvrlyActvCmfd 0 "SteerOvrlyActvReq_NoReq" 1 "SteerOvrlyActvReq_OvrlyMotTqActv" 2 "SteerOvrlyActvReq_SteerWhlOvrlyTqActv" 3 "SteerOvrlyActvReq_OvrlyMotTrqActvWithWd" 4 "SteerOvrlyActvReq_spare4" 5 "SteerOvrlyActvReq_spare5" 6 "SteerOvrlyActvReq_spare6" 7 "SteerOvrlyActvReq_spare7";
+VAL_ 112 DrvrSteerWhlHldGroup2DrvrSteerWhlHld 0 "OnOffDetd1_NoInfo" 1 "OnOffDetd1_OffDetd" 2 "OnOffDetd1_NotOnOrOffDetd" 3 "OnOffDetd1_OnDetd";
+VAL_ 112 SteerAssistModeActv 0 "SteerAssistMod_Off" 1 "SteerAssistMod_Standby" 2 "SteerAssistMod_FullAssist" 3 "SteerAssistMod_LimtedAssist" 4 "SteerAssistMod_Unused1" 5 "SteerAssistMod_Unused2" 6 "SteerAssistMod_Unused3" 7 "SteerAssistMod_Unused4" 8 "SteerAssistMod_FltOperStandby" 9 "SteerAssistMod_FltOperIntFlt" 10 "SteerAssistMod_FltOperLimpHome" 11 "SteerAssistMod_FltOperLimpAside" 12 "SteerAssistMod_FltOperUnused1" 13 "SteerAssistMod_FltOperUnused2" 14 "SteerAssistMod_FltOperUnused3" 15 "SteerAssistMod_Inoperable";
+VAL_ 112 SteerDtcSet 0 "NoYes1_No" 1 "NoYes1_Yes";
+VAL_ 112 SteerErrReq 0 "SteerErrReq3_NoReq" 1 "SteerErrReq3_SteerAssiSrvRqrd" 2 "SteerErrReq3_SteerErrStopSfty" 3 "SteerErrReq3_SteerAssiUrgentSrvRqrd" 4 "SteerErrReq3_SteerAssiTmpRedn" 5 "SteerErrReq3_Spare01" 6 "SteerErrReq3_Spare02" 7 "SteerErrReq3_Spare03";
+VAL_ 112 SteerServoSts2 0 "SteerServoSts1_SteerPwrAssidElecFullFct" 1 "SteerServoSts1_SteerPwrAssidElecCritErr";
+VAL_ 59 FrntWhlAngCtrlLimd 0 "NoYes1_No" 1 "NoYes1_Yes";
+VAL_ 59 FrntWhlAngCtrlLimdExt 0 "FrntWhlAngCtrlLimdExt_NotLimited" 1 "FrntWhlAngCtrlLimdExt_TqLimUpperReached" 2 "FrntWhlAngCtrlLimdExt_TqLimLowerReached" 3 "FrntWhlAngCtrlLimdExt_RateLimReached" 4 "FrntWhlAngCtrlLimdExt_DrvrSteerOvrd";
+VAL_ 59 FrntWhlAngCtrlSts 0 "FrntWhlAngCtrlSts_NotAvailable" 1 "FrntWhlAngCtrlSts_InputFault" 2 "FrntWhlAngCtrlSts_InternalFault" 3 "FrntWhlAngCtrlSts_FullyFunctional";
+VAL_ 59 SteerLatCtrlModReqCfmd 0 "LatCtrlMod5_NoReq" 1 "LatCtrlMod5_Mode1" 2 "LatCtrlMod5_Mode2" 3 "LatCtrlMod5_Mode3" 4 "LatCtrlMod5_Mode4" 5 "LatCtrlMod5_Mode5" 6 "LatCtrlMod5_Mode6" 7 "LatCtrlMod5_Mode7" 8 "LatCtrlMod5_Mode8" 9 "LatCtrlMod5_Mode9" 10 "LatCtrlMod5_Mode10";
+VAL_ 24 SteerWhlTqSafePrimSteerWhlTqQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 34 DrvrSteerActvGroup2DrvrSteerActv 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 62 SteerRackPosSafeGroupSteerRackPosQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 62 SteerRackPosSafeGroupSteerRackPosRateQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 66 SteerADL1ComCfmdPrimComConf 0 "TrueFalse_False" 1 "TrueFalse_True";
+VAL_ 66 SteerADModL1PrimRPCModActv 0 "TrueFalse_False" 1 "TrueFalse_True";
+VAL_ 66 SteerADModL2PrimRPCModActv 0 "TrueFalse_False" 1 "TrueFalse_True";
+VAL_ 66 SteerADPosReqUsedPrimSteerADReqUsed 0 "ADPosUsedType_None" 1 "ADPosUsedType_Primary" 2 "ADPosUsedType_Secondary";
+VAL_ 66 SteerADSigAvlPrim 0 "SteerADSigAvlType_Unknown" 1 "SteerADSigAvlType_PrimaryOnly" 2 "SteerADSigAvlType_SecondaryOnly" 3 "SteerADSigAvlType_NormalOperation";
+VAL_ 65 SteerADModCfmdPrimSteerADMod 0 "SteerADModCfmdType_Unknown" 1 "SteerADModCfmdType_InSfcMod" 2 "SteerADModCfmdType_TransitToSfcMod" 3 "SteerADModCfmdType_TransitToRpcMod" 4 "SteerADModCfmdType_InRpcMod";
+VAL_ 65 SteerADModRdySteerADModRdy 0 "TrueFalse_False" 1 "TrueFalse_True";
+VAL_ 65 SteerDegradedModPrimSteerDegradedMod 0 "SteerDegradedModType_FullyFunctional" 1 "SteerDegradedModType_FailOperational" 2 "SteerDegradedModType_LimpHome" 3 "SteerDegradedModType_LimpAside" 4 "SteerDegradedModType_Inoperable";
+VAL_ 65 SteerDegradedModPrimSteerDegradedSubinfo 0 "SteerDegradedSubMod_Normal" 1 "SteerDegradedSubMod_InternalFault" 2 "SteerDegradedSubMod_SignalFault" 3 "SteerDegradedSubMod_VoltageFault" 4 "SteerDegradedSubMod_TemparatureFault" 5 "SteerDegradedSubMod_Spare1" 6 "SteerDegradedSubMod_Spare2" 7 "SteerDegradedSubMod_Spare3";
+VAL_ 117 SteerTestMeasAncActive 0 "YesNo2_No" 1 "YesNo2_Yes";
+VAL_ 117 SteerTestMeasPdcActv 0 "YesNo2_No" 1 "YesNo2_Yes";
+SIG_GROUP_ 69 ADataForSteer 1 : ADataForSteerALat ADataForSteerALat1Qf ADataForSteerALatWithCmp ADataForSteerALgt ADataForSteerALgt1Qf ADataForSteerAVert ADataForSteerAVertQf ADataForSteerGrdtOfALgt;
+SIG_GROUP_ 96 BrkPedlPsdForSteer 1 : BrkPedlPsdForSteerBrkPedlPsdForSteer BrkPedlPsdForSteerBrkPedlPsdQfForSteer;
+SIG_GROUP_ 34 DrvrSteerActvGroup2 1 : DrvrSteerActvGroup2Chks DrvrSteerActvGroup2Cntr DrvrSteerActvGroup2DrvrSteerActv;
+SIG_GROUP_ 112 DrvrSteerWhlHldGroup2 1 : DrvrSteerWhlHldGroup2DrvrSteerWhlHld DrvrSteerWhlHldGroup2DrvrSteerWhlHldQly;
+SIG_GROUP_ 147 EscStsForSteerSafe 1 : EscStsForSteerSafeChks EscStsForSteerSafeCntr EscStsForSteerSafeEscStsForSteerSafe;
+SIG_GROUP_ 57 PinionSteerAg2Group 1 : PinionSteerAg2GroupChks PinionSteerAg2GroupCntr PinionSteerAg2GroupPinionSteerAg2 PinionSteerAg2GroupPinionSteerAg2Qf PinionSteerAg2GroupPinionSteerAg2Spd PinionSteerAg2GroupPinionSteerAg2SpdQf;
+SIG_GROUP_ 304 PSCMXCPL1Req 1 : PSCMXCPL1ReqByte0 PSCMXCPL1ReqByte1 PSCMXCPL1ReqByte2 PSCMXCPL1ReqByte3 PSCMXCPL1ReqByte4 PSCMXCPL1ReqByte5 PSCMXCPL1ReqByte6 PSCMXCPL1ReqByte7;
+SIG_GROUP_ 308 PSCMXCPL1Resp 1 : PSCMXCPL1RespByte0 PSCMXCPL1RespByte1 PSCMXCPL1RespByte2 PSCMXCPL1RespByte3 PSCMXCPL1RespByte4 PSCMXCPL1RespByte5 PSCMXCPL1RespByte6 PSCMXCPL1RespByte7;
+SIG_GROUP_ 310 PSCMXCPL2Req 1 : PSCMXCPL2ReqByte0 PSCMXCPL2ReqByte1 PSCMXCPL2ReqByte2 PSCMXCPL2ReqByte3 PSCMXCPL2ReqByte4 PSCMXCPL2ReqByte5 PSCMXCPL2ReqByte6 PSCMXCPL2ReqByte7;
+SIG_GROUP_ 314 PSCMXCPL2Resp 1 : PSCMXCPL2RespByte0 PSCMXCPL2RespByte1 PSCMXCPL2RespByte2 PSCMXCPL2RespByte3 PSCMXCPL2RespByte4 PSCMXCPL2RespByte5 PSCMXCPL2RespByte6 PSCMXCPL2RespByte7;
+SIG_GROUP_ 61 RackPositionReqSafe 1 : RackPositionReqSafeChks RackPositionReqSafeCntr RackPositionReqSafeRackPosRateLim RackPositionReqSafeSteerRackPosReq;
+SIG_GROUP_ 66 SteerADFallbackAvailTimePrim 1 : SteerADFallbackAvailTimePrimchks SteerADFallbackAvailTimePrimcntr SteerADFallbackAvailTimePrimFallbackAvilTime;
+SIG_GROUP_ 66 SteerADFallbackPfmncPrim 1 : SteerADFallbackPfmncPrimChks SteerADFallbackPfmncPrimCntr SteerADFallbackPfmncPrimFallbackPfmncLvl;
+SIG_GROUP_ 66 SteerADL1ComCfmdPrim 1 : SteerADL1ComCfmdPrimChks SteerADL1ComCfmdPrimCntr SteerADL1ComCfmdPrimComConf;
+SIG_GROUP_ 65 SteerADModCfmdPrim 1 : SteerADModCfmdPrimChks SteerADModCfmdPrimCntr SteerADModCfmdPrimSteerADMod;
+SIG_GROUP_ 66 SteerADModL1Prim 1 : SteerADModL1PrimChks SteerADModL1PrimCntr SteerADModL1PrimRPCModActv;
+SIG_GROUP_ 66 SteerADModL2Prim 1 : SteerADModL2PrimChks SteerADModL2PrimCntr SteerADModL2PrimRPCModActv;
+SIG_GROUP_ 65 SteerADModRdy 1 : SteerADModRdyChks SteerADModRdyCntr SteerADModRdySteerADModRdy;
+SIG_GROUP_ 93 SteerADModReqPrim 1 : SteerADModReqPrimChks SteerADModReqPrimCntr SteerADModReqPrimRPCModActv;
+SIG_GROUP_ 65 SteerADPfmncPrim 1 : SteerADPfmncPrimChks SteerADPfmncPrimCntr SteerADPfmncPrimCurrentPfmcLvl;
+SIG_GROUP_ 66 SteerADPosReqUsedPrim 1 : SteerADPosReqUsedPrimChks SteerADPosReqUsedPrimCntr SteerADPosReqUsedPrimSteerADReqUsed;
+SIG_GROUP_ 36 SteerADRackPosReqPrim 1 : SteerADRackPosReqPrimChks SteerADRackPosReqPrimcntr SteerADRackPosReqPrimReqConfidence SteerADRackPosReqPrimSteerRackPos;
+SIG_GROUP_ 66 SteerADRpcRampPrim 1 : SteerADRpcRampPrimChks SteerADRpcRampPrimCntr SteerADRpcRampPrimRPCCtrlLvl;
+SIG_GROUP_ 69 SteerBBSpareRx 1 : SteerBBSpareRxByte0 SteerBBSpareRxByte1 SteerBBSpareRxByte2 SteerBBSpareRxByte3 SteerBBSpareRxByte4 SteerBBSpareRxByte5 SteerBBSpareRxByte6 SteerBBSpareRxByte7;
+SIG_GROUP_ 71 SteerBBSpareTx 1 : SteerBBSpareTxByte0 SteerBBSpareTxByte1 SteerBBSpareTxByte2 SteerBBSpareTxByte3 SteerBBSpareTxByte4 SteerBBSpareTxByte5 SteerBBSpareTxByte6 SteerBBSpareTxByte7;
+SIG_GROUP_ 65 SteerDegradedModPrim 1 : SteerDegradedModPrimChks SteerDegradedModPrimCntr SteerDegradedModPrimSteerDegradedMod SteerDegradedModPrimSteerDegradedSubinfo;
+SIG_GROUP_ 288 SteerFeelTunSeln 1 : SteerFeelTunSelnSteerFeelTunMapSel SteerFeelTunSelnSteerFeelTunSetSeln;
+SIG_GROUP_ 61 SteerLatCtrlModReq 1 : SteerLatCtrlModReqChks SteerLatCtrlModReqCntr SteerLatCtrlModReqLatCtrlModReq;
+SIG_GROUP_ 62 SteerRackPosSafeGroup 1 : SteerRackPosSafeGroupChks SteerRackPosSafeGroupCntr SteerRackPosSafeGroupSteerRackPos SteerRackPosSafeGroupSteerRackPosQf SteerRackPosSafeGroupSteerRackPosRate SteerRackPosSafeGroupSteerRackPosRateQf;
+SIG_GROUP_ 117 SteerTestMeas 1 : SteerTestMeasAncActive SteerTestMeasAncTqReq SteerTestMeasAsscTqReq SteerTestMeasEarTqReq SteerTestMeasEstimdTotSplyI SteerTestMeasIntT SteerTestMeasLimOverlayTq SteerTestMeasPdcActv SteerTestMeasPdcTqReq SteerTestMeasSplyU SteerTestMeasSteerRackFEstimd SteerTestMeasSteerWhlTq SteerTestMeasTotMotTqReq;
+SIG_GROUP_ 147 SteerWhlHptcWarn 1 : SteerWhlHptcWarnAmp SteerWhlHptcWarnFrq SteerWhlHptcWarnReq;
+SIG_GROUP_ 24 SteerWhlTqSafePrim 1 : SteerWhlTqSafePrimChecksum SteerWhlTqSafePrimCounter SteerWhlTqSafePrimSteerWhlTq SteerWhlTqSafePrimSteerWhlTqQf;
+SIG_GROUP_ 124 VehSpdLgtforPSCM 1 : VehSpdLgtforPSCMVehSpdLgt VehSpdLgtforPSCMVehSpdLgtChks VehSpdLgtforPSCMVehSpdLgtCntr VehSpdLgtforPSCMVehSpdLgtQf;
+SIG_GROUP_ 124 VLgt 1 : VLgtChks VLgtCntr VLgtMax VLgtMin VLgtMinMaxQf VLgtNom VLgtNomQf;
+SIG_GROUP_ 96 WhlSpdCircumFrntForSteer 1 : WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLe WhlSpdCircumFrntForSteerWhlSpdCircumlFrntLeQf WhlSpdCircumFrntForSteerWhlSpdCircumlFrntri WhlSpdCircumFrntForSteerWhlSpdCircumlFrntRiQf;
+SIG_GROUP_ 96 WhlSpdCircumReForSteer 1 : WhlSpdCircumReForSteerWhlSpdCircumlReLe WhlSpdCircumReForSteerWhlSpdCircumlReLeQf WhlSpdCircumReForSteerWhlSpdCircumlReRi WhlSpdCircumReForSteerWhlSpdCircumlReRiQf;
+SIG_GROUP_ 147 YawRateForSteer 1 : YawRateForSteerYawRate YawRateForSteerYawRateQf;
+
+

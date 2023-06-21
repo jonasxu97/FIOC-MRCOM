@@ -1,0 +1,1723 @@
+// *************************************************************************** *
+// *                                                                           *
+// * Description:         CANDB File                                           *
+// * Generated at:        2022-06-21 16:34                                     *
+// * System:              BrakesystemSPA2_MAIN_16                              *
+// * Network:             BCMA1CAN                                             *
+// *                                                                           *
+// *************************************************************************** *
+
+
+VERSION "BCMA1CAN"
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_ :
+
+BU_ :  BCMA BCMAdp1 BCMAdp1HIA BCMAdp1HIB
+
+BO_ 1282 Bcma1NmCanFrame : 8 BCMA
+ SG_ NM_PNI_BCMA : 14|1@0+ (1,0) [0|0] "" BCMAdp1
+ SG_ NM_AW_BCMA : 12|1@0+ (1,0) [0|0] "" BCMAdp1
+ SG_ NM_CS_BCMA : 11|1@0+ (1,0) [0|0] "" BCMAdp1
+ SG_ NM_RMR_BCMA : 8|1@0+ (1,0) [0|0] "" BCMAdp1
+ SG_ NM_NodeID_BCMA : 7|8@0+ (1,0) [0|0] "" BCMAdp1
+
+BO_ 257 BcmaBcma1CANDp1AndDp1HIBFrame01 : 64 BCMA
+ SG_ ActvBrkFctIdGrp_UB : 56|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ ActvBrkFctIdGrpActvBrkFctId : 288|8@1+ (1.0,0.0) [0.0|120.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ ActvBrkFctIdGrpActvBrkFctIdChks : 272|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ ActvBrkFctIdGrpActvBrkFctIdCntr : 280|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ BrkPedlPsd3_UB : 392|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkPedlPsd3BrkPedlNotPsdSafe : 314|1@1+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkPedlPsd3BrkPedlPsd : 316|1@1+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkPedlPsd3BrkPedlPsdChks : 296|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ BrkPedlPsd3BrkPedlPsdCntr : 304|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ BrkPedlPsd3BrkPedlPsdQf : 312|2@1+ (1,0) [0|3] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActv : 394|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActv_UB : 393|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActvForWhlFrntLe : 335|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActvForWhlFrntLe_UB : 334|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActvForWhlFrntRi : 333|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActvForWhlFrntRi_UB : 332|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActvForWhlReLe : 331|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActvForWhlReLe_UB : 330|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActvForWhlReRi : 329|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ BrkTracCtrlActvForWhlReRi_UB : 328|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ DrvrBrkTqReqdTot_UB : 62|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ DrvrBrkTqReqdTotChks : 64|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ DrvrBrkTqReqdTotCntr : 72|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ DrvrBrkTqReqdTotDrvrBrkTqAtWhlsReqd : 80|16@1- (1.0,0.0) [-32768.0|32767.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ DrvrBrkTqReqdTotDrvrBrkTqAtWhlsReqdQf : 96|2@1+ (1,0) [0|3] "" BCMAdp1,BCMAdp1HIB
+ SG_ EngTracCtrlActvFrntMax : 327|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ EngTracCtrlActvFrntMax_UB : 326|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ EngTracCtrlActvFrntMin : 325|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ EngTracCtrlActvFrntMin_UB : 324|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ EngTracCtrlActvReMax : 323|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ EngTracCtrlActvReMax_UB : 322|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ EngTracCtrlActvReMin : 321|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ EngTracCtrlActvReMin_UB : 320|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ FailSafeFlgOTRGrp_UB : 407|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ FailSafeFlgOTRGrpChks : 344|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ FailSafeFlgOTRGrpCntr : 352|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ FailSafeFlgOTRGrpFailSafeFlgOTR : 360|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleAddReq1_UB : 61|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleAddReq1PtTqAtAxleAddFrntReq : 120|10@1+ (1.0,0.0) [0.0|1000.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleAddReq1PtTqAtAxleAddReqChks : 104|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleAddReq1PtTqAtAxleAddReqCntr : 112|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleAddReq1PtTqAtAxleAddReReq : 130|10@1+ (1.0,0.0) [0.0|1000.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleFrntMaxReq1_UB : 60|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleFrntMaxReq1Chks : 144|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleFrntMaxReq1Cntr : 152|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleFrntMaxReq1PtTqAtAxleFrntMaxReq : 160|16@1- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleFrntMinReq1_UB : 59|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReq : 192|16@1- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqChks : 176|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqCntr : 184|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleReMaxReq2_UB : 58|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleReMaxReq2Chks : 208|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleReMaxReq2Cntr : 216|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleReMaxReq2PtTqAtAxleReMaxReq1 : 224|16@1- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleReMinReq_UB : 57|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleReMinReqChks : 240|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleReMinReqCntr : 248|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ PtTqAtAxleReMinReqPtTqAtAxleReMinReq : 256|16@1- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ RscCtrlActvAtWhlFrntLe : 343|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ RscCtrlActvAtWhlFrntLe_UB : 342|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ RscCtrlActvAtWhlFrntRi : 341|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ RscCtrlActvAtWhlFrntRi_UB : 340|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ RscCtrlActvAtWhlReLe : 339|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ RscCtrlActvAtWhlReLe_UB : 338|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ RscCtrlActvAtWhlReRi : 337|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ RscCtrlActvAtWhlReRi_UB : 336|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ TqVect2_UB : 63|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ TqVect2Chks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ TqVect2Cntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1,BCMAdp1HIB
+ SG_ TqVect2DeltaLe : 16|13@1- (4.0,0.0) [-16384.0|16380.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ TqVect2DeltaRi : 29|13@1- (4.0,0.0) [-16384.0|16380.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ TqVect2TqVectOvrLckReq : 42|12@1+ (1.0,0.0) [0.0|4095.0] "NewtonMeter" BCMAdp1,BCMAdp1HIB
+ SG_ WhlBrkRotorT_UB : 395|1@0+ (1,0) [0|1] "" BCMAdp1,BCMAdp1HIB
+ SG_ WhlBrkRotorTFrntLe : 375|7@0+ (15.0,0.0) [0.0|1905.0] "degC" BCMAdp1,BCMAdp1HIB
+ SG_ WhlBrkRotorTFrntRi : 368|7@0+ (15.0,0.0) [0.0|1905.0] "degC" BCMAdp1,BCMAdp1HIB
+ SG_ WhlBrkRotorTReLe : 377|7@0+ (15.0,0.0) [0.0|1905.0] "degC" BCMAdp1,BCMAdp1HIB
+ SG_ WhlBrkRotorTReRi : 386|7@0+ (15.0,0.0) [0.0|1905.0] "degC" BCMAdp1,BCMAdp1HIB
+
+BO_ 273 BcmaBcma1CANDp1HIBOnlyFrame01 : 64 BCMA
+ SG_ AbsCtrlActvForWhlSafe2_UB : 341|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ AbsCtrlActvForWhlSafe2Chks : 248|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1HIB
+ SG_ AbsCtrlActvForWhlSafe2Cntr : 256|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1HIB
+ SG_ AbsCtrlActvForWhlSafe2FrntLe : 266|1@1+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ AbsCtrlActvForWhlSafe2FrntRi : 267|1@1+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ AbsCtrlActvForWhlSafe2Qf : 264|2@1+ (1,0) [0|3] "" BCMAdp1HIB
+ SG_ AbsCtrlActvForWhlSafe2ReLe : 268|1@1+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ AbsCtrlActvForWhlSafe2ReRi : 269|1@1+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ BrkFricTqAtVehAct_UB : 340|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ BrkFricTqAtVehActBrkFricTqAtVehAct : 288|15@1+ (1.0,0.0) [0.0|32767.0] "NewtonMeter" BCMAdp1HIB
+ SG_ BrkFricTqAtVehActChks : 272|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1HIB
+ SG_ BrkFricTqAtVehActCntr : 280|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1HIB
+ SG_ BrkFricTqAtVehActStabyCtrlActvAtVeh : 303|1@1+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ BrkSysResp_UB : 339|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ BrkSysRespBrkDegradedSt : 320|3@1+ (1,0) [0|7] "" BCMAdp1HIB
+ SG_ BrkSysRespBrkSysDegradedSts : 323|2@1+ (1,0) [0|3] "" BCMAdp1HIB
+ SG_ BrkSysRespBrkTqReqAvl : 325|2@1+ (1,0) [0|3] "" BCMAdp1HIB
+ SG_ BrkSysRespBrkTqReqInCtrl : 328|2@1+ (1.0,0.0) [0.0|2.0] "Unitless" BCMAdp1HIB
+ SG_ BrkSysRespChks : 304|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1HIB
+ SG_ BrkSysRespCntr : 312|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1HIB
+ SG_ BrkSysRespLocalStopEnad : 327|1@1+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl1 : 7|16@0- (1.0,0.0) [-32768.0|32767.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl1_UB : 247|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl10 : 215|32@0- (1.0,0.0) [-2147483648.0|2147483647.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl10_UB : 342|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl2 : 23|16@0- (1.0,0.0) [-32768.0|32767.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl2_UB : 246|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl3 : 39|16@0- (1.0,0.0) [-32768.0|32767.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl3_UB : 245|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl4 : 55|16@0- (1.0,0.0) [-32768.0|32767.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl4_UB : 244|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl5 : 71|16@0- (1.0,0.0) [-32768.0|32767.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl5_UB : 243|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl6 : 87|32@0- (1.0,0.0) [-2147483648.0|2147483647.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl6_UB : 242|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl7 : 119|32@0- (1.0,0.0) [-2147483648.0|2147483647.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl7_UB : 241|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl8 : 151|32@0- (1.0,0.0) [-2147483648.0|2147483647.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl8_UB : 240|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl9 : 183|32@0- (1.0,0.0) [-2147483648.0|2147483647.0] "Unitless" BCMAdp1HIB
+ SG_ RscResdSigToVehDynCtrl9_UB : 343|1@0+ (1,0) [0|1] "" BCMAdp1HIB
+
+BO_ 256 BcmaBcma1CANFrame01 : 64 BCMA
+ SG_ AbsCtrlActv : 161|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ AbsCtrlActv_UB : 160|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ AbsCtrlActvForWhl_UB : 354|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ AbsCtrlActvForWhlFrntLe : 203|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ AbsCtrlActvForWhlFrntRi : 202|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ AbsCtrlActvForWhlReLe : 201|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ AbsCtrlActvForWhlReRi : 200|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ AxleSlipRelAct : 159|14@0- (0.003906369,0.0) [-29.997007551|30.00091392] "m/s" BCMAdp1
+ SG_ AxleSlipRelAct_UB : 55|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ BrkFDistbnElectcAct : 43|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ BrkFDistbnElectcAct_UB : 42|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ BrkPedlrRat : 175|15@0+ (0.00390625,0.0) [0.0|100.0] "%" BCMAdp1
+ SG_ BrkPedlrRat_UB : 176|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ BrkTqAtWhlsReq : 191|12@0+ (4.0,0.0) [0.0|16380.0] "Nm" BCMAdp1
+ SG_ BrkTqAtWhlsReq_UB : 195|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ DrvrBrkTqAtWhlsGrdtReqd_UB : 50|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ DrvrBrkTqAtWhlsGrdtReqdChks : 80|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ DrvrBrkTqAtWhlsGrdtReqdCntr : 88|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ DrvrBrkTqAtWhlsGrdtReqdDrvrBrkTqAtWhlsGrdtReqd : 96|12@1+ (100.0,0.0) [0.0|409500.0] "Nm/s" BCMAdp1
+ SG_ EscDamprReq : 206|2@0+ (1,0) [0|3] "" BCMAdp1
+ SG_ EscDamprReq_UB : 204|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ EscLatCtrlMod : 47|4@0+ (1,0) [0|15] "" BCMAdp1
+ SG_ EscLatCtrlMod_UB : 32|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ EscSteerTqReq : 31|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" BCMAdp1
+ SG_ EscSteerTqReq_UB : 33|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ PtActrReModReq : 41|2@0+ (1,0) [0|3] "" BCMAdp1
+ SG_ PtActrReModReq_UB : 54|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ RcwmBrkActvd : 353|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ RcwmBrkActvd_UB : 352|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ SpdLimFrntMaxReq1_UB : 359|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ SpdLimFrntMaxReq1Chks : 224|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ SpdLimFrntMaxReq1Cntr : 232|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ SpdLimFrntMaxReq1SpdLimFrntMaxReq : 240|15@1+ (0.1,0.0) [0.0|3276.7000000000003] "rpm" BCMAdp1
+ SG_ SpdLimFrntMinReq1_UB : 358|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ SpdLimFrntMinReq1Chks : 256|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ SpdLimFrntMinReq1Cntr : 264|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ SpdLimFrntMinReq1SpdLimFrntMinReq : 272|15@1+ (0.1,0.0) [0.0|3276.7000000000003] "rpm" BCMAdp1
+ SG_ SpdLimReMaxReq1_UB : 357|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ SpdLimReMaxReq1Chks : 288|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ SpdLimReMaxReq1Cntr : 296|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ SpdLimReMaxReq1SpdLimReMaxReq : 304|15@1+ (0.1,0.0) [0.0|3276.7000000000003] "rpm" BCMAdp1
+ SG_ SpdLimReMinReq1_UB : 356|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ SpdLimReMinReq1Chks : 320|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ SpdLimReMinReq1Cntr : 328|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ SpdLimReMinReq1SpdLimReMinReq : 336|15@1+ (0.1,0.0) [0.0|3276.7000000000003] "rpm" BCMAdp1
+ SG_ SteerAngleRefFromRscSafe : 127|16@0- (0.001953,0.0) [-63.999810000000004|63.999810000000004] "Deg" BCMAdp1
+ SG_ SteerAngleRefFromRscSafe_UB : 53|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ TqDrgCtrlDegraded1_UB : 51|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ TqDrgCtrlDegraded1Chks : 56|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ TqDrgCtrlDegraded1Cntr : 64|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ TqDrgCtrlDegraded1TqDrgCtrlDegraded : 73|1@1+ (1,0) [0|1] "" BCMAdp1
+ SG_ TrlrStabyActv : 194|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ TrlrStabyActv_UB : 193|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ WhlAgVRawFrnt_UB : 471|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ WhlAgVRawFrntLe : 367|24@0+ (0.01,0.0) [0.0|167772.15] "rpm" BCMAdp1
+ SG_ WhlAgVRawFrntLeQf : 415|2@0+ (1,0) [0|3] "" BCMAdp1
+ SG_ WhlAgVRawFrntRi : 391|24@0+ (0.01,0.0) [0.0|167772.15] "rpm" BCMAdp1
+ SG_ WhlAgVRawFrntRiQf : 413|2@0+ (1,0) [0|3] "" BCMAdp1
+ SG_ WhlAgVRawRe_UB : 470|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ WhlAgVRawReLe : 423|24@0+ (0.01,0.0) [0.0|167772.15] "rpm" BCMAdp1
+ SG_ WhlAgVRawReLeQf : 411|2@0+ (1,0) [0|3] "" BCMAdp1
+ SG_ WhlAgVRawReRi : 447|24@0+ (0.01,0.0) [0.0|167772.15] "rpm" BCMAdp1
+ SG_ WhlAgVRawReRiQf : 409|2@0+ (1,0) [0|3] "" BCMAdp1
+ SG_ WhlBrkPEstimdMax : 119|8@0+ (1.0,0.0) [0.0|250.0] "bar" BCMAdp1
+ SG_ WhlBrkPEstimdMax_UB : 207|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ YawRateRefFromRscSafe : 143|16@0- (0.000244140625,0.0) [-6.0|6.0] "rad/s" BCMAdp1
+ SG_ YawRateRefFromRscSafe_UB : 52|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ YawRateReqdByDrvr : 215|16@0- (0.000244140625,0.0) [-5.0|5.0] "rad/s" BCMAdp1
+ SG_ YawRateReqdByDrvr_UB : 355|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ YawStabyCtrlActv : 49|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ YawStabyCtrlActv_UB : 48|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ YawTqStsSafeGroup1_UB : 192|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ YawTqStsSafeGroup1Chks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ YawTqStsSafeGroup1Cntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ YawTqStsSafeGroup1Sts : 16|2@1+ (1,0) [0|3] "" BCMAdp1
+
+BO_ 288 BcmaBcma1CANFrame02 : 64 BCMA
+ SG_ PbcIn_UB : 103|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ PbcInChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ PbcInCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ PbcInHostAvailabilityLeft : 86|2@1+ (1,0) [0|3] "" BCMAdp1
+ SG_ PbcInHostAvailabilityRight : 88|2@1+ (1,0) [0|3] "" BCMAdp1
+ SG_ PbcInMotorCurrentLeft : 16|16@1- (0.01,0.0) [0.0|50.0] "A" BCMAdp1
+ SG_ PbcInMotorCurrentRight : 32|16@1- (0.01,0.0) [0.0|50.0] "A" BCMAdp1
+ SG_ PbcInMotorDriverStateLeft : 80|3@1+ (1,0) [0|7] "" BCMAdp1
+ SG_ PbcInMotorDriverStateRight : 83|3@1+ (1,0) [0|7] "" BCMAdp1
+ SG_ PbcInMotorVoltageLeft : 48|16@1- (0.01,0.0) [-20.0|20.0] "Volt" BCMAdp1
+ SG_ PbcInMotorVoltageRight : 64|16@1- (0.01,0.0) [-20.0|20.0] "Volt" BCMAdp1
+ SG_ PbcInPowerSupplyState : 90|2@1+ (1,0) [0|3] "" BCMAdp1
+
+BO_ 320 BcmaBcma1CANFrame03 : 64 BCMA
+ SG_ BrkDegraded3_UB : 57|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ BrkDegraded3Chks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ BrkDegraded3Cntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ BrkDegraded3Sts : 16|16@1+ (1.0,0.0) [0.0|65535.0] "Unitless" BCMAdp1
+ SG_ BrkFldLeakPrim1_UB : 56|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ BrkFldLeakPrim1Chks : 32|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ BrkFldLeakPrim1Cntr : 40|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ BrkFldLeakPrim1Detd : 48|2@1+ (1,0) [0|3] "" BCMAdp1
+ SG_ BrkPadWearIndcn_UB : 102|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ BrkPadWearIndcnFrntAxle : 71|3@0+ (1,0) [0|7] "" BCMAdp1
+ SG_ BrkPadWearIndcnReAxle : 68|3@0+ (1,0) [0|7] "" BCMAdp1
+ SG_ EscCtrlIndcnSrc_UB : 103|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ EscCtrlIndcnSrcChks : 72|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMAdp1
+ SG_ EscCtrlIndcnSrcCntr : 80|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ EscCtrlIndcnSrcEscCtrlIndcnSrc : 88|3@1+ (1,0) [0|7] "" BCMAdp1
+ SG_ ObdSlave_UB : 58|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ ObdSlaveAbsMilReq : 59|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ ObdSlaveSlaveAlvCntr : 63|4@0+ (1.0,0.0) [0.0|15.0] "Unitless" BCMAdp1
+ SG_ WhlBrkOvrheatd : 101|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ WhlBrkOvrheatd_UB : 100|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ WhlBrkWrm : 65|1@0+ (1,0) [0|1] "" BCMAdp1
+ SG_ WhlBrkWrm_UB : 64|1@0+ (1,0) [0|1] "" BCMAdp1
+
+BO_ 1697 BcmaDiagRespCanFrame : 64 BCMA
+ SG_ BcmaUdsRespNPdu : 7|512@0+ (1,0) [0|0] "" BCMAdp1
+
+BO_ 2047 BcmaDpFuncReqCanFrame : 64 BCMAdp1
+ SG_ BcmaUdsToAllNPdu : 7|512@0+ (1,0) [0|0] "" BCMA
+
+BO_ 1953 BcmaDpToBcmaDiagReqCanFrame : 64 BCMAdp1
+ SG_ BcmaUdsReqNPdu : 7|512@0+ (1,0) [0|0] "" BCMA
+
+BO_ 272 Dp1Bcma1CANFrame01 : 64 BCMAdp1
+ SG_ BrkModMngt_UB : 40|1@0+ (1,0) [0|1] "" BCMA
+ SG_ BrkModMngtCarModStsForBrk : 64|4@1+ (1,0) [0|15] "" BCMA
+ SG_ BrkModMngtChks : 48|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ BrkModMngtCntr : 56|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ BrkModMngtUsgModStsForBrk : 68|4@1+ (1,0) [0|15] "" BCMA
+ SG_ FricEstimnFromVehDyn_UB : 96|1@0+ (1,0) [0|1] "" BCMA
+ SG_ FricEstimnFromVehDynFricEstimnFromVehDyn : 127|8@0+ (0.01,0.0) [0.0|2.0] "Unitless" BCMA
+ SG_ FricEstimnFromVehDynQly : 114|3@0+ (1,0) [0|7] "" BCMA
+ SG_ PrpsnTqFrntReq : 7|16@0- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMA
+ SG_ PrpsnTqFrntReq_UB : 135|1@0+ (1,0) [0|1] "" BCMA
+ SG_ PrpsnTqReReq : 23|16@0- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMA
+ SG_ PrpsnTqReReq_UB : 134|1@0+ (1,0) [0|1] "" BCMA
+ SG_ PtTqAtAxleAvlFrntMax : 95|13@0- (4.0,0.0) [-16384.0|16380.0] "NewtonMeter" BCMA
+ SG_ PtTqAtAxleAvlFrntMax_UB : 98|1@0+ (1,0) [0|1] "" BCMA
+ SG_ PtTqAtAxleAvlReMax : 111|13@0- (4.0,0.0) [-16384.0|16380.0] "NewtonMeter" BCMA
+ SG_ PtTqAtAxleAvlReMax_UB : 97|1@0+ (1,0) [0|1] "" BCMA
+ SG_ PtTqAtAxleAvlReMin : 39|13@0- (4.0,0.0) [-16384.0|16380.0] "NewtonMeter" BCMA
+ SG_ PtTqAtAxleAvlReMin_UB : 42|1@0+ (1,0) [0|1] "" BCMA
+ SG_ TiDrvgCycOff : 79|16@0+ (1.0,0.0) [0.0|65535.0] "Unitless" BCMA
+ SG_ TiDrvgCycOff_UB : 41|1@0+ (1,0) [0|1] "" BCMA
+
+BO_ 304 Dp1Bcma1CANFrame02 : 64 BCMAdp1
+ SG_ AdPrimBrkActvnGroupSafe1_UB : 5|1@0+ (1,0) [0|1] "" BCMA
+ SG_ AdPrimBrkActvnGroupSafe1ActvnReq : 280|1@1+ (1,0) [0|1] "" BCMA
+ SG_ AdPrimBrkActvnGroupSafe1Chks : 264|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ AdPrimBrkActvnGroupSafe1Cntr : 272|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ AdPrimBrkActvnGroupSafe1DeactvnReq : 281|1@1+ (1,0) [0|1] "" BCMA
+ SG_ AdPrimBrkActvnGroupSafe1LoSpdActvnReq : 282|1@1+ (1,0) [0|1] "" BCMA
+ SG_ AdPrimBrkActvnGroupSafe1LoSpdDeactvnReq : 283|1@1+ (1,0) [0|1] "" BCMA
+ SG_ BrkTqMinReq2_UB : 345|1@0+ (1,0) [0|1] "" BCMA
+ SG_ BrkTqMinReq2BrkActrCtrlModForMinTqReq : 380|2@1+ (1,0) [0|3] "" BCMA
+ SG_ BrkTqMinReq2BrkTqGrdtNegMinReq : 382|10@1+ (500.0,0.0) [0.0|511500.0] "Nm/s" BCMA
+ SG_ BrkTqMinReq2BrkTqGrdtPosMinReq : 392|10@1+ (500.0,0.0) [0.0|511500.0] "Nm/s" BCMA
+ SG_ BrkTqMinReq2BrkTqMinReq : 368|12@1+ (4.0,0.0) [0.0|16380.0] "Nm" BCMA
+ SG_ BrkTqMinReq2BrkTqMinReqChks : 352|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ BrkTqMinReq2BrkTqMinReqCntr : 360|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ CrsCtrlrSts : 421|3@0+ (1,0) [0|7] "" BCMA
+ SG_ CrsCtrlrSts_UB : 418|1@0+ (1,0) [0|1] "" BCMA
+ SG_ DrvrPrsntSts3_UB : 1|1@0+ (1,0) [0|1] "" BCMA
+ SG_ DrvrPrsntSts3DrvrPrsnt : 304|2@1+ (1,0) [0|3] "" BCMA
+ SG_ DrvrPrsntSts3DrvrPrsntChks : 288|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ DrvrPrsntSts3DrvrPrsntCntr : 296|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ DrvrPrsntSts3DrvrPrsntQf : 306|2@1+ (1,0) [0|3] "" BCMA
+ SG_ IMUProcessedData1_UB : 7|1@0+ (1,0) [0|1] "" BCMA
+ SG_ IMUProcessedData1Chks : 8|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ IMUProcessedData1Cntr : 16|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ IMUProcessedData1PitchRateComp : 24|16@1+ (0.000159791,-5.236031488) [-5.236031488|5.235871697] "rad/s" BCMA
+ SG_ IMUProcessedData1PitchRateCompQf : 120|3@1+ (1,0) [0|7] "" BCMA
+ SG_ IMUProcessedData1PitchRateDiff : 40|16@1+ (0.0005493164,-17.9999997952) [-17.9999997952|17.999450478800004] "rad/s^2" BCMA
+ SG_ IMUProcessedData1RollRateComp : 56|16@1+ (0.000159791,-5.236031488) [-5.236031488|5.235871697] "rad/s" BCMA
+ SG_ IMUProcessedData1RollRateCompQf : 123|3@1+ (1,0) [0|7] "" BCMA
+ SG_ IMUProcessedData1RollRateDiff : 72|16@1+ (0.0005493164,-17.9999997952) [-17.9999997952|17.999450478800004] "rad/s^2" BCMA
+ SG_ IMUProcessedData1YawRateComp : 88|16@1+ (0.000159791,-5.236031488) [-5.236031488|5.235871697] "rad/s" BCMA
+ SG_ IMUProcessedData1YawRateCompQf : 126|3@1+ (1,0) [0|7] "" BCMA
+ SG_ IMUProcessedData1YawRateDiff : 104|16@1+ (0.0005493164,-17.9999997952) [-17.9999997952|17.999450478800004] "rad/s^2" BCMA
+ SG_ IMURawData1_UB : 6|1@0+ (1,0) [0|1] "" BCMA
+ SG_ IMURawData1Chks : 136|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ IMURawData1Cntr : 144|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ IMURawData1LatAccRaw : 152|16@1+ (0.0015258789,-49.9999997952) [-49.9999997952|49.9984739163] "m/s^2" BCMA
+ SG_ IMURawData1LatAccRawQf : 248|2@1+ (1,0) [0|3] "" BCMA
+ SG_ IMURawData1LongAccRaw : 168|16@1+ (0.0015258789,-49.9999997952) [-49.9999997952|49.9984739163] "m/s^2" BCMA
+ SG_ IMURawData1LongAccRawQf : 250|2@1+ (1,0) [0|3] "" BCMA
+ SG_ IMURawData1PitchRateRaw : 184|16@1+ (0.000159791,-5.236031488) [-5.236031488|5.235871697] "rad/s" BCMA
+ SG_ IMURawData1PitchRateRawQf : 252|2@1+ (1,0) [0|3] "" BCMA
+ SG_ IMURawData1RollRateRaw : 200|16@1+ (0.000159791,-5.236031488) [-5.236031488|5.235871697] "rad/s" BCMA
+ SG_ IMURawData1RollRateRawQf : 254|2@1+ (1,0) [0|3] "" BCMA
+ SG_ IMURawData1VertAccRaw : 216|16@1+ (0.0015258789,-49.9999997952) [-49.9999997952|49.9984739163] "m/s^2" BCMA
+ SG_ IMURawData1VertAccRawQf : 256|2@1+ (1,0) [0|3] "" BCMA
+ SG_ IMURawData1YawRateRaw : 232|16@1+ (0.000159791,-5.236031488) [-5.236031488|5.235871697] "rad/s" BCMA
+ SG_ IMURawData1YawRateRawQf : 258|2@1+ (1,0) [0|3] "" BCMA
+ SG_ ParkByDrvrWhlsFrnt : 3|1@0+ (1,0) [0|1] "" BCMA
+ SG_ ParkByDrvrWhlsFrnt_UB : 2|1@0+ (1,0) [0|1] "" BCMA
+ SG_ ParkByDrvrWhlsFrntSafe1_UB : 0|1@0+ (1,0) [0|1] "" BCMA
+ SG_ ParkByDrvrWhlsFrntSafe1Chks : 312|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ ParkByDrvrWhlsFrntSafe1Cntr : 320|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ ParkByDrvrWhlsFrntSafe1Sts : 329|1@1+ (1,0) [0|1] "" BCMA
+ SG_ ParkCtrl : 417|2@0+ (1,0) [0|3] "" BCMA
+ SG_ ParkCtrl_UB : 431|1@0+ (1,0) [0|1] "" BCMA
+ SG_ SpdTarForHillDwnCtrl : 415|10@0+ (0.1,0.0) [0.0|100.0] "Km/h" BCMA
+ SG_ SpdTarForHillDwnCtrl_UB : 344|1@0+ (1,0) [0|1] "" BCMA
+ SG_ SteerWhlTqAddlWdSteerWhlTqAddl : 343|14@0- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" BCMA
+ SG_ SteerWhlTqAddlWdSteerWhlTqAddl_UB : 4|1@0+ (1,0) [0|1] "" BCMA
+
+BO_ 336 Dp1Bcma1CANFrame03 : 64 BCMAdp1
+ SG_ EmAntiSpinCtrl_UB : 72|1@0+ (1,0) [0|1] "" BCMA
+ SG_ EmAntiSpinCtrlKdPid : 39|8@0+ (0.0002,0.0) [0.0|0.051000000000000004] "Unitless" BCMA
+ SG_ EmAntiSpinCtrlKiPid : 47|8@0+ (0.0002,0.0) [0.0|0.051000000000000004] "Unitless" BCMA
+ SG_ EmAntiSpinCtrlKpPid : 79|6@0+ (0.01,0.0) [0.0|0.63] "Unitless" BCMA
+ SG_ EmAntiSpinCtrlNRateLimGain : 55|8@0+ (0.0002,0.0) [0.0|0.051000000000000004] "Unitless" BCMA
+ SG_ EmAntiSpinCtrlNRateLimMax : 63|8@0+ (150.0,0.0) [0.0|38250.0] "RpmPerSec" BCMA
+ SG_ EmAntiSpinCtrlNRateLimMin : 71|8@0+ (150.0,-38250.0) [-38250.0|0.0] "RpmPerSec" BCMA
+ SG_ EmAntiSpinCtrlNRateLimModReq : 73|1@0+ (1,0) [0|1] "" BCMA
+ SG_ EmAntiSpinNLim_UB : 214|1@0+ (1,0) [0|1] "" BCMA
+ SG_ EmAntiSpinNLimMax : 191|12@0+ (10.0,-16000.0) [-16000.0|16000.0] "rpm" BCMA
+ SG_ EmAntiSpinNLimMin : 195|12@0+ (10.0,-16000.0) [-16000.0|16000.0] "rpm" BCMA
+ SG_ EmAntiSpinNLimModReq : 215|1@0+ (1,0) [0|1] "" BCMA
+ SG_ EmModSts : 213|3@0+ (1,0) [0|7] "" BCMA
+ SG_ EmModSts_UB : 210|1@0+ (1,0) [0|1] "" BCMA
+ SG_ PtTqAtWhlFrntAct_UB : 132|1@0+ (1,0) [0|1] "" BCMA
+ SG_ PtTqAtWhlFrntActPtTqAtAxleFrntAct : 87|16@0- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMA
+ SG_ PtTqAtWhlFrntActPtTqAtWhlFrntLeAct : 103|16@0- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMA
+ SG_ PtTqAtWhlFrntActPtTqAtWhlFrntRiAct : 119|16@0- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMA
+ SG_ PtTqAtWhlFrntActPtTqAtWhlsFrntQly : 135|3@0+ (1,0) [0|7] "" BCMA
+ SG_ PtTqAtWhlReAct_UB : 131|1@0+ (1,0) [0|1] "" BCMA
+ SG_ PtTqAtWhlReActPtTqAtAxleReAct : 143|16@0- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMA
+ SG_ PtTqAtWhlReActPtTqAtWhlReLeAct : 159|16@0- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMA
+ SG_ PtTqAtWhlReActPtTqAtWhlReRiAct : 175|16@0- (1.0,0.0) [-20000.0|20000.0] "NewtonMeter" BCMA
+ SG_ PtTqAtWhlReActPtTqAtWhlsReQly : 130|3@0+ (1,0) [0|7] "" BCMA
+ SG_ TqVectAvlMax_UB : 209|1@0+ (1,0) [0|1] "" BCMA
+ SG_ TqVectAvlMaxChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ TqVectAvlMaxCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ TqVectAvlMaxTqVectAvlMax : 16|12@1+ (1.0,0.0) [0.0|4095.0] "NewtonMeter" BCMA
+
+BO_ 400 Dp1Bcma1CANSporadicFrame01 : 64 BCMAdp1
+ SG_ BrkVehCfg_UB : 135|1@0+ (1,0) [0|1] "" BCMA
+ SG_ BrkVehCfgBlk1 : 7|32@0+ (1.0,0.0) [0.0|4294967295.0] "Unitless" BCMA
+ SG_ BrkVehCfgBlk2 : 39|32@0+ (1.0,0.0) [0.0|4294967295.0] "Unitless" BCMA
+ SG_ JID_UB : 134|1@0+ (1,0) [0|1] "" BCMA
+ SG_ JIDByte0 : 71|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ JIDByte1 : 79|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ JIDByte2 : 87|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ JIDByte3 : 95|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ JIDByte4 : 103|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ JIDByte5 : 111|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ JIDByte6 : 119|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ JIDByte7 : 127|8@0+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+
+BO_ 368 Dp1HIBBcma1CANFrame01 : 64 BCMAdp1HIB
+ SG_ BrkTqReqdCtrlr_UB : 260|1@0+ (1,0) [0|1] "" BCMA
+ SG_ BrkTqReqdCtrlrBrkTqReqdCtrlr : 168|2@1+ (1,0) [0|3] "" BCMA
+ SG_ BrkTqReqdCtrlrChks : 152|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ BrkTqReqdCtrlrCntr : 160|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ BrkTqReqSafe_UB : 262|1@0+ (1,0) [0|1] "" BCMA
+ SG_ BrkTqReqSafeBrkTqReqSafe : 72|16@1- (1.0,0.0) [-32768.0|32767.0] "NewtonMeter" BCMA
+ SG_ BrkTqReqSafeChks : 56|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ BrkTqReqSafeCntr : 64|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ BrkTqReqSafeQf : 88|3@1+ (1,0) [0|7] "" BCMA
+ SG_ LocalStopEnaReq_UB : 259|1@0+ (1,0) [0|1] "" BCMA
+ SG_ LocalStopEnaReqChks : 176|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ LocalStopEnaReqCntr : 184|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ LocalStopEnaReqLocalStopEnaReq : 192|1@1+ (1,0) [0|1] "" BCMA
+ SG_ SteerWhlSnsrSafe2_UB : 263|1@0+ (1,0) [0|1] "" BCMA
+ SG_ SteerWhlSnsrSafe2SteerWhlAg : 16|15@1- (0.0009765625,0.0) [-14.5|14.5] "rad" BCMA
+ SG_ SteerWhlSnsrSafe2SteerWhlAgSpd : 32|14@1- (0.0078125,0.0) [-50.0|50.0] "rad/s" BCMA
+ SG_ SteerWhlSnsrSafe2SteerWhlSnsrChks : 0|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ SteerWhlSnsrSafe2SteerWhlSnsrCntr : 8|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ SteerWhlSnsrSafe2SteerWhlSnsrQf : 48|2@1+ (1,0) [0|3] "" BCMA
+ SG_ SteerWhlTq1_UB : 261|1@0+ (1,0) [0|1] "" BCMA
+ SG_ SteerWhlTq1Chks : 96|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ SteerWhlTq1Cntr : 104|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ SteerWhlTq1Qf : 126|2@1+ (1,0) [0|3] "" BCMA
+ SG_ SteerWhlTq1SteerWhlTq : 112|14@1- (0.00390625,0.0) [-30.0|30.0] "NewtonMeter" BCMA
+ SG_ VcuBrkLiGrp_UB : 258|1@0+ (1,0) [0|1] "" BCMA
+ SG_ VcuBrkLiGrpVcuBrkLiChks : 128|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ VcuBrkLiGrpVcuBrkLiCntr : 136|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ VcuBrkLiGrpVcuBrkLiReq : 144|2@1+ (1,0) [0|3] "" BCMA
+ SG_ WhlMotAxleAgrSpd_UB : 257|1@0+ (1,0) [0|1] "" BCMA
+ SG_ WhlMotAxleAgrSpdChks : 200|8@1+ (1.0,0.0) [0.0|255.0] "Unitless" BCMA
+ SG_ WhlMotAxleAgrSpdCntr : 208|4@1+ (1.0,0.0) [0.0|15.0] "Unitless" BCMA
+ SG_ WhlMotAxleAgrSpdFrntAxle : 216|16@1- (0.0078125,0.0) [-256.0|255.0] "rad/s" BCMA
+ SG_ WhlMotAxleAgrSpdQFFrnt : 248|2@1+ (1,0) [0|3] "" BCMA
+ SG_ WhlMotAxleAgrSpdQFRear : 250|2@1+ (1,0) [0|3] "" BCMA
+ SG_ WhlMotAxleAgrSpdReAxle : 232|16@1- (0.0078125,0.0) [-256.0|255.0] "rad/s" BCMA
+
+BO_ 1284 Dp1NmCanFrame : 8 BCMAdp1
+ SG_ NM_PNI_BCMAdp1 : 14|1@0+ (1,0) [0|0] "" BCMA
+ SG_ NM_AW_BCMAdp1 : 12|1@0+ (1,0) [0|0] "" BCMA
+ SG_ NM_CS_BCMAdp1 : 11|1@0+ (1,0) [0|0] "" BCMA
+ SG_ NM_RMR_BCMAdp1 : 8|1@0+ (1,0) [0|0] "" BCMA
+ SG_ NM_NodeID_BCMAdp1 : 7|8@0+ (1,0) [0|0] "" BCMA
+
+
+// Node Comments
+CM_ BU_ BCMA "Brake Control Module A";
+CM_ BU_ BCMAdp1 "Device Proxy 1 for Brake Control Module A";
+CM_ BU_ BCMAdp1HIA "HI Device Proxy 1 for Brake Control Module A";
+CM_ BU_ BCMAdp1HIB "HI Device Proxy 2 for Brake Control Module A";
+
+// Signal Comments
+CM_ SG_ 257 ActvBrkFctIdGrpActvBrkFctId "The arbitrated braking function which is active at the vehicle level";
+CM_ SG_ 257 ActvBrkFctIdGrpActvBrkFctIdChks "Checksum";
+CM_ SG_ 257 ActvBrkFctIdGrpActvBrkFctIdCntr "Counter";
+CM_ SG_ 257 BrkPedlPsd3BrkPedlNotPsdSafe "Brake pedal not pressed with ASIL C integrity";
+CM_ SG_ 257 BrkPedlPsd3BrkPedlPsd "Brake pedal pressed with ASIL B integrity";
+CM_ SG_ 257 BrkPedlPsd3BrkPedlPsdChks "Checksum for brake pedal pressed information";
+CM_ SG_ 257 BrkPedlPsd3BrkPedlPsdCntr "Counter value for brake pedal pressed information";
+CM_ SG_ 257 BrkPedlPsd3BrkPedlPsdQf "Qf for brake pedal pressed ASIL B signal";
+CM_ SG_ 257 BrkTracCtrlActv "Indicates  'InCtrl' if brake traction control (TC) is active on at least one wheel.";
+CM_ SG_ 257 BrkTracCtrlActvForWhlFrntLe "Brake traction control intervention is active on wheel.
+";
+CM_ SG_ 257 BrkTracCtrlActvForWhlFrntRi "Brake traction control intervention is active on wheel.";
+CM_ SG_ 257 BrkTracCtrlActvForWhlReLe "Brake traction control intervention is active on wheel.";
+CM_ SG_ 257 BrkTracCtrlActvForWhlReRi "Brake traction control intervention is active on wheel.";
+CM_ SG_ 257 EngTracCtrlActvFrntMax "Engine traction control intervention is active on front axle.";
+CM_ SG_ 257 EngTracCtrlActvFrntMin "Engine traction control intervention is active on front axle.";
+CM_ SG_ 257 EngTracCtrlActvReMax "Engine traction control intervention is active on rear axle.";
+CM_ SG_ 257 EngTracCtrlActvReMin "Engine traction control intervention is active on rear axle.";
+CM_ SG_ 257 FailSafeFlgOTRGrpChks "Checksum";
+CM_ SG_ 257 FailSafeFlgOTRGrpCntr "Counter";
+CM_ SG_ 257 FailSafeFlgOTRGrpFailSafeFlgOTR "Fail safe flag for OTR concept";
+CM_ SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddFrntReq "Additive torque request for front axle";
+CM_ SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReqChks "Checksum";
+CM_ SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReqCntr "Counter";
+CM_ SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReReq "Additive torque request for rear axle";
+CM_ SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReq "Minimum allowed powertrain applied torque on the front axle";
+CM_ SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqChks "Checksum";
+CM_ SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqCntr "Counter";
+CM_ SG_ 257 PtTqAtAxleReMinReqChks "Checksum";
+CM_ SG_ 257 PtTqAtAxleReMinReqCntr "Counter";
+CM_ SG_ 257 PtTqAtAxleReMinReqPtTqAtAxleReMinReq "Minimum allowed powertrain applied torque on the rear axle";
+CM_ SG_ 257 RscCtrlActvAtWhlFrntLe "RSC pressure request wins arbitration on specified wheel.";
+CM_ SG_ 257 RscCtrlActvAtWhlFrntRi "RSC pressure request wins arbitration on specified wheel.";
+CM_ SG_ 257 RscCtrlActvAtWhlReLe "RSC pressure request wins arbitration on specified wheel.";
+CM_ SG_ 257 RscCtrlActvAtWhlReRi "RSC pressure request wins arbitration on specified wheel.";
+CM_ SG_ 257 TqVect2Chks "Checksum";
+CM_ SG_ 257 TqVect2Cntr "Counter";
+CM_ SG_ 257 TqVect2DeltaLe "Wheel Delta Torque Left";
+CM_ SG_ 257 TqVect2DeltaRi "Wheel Delta Torque Right";
+CM_ SG_ 257 TqVect2TqVectOvrLckReq "Torque request for Yaw damping";
+CM_ SG_ 257 WhlBrkRotorTFrntLe "Wheel brake rotor (disc) temperature front left";
+CM_ SG_ 257 WhlBrkRotorTFrntRi "Wheel brake rotor (disc) temperature front right";
+CM_ SG_ 257 WhlBrkRotorTReLe "Wheel brake rotor (disc) temperature rear left";
+CM_ SG_ 257 WhlBrkRotorTReRi "Wheel brake rotor (disc) temperature rear right";
+CM_ SG_ 273 AbsCtrlActvForWhlSafe2Chks "Checksum";
+CM_ SG_ 273 AbsCtrlActvForWhlSafe2Cntr "Counter";
+CM_ SG_ 273 AbsCtrlActvForWhlSafe2FrntLe "ABS control is active on wheel";
+CM_ SG_ 273 AbsCtrlActvForWhlSafe2FrntRi "ABS control is active on wheel";
+CM_ SG_ 273 AbsCtrlActvForWhlSafe2Qf "Quality Flag";
+CM_ SG_ 273 AbsCtrlActvForWhlSafe2ReLe "ABS control is active on wheel";
+CM_ SG_ 273 AbsCtrlActvForWhlSafe2ReRi "ABS control is active on wheel";
+CM_ SG_ 273 BrkFricTqAtVehActBrkFricTqAtVehAct "Actual frictional brake torque at Vehicle";
+CM_ SG_ 273 BrkFricTqAtVehActChks "Checksum";
+CM_ SG_ 273 BrkFricTqAtVehActCntr "Counter";
+CM_ SG_ 273 BrkFricTqAtVehActStabyCtrlActvAtVeh "Information about any stability function active at vehicle";
+CM_ SG_ 273 BrkSysRespBrkDegradedSt "Brake system functional degradation state for performing the brake";
+CM_ SG_ 273 BrkSysRespBrkSysDegradedSts "Informs about the degradation status of the Brake system";
+CM_ SG_ 273 BrkSysRespBrkTqReqAvl "Informs about the number of Brake torque request received valid";
+CM_ SG_ 273 BrkSysRespBrkTqReqInCtrl "Informs about brake torque request (Primary or Redundant) which is in control";
+CM_ SG_ 273 BrkSysRespChks "Checksum";
+CM_ SG_ 273 BrkSysRespCntr "Counter";
+CM_ SG_ 273 BrkSysRespLocalStopEnad "Local safe stop enabled in the Brake system";
+CM_ SG_ 256 AbsCtrlActv "Anti Blocking Systems (ABS) control is active (at least one wheel)
+0 = No wheel is in Anti Blocking Systems (ABS) control
+1 = At least one wheel is in Anti Blocking Systems (ABS) control";
+CM_ SG_ 256 AbsCtrlActvForWhlFrntLe "Antilock braking system (ABS) control is active on wheel.";
+CM_ SG_ 256 AbsCtrlActvForWhlFrntRi "Antilock braking system (ABS) control is active on wheel.";
+CM_ SG_ 256 AbsCtrlActvForWhlReLe "Antilock braking system (ABS) control is active on wheel.";
+CM_ SG_ 256 AbsCtrlActvForWhlReRi "Antilock braking system (ABS) control is active on wheel.";
+CM_ SG_ 256 AxleSlipRelAct "Wheel slip difference between front and rear axle. Slip difference = front slip - rear slip (independent of vehicle direction which needs to be considered by subscriber). Compensated for variation of tire radius
+";
+CM_ SG_ 256 BrkFDistbnElectcAct "EBD (Electronic brake force distribution) active flag";
+CM_ SG_ 256 BrkTqAtWhlsReq "Contains driver requested brake torque and driver support system requested brake torque. The signal is always positive and acts in opposite vehicle motion direction.";
+CM_ SG_ 256 EscDamprReq "Request from brake system to change damper settings during braking or handling.
+0='NoRequest'
+1='DamprChartcForHndlg'	Damping for RSC performance (increase damping on all four wheels)
+2='DamprChartcForBrkTrig'	Damping for pitch velocity mitigation (early phase of panic brake)
+3='DamprChartcForBrkGrip'	Optimal grip (ABS active - late phase of panic brake)";
+CM_ SG_ 256 EscLatCtrlMod "Arbitrated lateral control mode for steering wheel torque request made by ESC functions DSR or ASC.";
+CM_ SG_ 256 EscSteerTqReq "Arbitrated steering wheel torque request made by ESC functions DSR or ASC.";
+CM_ SG_ 256 PtActrReModReq "Powertrain actuator mode request.
+0=No request
+1=Disable active damping
+2=Reduce actuator inertia
+3=Reduce actuator inertia and disable active damping";
+CM_ SG_ 256 RcwmBrkActvd "RCWM brake actuation is activated.";
+CM_ SG_ 256 SpdLimFrntMaxReq1Chks "Checksum";
+CM_ SG_ 256 SpdLimFrntMaxReq1Cntr "Counter";
+CM_ SG_ 256 SpdLimFrntMaxReq1SpdLimFrntMaxReq "Requested maximum wheel RPM for front motor";
+CM_ SG_ 256 SpdLimFrntMinReq1Chks "Checksum.";
+CM_ SG_ 256 SpdLimFrntMinReq1Cntr "Counter";
+CM_ SG_ 256 SpdLimFrntMinReq1SpdLimFrntMinReq "Requested minimum wheel RPM for front motor";
+CM_ SG_ 256 SpdLimReMaxReq1Chks "Checksum";
+CM_ SG_ 256 SpdLimReMaxReq1Cntr "Counter";
+CM_ SG_ 256 SpdLimReMaxReq1SpdLimReMaxReq "Requested maximum wheel RPM for rear motor";
+CM_ SG_ 256 SpdLimReMinReq1Chks "Checksum";
+CM_ SG_ 256 SpdLimReMinReq1Cntr "Counter";
+CM_ SG_ 256 SpdLimReMinReq1SpdLimReMinReq "Requested minimum wheel RPM for rear motor";
+CM_ SG_ 256 TqDrgCtrlDegraded1Chks "Checksum";
+CM_ SG_ 256 TqDrgCtrlDegraded1Cntr "Counter";
+CM_ SG_ 256 TqDrgCtrlDegraded1TqDrgCtrlDegraded "Drag Torqe Control Degraded";
+CM_ SG_ 256 TrlrStabyActv "Trailer stability assist (TSA) control active.";
+CM_ SG_ 256 WhlAgVRawFrntLe "Unfiltered front left wheel rotational speed.";
+CM_ SG_ 256 WhlAgVRawFrntLeQf "Unfiltered front left wheel rotational speed quality factor.";
+CM_ SG_ 256 WhlAgVRawFrntRi "Unfiltered front right wheel rotational speed.";
+CM_ SG_ 256 WhlAgVRawFrntRiQf "Unfiltered front right wheel rotational speed quality factor";
+CM_ SG_ 256 WhlAgVRawReLe "Unfiltered rear left wheel rotational speed.";
+CM_ SG_ 256 WhlAgVRawReLeQf "Unfiltered rear left wheel rotational speed quality factor";
+CM_ SG_ 256 WhlAgVRawReRi "Unfiltered rear right wheel rotational speed.";
+CM_ SG_ 256 WhlAgVRawReRiQf "Unfiltered rear right wheel rotational speed quality factor.";
+CM_ SG_ 256 WhlBrkPEstimdMax "Maximum of the estimated wheel pressures";
+CM_ SG_ 256 YawRateReqdByDrvr "When the vehicle is making a left turn this signal is supposed to show positive numbers. Unfiltered and offset compensated plausibility check";
+CM_ SG_ 256 YawStabyCtrlActv "Indicates  'InCtrl' if AYC or RSC or ASC is requesting wheel torque for control of vehicle yaw movement.";
+CM_ SG_ 256 YawTqStsSafeGroup1Chks "Checksum";
+CM_ SG_ 256 YawTqStsSafeGroup1Cntr "Counter";
+CM_ SG_ 256 YawTqStsSafeGroup1Sts "Status of Yaw Torque function (lateral brake torque performance)";
+CM_ SG_ 288 PbcInChks "Checksum";
+CM_ SG_ 288 PbcInCntr "Counter";
+CM_ SG_ 288 PbcInHostAvailabilityLeft "Transmitting the current availability of the electric supply lines of the HOST for the respective side. This signal gives feedback about which basic functionality of the EPB hardware driver control is still available.";
+CM_ SG_ 288 PbcInHostAvailabilityRight "Transmitting the current availability of the electric supply lines of the HOST for the respective side. This signal gives feedback about which basic functionality of the EPB hardware driver control is still available.";
+CM_ SG_ 288 PbcInMotorCurrentLeft "Transmitting the currently measured motor current of the parking brake actuator upon activation of the parking brake actuators";
+CM_ SG_ 288 PbcInMotorCurrentRight "Transmitting the currently measured motor current of the parking brake actuator upon activation of the parking brake actuators.";
+CM_ SG_ 288 PbcInMotorDriverStateLeft "Transmitting the switching state of the EPB hardware driver control currently being executed";
+CM_ SG_ 288 PbcInMotorDriverStateRight "Transmitting the switching state of the EPB hardware driver control currently being executed";
+CM_ SG_ 288 PbcInMotorVoltageLeft "Transmitting the currently measured voltage of the parking brake actuators at the motor terminals of the ECU";
+CM_ SG_ 288 PbcInMotorVoltageRight "Transmitting the currently measured voltage of the parking brake actuators at the motor terminals of the ECU";
+CM_ SG_ 288 PbcInPowerSupplyState "Transmitting the current power supply state to the PBC";
+CM_ SG_ 320 BrkDegraded3Chks "Checksum";
+CM_ SG_ 320 BrkDegraded3Cntr "Counter";
+CM_ SG_ 320 BrkDegraded3Sts "Brake degraded status";
+CM_ SG_ 320 BrkFldLeakPrim1Chks "Checksum";
+CM_ SG_ 320 BrkFldLeakPrim1Cntr "Counter";
+CM_ SG_ 320 BrkFldLeakPrim1Detd "Indicate a low level of BFLS in mkc1";
+CM_ SG_ 320 BrkPadWearIndcnFrntAxle "Front brake pad wear indication";
+CM_ SG_ 320 BrkPadWearIndcnReAxle "Rear brake pad wear indication";
+CM_ SG_ 320 EscCtrlIndcnSrcChks "Checksum";
+CM_ SG_ 320 EscCtrlIndcnSrcCntr "Counter";
+CM_ SG_ 320 EscCtrlIndcnSrcEscCtrlIndcnSrc "ESC control indication source information";
+CM_ SG_ 320 ObdSlaveAbsMilReq "BCMA request to light up MIL";
+CM_ SG_ 320 ObdSlaveSlaveAlvCntr "Slave Alive counter";
+CM_ SG_ 320 WhlBrkOvrheatd "Wheel brake overheating Indication that at least one wheel brake (caliper, disc, pad) temperature is high.";
+CM_ SG_ 320 WhlBrkWrm "Indication of warm brakes. Reduced brake capacity depending on brake system HW.";
+CM_ SG_ 272 BrkModMngtCarModStsForBrk "Local car mode signal for BCMA";
+CM_ SG_ 272 BrkModMngtUsgModStsForBrk "Local usage mode signal for BCMA";
+CM_ SG_ 272 FricEstimnFromVehDynFricEstimnFromVehDyn "Momentary friction estimate.";
+CM_ SG_ 272 FricEstimnFromVehDynQly "Quality of momentary friction estimate.";
+CM_ SG_ 272 PrpsnTqFrntReq "Propulsion wheel torque request at front wheel axle. This request is arbitrated from driver request and autonomous driving functions (CC, ACC, etc) requests. The torque includes effects from auxiliary loads, transmissions, etc.";
+CM_ SG_ 272 PrpsnTqReReq "Propulsion wheel torque request at rear wheel axle. This request is arbitrated from driver request and autonomous driving functions (CC, ACC, etc) requests. The torque includes effects from auxiliary loads, transmission, etc.";
+CM_ SG_ 272 PtTqAtAxleAvlFrntMax "Available propulsion maximum torque at front wheel axle, mean value of right and left wheels. Sign definition: A positive torque will accelerate the vehicle in the driver desired direction. 
+";
+CM_ SG_ 272 PtTqAtAxleAvlReMax "Available propulsion maximum torque at rear wheel axle, mean value of right and left wheels. Sign definition: A positive torque will accelerate the vehicle in the driver desired direction. 
+";
+CM_ SG_ 272 PtTqAtAxleAvlReMin "Available propulsion minimum torque at rear wheel axle, mean value of right and left wheels. Sign definition: A positive torque will accelerate the vehicle in the driver desired direction. ";
+CM_ SG_ 272 TiDrvgCycOff "The value of this signal is unlinear as the square root (Sqrt) since it is used to describe physical processes that are most important shortly after the start and less important after a long time has passed since start. 
+For the brake soak time the formula is described in REQPROD: 349980.";
+CM_ SG_ 304 AdPrimBrkActvnGroupSafe1ActvnReq "Activation request of local AD mode in primary brake from VDM to BC.";
+CM_ SG_ 304 AdPrimBrkActvnGroupSafe1Chks "Checksum for E2E.";
+CM_ SG_ 304 AdPrimBrkActvnGroupSafe1Cntr "Counter for E2E.";
+CM_ SG_ 304 AdPrimBrkActvnGroupSafe1DeactvnReq "Deactivation request of local AD mode in primary brake from VDM to BC.";
+CM_ SG_ 304 AdPrimBrkActvnGroupSafe1LoSpdActvnReq "Low Speed Activation request of local AD mode in primary brake from VDM to BC.";
+CM_ SG_ 304 AdPrimBrkActvnGroupSafe1LoSpdDeactvnReq "Low Speed Deactivation request of local AD mode in primary brake from VDM to BC.";
+CM_ SG_ 304 BrkTqMinReq2BrkActrCtrlModForMinTqReq "Brake actuator mode for brake torque actuation";
+CM_ SG_ 304 BrkTqMinReq2BrkTqGrdtNegMinReq "Allowed negative brake torque gradient";
+CM_ SG_ 304 BrkTqMinReq2BrkTqGrdtPosMinReq "Allowed positive brake torque gradient";
+CM_ SG_ 304 BrkTqMinReq2BrkTqMinReq "Minimum vehicle brake torque request";
+CM_ SG_ 304 BrkTqMinReq2BrkTqMinReqChks "Checksum";
+CM_ SG_ 304 BrkTqMinReq2BrkTqMinReqCntr "Counter";
+CM_ SG_ 304 CrsCtrlrSts "The signal indicates the status (or state) of the Cruise Controller; Off, Standby, Actv etc.";
+CM_ SG_ 304 DrvrPrsntSts3DrvrPrsnt "Driver Present";
+CM_ SG_ 304 DrvrPrsntSts3DrvrPrsntChks "Driver Present checksum";
+CM_ SG_ 304 DrvrPrsntSts3DrvrPrsntCntr "Driver Present counter";
+CM_ SG_ 304 DrvrPrsntSts3DrvrPrsntQf "Driver Present quality factor";
+CM_ SG_ 304 IMUProcessedData1Chks "Checksum";
+CM_ SG_ 304 IMUProcessedData1Cntr "Counter";
+CM_ SG_ 304 IMURawData1Chks "Checksum";
+CM_ SG_ 304 IMURawData1Cntr "Counter";
+CM_ SG_ 304 IMURawData1LatAccRaw "IMU Lateral Acceleration Raw Data ";
+CM_ SG_ 304 IMURawData1PitchRateRawQf "IMU Pitch Rate Raw Quality Factor";
+CM_ SG_ 304 IMURawData1RollRateRaw "IMU Roll Rate Raw Data";
+CM_ SG_ 304 IMURawData1RollRateRawQf "IMU Roll Rate Raw Quality Factor";
+CM_ SG_ 304 IMURawData1VertAccRaw "IMU Vertical Acceleration Raw Data";
+CM_ SG_ 304 IMURawData1VertAccRawQf "IMU Vertical Acceleration Raw Quality Factor";
+CM_ SG_ 304 IMURawData1YawRateRaw "IMU Yaw Rate Raw Data";
+CM_ SG_ 304 IMURawData1YawRateRawQf "IMU Yaw Rate Raw Quality Factor";
+CM_ SG_ 304 ParkByDrvrWhlsFrnt "ParkByDrvrWhlsFrnt reflects whether the front axle has successfully been placed in a state where roll-away is not mechanically possible.
+
+The information is created using feedback from the blocking mechanism (e.g. the transmission on AT vehicles) and will be set only when such feedback has been correctly received.
+
+Note: MT vehicles conventionally have no means of locking the front axle and hence will never set this information TRUE.
+";
+CM_ SG_ 304 SpdTarForHillDwnCtrl "Target speed for low speed control functionality. E.g HDC";
+CM_ SG_ 304 SteerWhlTqAddlWdSteerWhlTqAddl "Overlay torque from external requests";
+CM_ SG_ 336 EmAntiSpinCtrlKdPid "Derivative gain factor calibrator for EM speed controller";
+CM_ SG_ 336 EmAntiSpinCtrlKiPid "Integral gain factor calibrator for EM speed controller";
+CM_ SG_ 336 EmAntiSpinCtrlKpPid "Proportional gain factor calibrator for EM speed controller";
+CM_ SG_ 336 EmAntiSpinCtrlNRateLimGain "Gain factor applied to rate limiter for anti-spin control of Electric Machine";
+CM_ SG_ 336 EmAntiSpinCtrlNRateLimMax "Max rate of EM speed change (accelerating)";
+CM_ SG_ 336 EmAntiSpinCtrlNRateLimMin "Max rate of EM speed change (decelerating)";
+CM_ SG_ 336 EmAntiSpinCtrlNRateLimModReq "Request to enable rate limitation (gradient)";
+CM_ SG_ 336 EmAntiSpinNLimMax "Maximum EM speed for anti-spin wheel slip control";
+CM_ SG_ 336 EmAntiSpinNLimMin "Minumum EM speed for anti-spin wheel slip control";
+CM_ SG_ 336 EmAntiSpinNLimModReq "Request to activate speed limitation during anti-spin events";
+CM_ SG_ 336 EmModSts "Actual operating mode status of the Electric Machine (EM) drive system";
+CM_ SG_ 336 PtTqAtWhlFrntActPtTqAtAxleFrntAct "Actual torque on front axle. Not compensated for inertia, exception open converter.";
+CM_ SG_ 336 PtTqAtWhlFrntActPtTqAtWhlFrntLeAct "Actual torque on front left wheel. Compensated for inertia.";
+CM_ SG_ 336 PtTqAtWhlFrntActPtTqAtWhlFrntRiAct "Actual torque on front right wheel. Compensated for inertia.";
+CM_ SG_ 336 PtTqAtWhlFrntActPtTqAtWhlsFrntQly "Quality for estimated front axle and wheel torque";
+CM_ SG_ 336 PtTqAtWhlReActPtTqAtAxleReAct "Actual torque on rear axle. Not compensated for inertia.";
+CM_ SG_ 336 PtTqAtWhlReActPtTqAtWhlReLeAct "Actual torque on rear left wheel. Compensated for inertia.";
+CM_ SG_ 336 PtTqAtWhlReActPtTqAtWhlReRiAct "Actual torque on rear right wheel. Compensated for inertia.";
+CM_ SG_ 336 PtTqAtWhlReActPtTqAtWhlsReQly "Quality for estimated rear axle and wheel torque";
+CM_ SG_ 336 TqVectAvlMaxChks "Checksum";
+CM_ SG_ 336 TqVectAvlMaxCntr "Counter";
+CM_ SG_ 336 TqVectAvlMaxTqVectAvlMax "Torque Vectoring clutch capacity";
+CM_ SG_ 400 BrkVehCfgBlk1 "information for Vehicle Type, Transmition Driveline Type, Brake Pads, Wheel Brakes Type Front, Wheels Brakes Type Rear, Propulsion Type, Roll Control and Levelling Control";
+CM_ SG_ 400 BrkVehCfgBlk2 "information for Front Axle Weight, Rear Axle Weight and Damping Control";
+CM_ SG_ 400 JIDByte0 "Byte0";
+CM_ SG_ 400 JIDByte1 "Byte1";
+CM_ SG_ 400 JIDByte2 "Byte2";
+CM_ SG_ 400 JIDByte3 "Byte3";
+CM_ SG_ 400 JIDByte4 "Byte4";
+CM_ SG_ 400 JIDByte5 "Byte5";
+CM_ SG_ 400 JIDByte6 "Byte6";
+CM_ SG_ 400 JIDByte7 "Byte7";
+CM_ SG_ 368 BrkTqReqdCtrlrBrkTqReqdCtrlr "The brake torque request which is to be actuated in Brake system, Redundant channel";
+CM_ SG_ 368 BrkTqReqdCtrlrChks "Checksum";
+CM_ SG_ 368 BrkTqReqdCtrlrCntr "Counter";
+CM_ SG_ 368 BrkTqReqSafeBrkTqReqSafe "Requested brake torque from autonoumous/semi-autonomous functions. Opd included. Positive values are braking torque";
+CM_ SG_ 368 BrkTqReqSafeChks "Checksum";
+CM_ SG_ 368 BrkTqReqSafeCntr "Counter";
+CM_ SG_ 368 BrkTqReqSafeQf "Qualifier flag for the requested Brake torque";
+CM_ SG_ 368 LocalStopEnaReqChks "Checksum";
+CM_ SG_ 368 LocalStopEnaReqCntr "Counter";
+CM_ SG_ 368 LocalStopEnaReqLocalStopEnaReq "Local safe stop enable request from Primary request";
+CM_ SG_ 368 SteerWhlSnsrSafe2SteerWhlAg "Actual steering wheel angle from the actual centre position of the steering wheel. The signal value is a signed value from zero (at centre steering wheel position) where a left turn (counterclockwise from steering wheel centre position) is represented by positive values and right turn (clockwise from steering wheel centre position) will have negative value. ";
+CM_ SG_ 368 SteerWhlSnsrSafe2SteerWhlAgSpd "Steering angle speed with steering wheel rotation direction.  Turning the steering wheel left (counterclockwise) is represented by positive values and turning the steering wheel right (clockwise) is represented by negative values.";
+CM_ SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrChks "Checksum for steering wheel sensor data.";
+CM_ SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrCntr "Counter value for steering wheel sensor data.";
+CM_ SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrQf "Qf for steering wheel sensor information";
+CM_ SG_ 368 SteerWhlTq1Chks "Checksum";
+CM_ SG_ 368 SteerWhlTq1Cntr "Counter";
+CM_ SG_ 368 SteerWhlTq1Qf "Quality factor";
+CM_ SG_ 368 SteerWhlTq1SteerWhlTq "Torque on steering wheel";
+CM_ SG_ 368 VcuBrkLiGrpVcuBrkLiChks "Checksum";
+CM_ SG_ 368 VcuBrkLiGrpVcuBrkLiCntr "Counter";
+CM_ SG_ 368 VcuBrkLiGrpVcuBrkLiReq "Brake light generated in VCU";
+CM_ SG_ 368 WhlMotAxleAgrSpdChks "Checksum";
+CM_ SG_ 368 WhlMotAxleAgrSpdCntr "Counter";
+CM_ SG_ 368 WhlMotAxleAgrSpdFrntAxle "Front Axle Motor Speed in wheel domain ";
+CM_ SG_ 368 WhlMotAxleAgrSpdQFFrnt "Qualifier for Front";
+CM_ SG_ 368 WhlMotAxleAgrSpdQFRear "Qualifier Rear";
+CM_ SG_ 368 WhlMotAxleAgrSpdReAxle "Rear Axle Motor Speed in wheel domain ";
+
+// Attribute definitions
+BA_DEF_  "BaudRateCANFD" FLOAT 1000 10000000; // [bps]
+BA_DEF_  "Baudrate" INT 1000 1000000; // [bps]
+BA_DEF_  "BusType" STRING;
+BA_DEF_  "DBName" STRING;
+BA_DEF_  "ProtocolType" STRING;
+BA_DEF_ BU_ "NmAsrNode" ENUM "No","Yes";
+BA_DEF_ BU_ "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BO_ "CANFD_BRS" ENUM "0","1";
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65536; // [ms]
+BA_DEF_ BO_ "GenMsgCycleTimeFast" FLOAT 0 300000;
+BA_DEF_ BO_ "GenMsgDelayTime" INT 0 65536; // [ms]
+BA_DEF_ BO_ "GenMsgNrOfRepetition" INT 0 100000;
+BA_DEF_ BO_ "GenMsgSendType" ENUM "cyclic", "spontaneous", "not-used", "not-used", "not-used", "cyclicAndSpontaneous", "not-used", "cyclicIfActive", "NoMsgSendType"; // [us]
+BA_DEF_ BO_ "GenMsgStartDelayTime" INT 0 65536; // [ms]
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ SG_ "GenSigSendType" ENUM "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_ "GenSigStartValue" HEX 0 80000000;
+BA_DEF_ BO_ "GenMsgILSupport" ENUM "No","Yes";
+BA_DEF_ BO_ "NmAsrMessage" ENUM "No","Yes";
+BA_DEF_  "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_  "NmAsrMessageCount" INT 0 255;
+BA_DEF_ BU_ "NodeLayerModules" STRING;
+BA_DEF_ BU_ "ILused" ENUM "No","Yes";
+BA_DEF_ SG_ "GenSigFuncType" ENUM "NoFunction","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","n/a","CHK","CNTR","n/a","n/a","n/a","CNTR_AR_01","CRC_AR_01_BOTH","CRC_AR_01_ALT","CRC_AR_01_LOW","CRC_AR_01_NIBBLE","CNTR_AR_04","CRC_AR_04A","CNTR_AR_05","CRC_AR_05";
+BA_DEF_ SG_ "GenSigDataID" STRING;
+BA_DEF_ SG_ "SigGroup" STRING;
+
+BA_DEF_DEF_ "BusType" "";
+BA_DEF_DEF_ "DBName" "";
+BA_DEF_DEF_ "ProtocolType" "";
+BA_DEF_DEF_ "NmAsrNode" "No";
+BA_DEF_DEF_ "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_ "CANFD_BRS" "1";
+BA_DEF_DEF_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_DEF_DEF_ "VFrameFormat" "J1939PG";
+BA_DEF_DEF_ "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "GenMsgDelayTime" 0;
+BA_DEF_DEF_ "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_ "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_ "GenMsgILSupport" "Yes";
+BA_DEF_DEF_ "NmAsrMessage" "No";
+BA_DEF_DEF_ "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_ "NmAsrMessageCount" 64;
+BA_DEF_DEF_ "NodeLayerModules" "CANoeILNLSPA.dll";
+BA_DEF_DEF_ "ILused" "Yes";
+BA_DEF_DEF_ "GenSigFuncType" "NoFunction";
+BA_DEF_DEF_ "GenSigDataID" "";
+BA_DEF_DEF_ "SigGroup" "";
+
+
+BA_ "BaudRateCANFD" 2000000;
+BA_ "Baudrate" 500000;
+BA_ "BusType" "CAN FD";
+BA_ "DBName" "BCMA1CAN";
+BA_ "ProtocolType" "CAN";
+// ECU: BCMA
+BA_ "ILused" BU_ BCMA 1;
+BA_ "NmAsrNode" BU_ BCMA 1;
+BA_ "NmAsrNodeIdentifier" BU_ BCMA 2;
+BA_ "NodeLayerModules" BU_ BCMA "CANoeILNLSPA.dll,AsrNM33.dll";
+// ECU: BCMAdp1
+BA_ "ILused" BU_ BCMAdp1 1;
+BA_ "NmAsrNode" BU_ BCMAdp1 1;
+BA_ "NmAsrNodeIdentifier" BU_ BCMAdp1 4;
+BA_ "NodeLayerModules" BU_ BCMAdp1 "CANoeILNLSPA.dll,AsrNM33.dll";
+// ECU: BCMAdp1HIA
+BA_ "ILused" BU_ BCMAdp1HIA 0;
+// ECU: BCMAdp1HIB
+BA_ "ILused" BU_ BCMAdp1HIB 0;
+BA_ "NodeLayerModules" BU_ BCMAdp1HIB "CANoeILNLSPA.dll";
+// Frame: Bcma1NmCanFrame
+BA_ "GenMsgDelayTime" BO_ 1282 20.000;
+BA_ "GenMsgSendType" BO_ 1282 1;
+BA_ "VFrameFormat" BO_ 1282 14;
+// Frame: BcmaBcma1CANDp1AndDp1HIBFrame01
+BA_ "GenMsgCycleTime" BO_ 257 5.000;
+BA_ "GenMsgSendType" BO_ 257 0;
+BA_ "GenMsgStartDelayTime" BO_ 257 0.000;
+BA_ "VFrameFormat" BO_ 257 14;
+// Frame: BcmaBcma1CANDp1HIBOnlyFrame01
+BA_ "GenMsgCycleTime" BO_ 273 5.000;
+BA_ "GenMsgSendType" BO_ 273 0;
+BA_ "GenMsgStartDelayTime" BO_ 273 0.000;
+BA_ "VFrameFormat" BO_ 273 14;
+// Frame: BcmaBcma1CANFrame01
+BA_ "GenMsgCycleTime" BO_ 256 5.000;
+BA_ "GenMsgSendType" BO_ 256 0;
+BA_ "GenMsgStartDelayTime" BO_ 256 0.000;
+BA_ "VFrameFormat" BO_ 256 14;
+// Frame: BcmaBcma1CANFrame02
+BA_ "GenMsgCycleTime" BO_ 288 10.000;
+BA_ "GenMsgSendType" BO_ 288 0;
+BA_ "GenMsgStartDelayTime" BO_ 288 0.000;
+BA_ "VFrameFormat" BO_ 288 14;
+// Frame: BcmaBcma1CANFrame03
+BA_ "GenMsgCycleTime" BO_ 320 20.000;
+BA_ "GenMsgSendType" BO_ 320 0;
+BA_ "GenMsgStartDelayTime" BO_ 320 0.000;
+BA_ "VFrameFormat" BO_ 320 14;
+// Frame: BcmaDiagRespCanFrame
+BA_ "GenMsgDelayTime" BO_ 1697 5.000;
+BA_ "GenMsgSendType" BO_ 1697 1;
+BA_ "VFrameFormat" BO_ 1697 14;
+// Frame: BcmaDpFuncReqCanFrame
+BA_ "GenMsgDelayTime" BO_ 2047 5.000;
+BA_ "GenMsgSendType" BO_ 2047 1;
+BA_ "VFrameFormat" BO_ 2047 14;
+// Frame: BcmaDpToBcmaDiagReqCanFrame
+BA_ "GenMsgDelayTime" BO_ 1953 5.000;
+BA_ "GenMsgSendType" BO_ 1953 1;
+BA_ "VFrameFormat" BO_ 1953 14;
+// Frame: Dp1Bcma1CANFrame01
+BA_ "GenMsgCycleTime" BO_ 272 5.000;
+BA_ "GenMsgSendType" BO_ 272 0;
+BA_ "GenMsgStartDelayTime" BO_ 272 0.000;
+BA_ "VFrameFormat" BO_ 272 14;
+// Frame: Dp1Bcma1CANFrame02
+BA_ "GenMsgCycleTime" BO_ 304 10.000;
+BA_ "GenMsgSendType" BO_ 304 0;
+BA_ "GenMsgStartDelayTime" BO_ 304 0.000;
+BA_ "VFrameFormat" BO_ 304 14;
+// Frame: Dp1Bcma1CANFrame03
+BA_ "GenMsgCycleTime" BO_ 336 20.000;
+BA_ "GenMsgSendType" BO_ 336 0;
+BA_ "GenMsgStartDelayTime" BO_ 336 0.000;
+BA_ "VFrameFormat" BO_ 336 14;
+// Frame: Dp1Bcma1CANSporadicFrame01
+BA_ "GenMsgDelayTime" BO_ 400 1000.000;
+BA_ "GenMsgSendType" BO_ 400 1;
+BA_ "VFrameFormat" BO_ 400 14;
+// Frame: Dp1HIBBcma1CANFrame01
+BA_ "GenMsgCycleTime" BO_ 368 5.000;
+BA_ "GenMsgSendType" BO_ 368 0;
+BA_ "GenMsgStartDelayTime" BO_ 368 0.000;
+BA_ "VFrameFormat" BO_ 368 14;
+// Frame: Dp1NmCanFrame
+BA_ "GenMsgDelayTime" BO_ 1284 20.000;
+BA_ "GenMsgSendType" BO_ 1284 1;
+BA_ "VFrameFormat" BO_ 1284 14;
+BA_ "GenMsgILSupport" BO_ 1282 0;
+BA_ "GenMsgILSupport" BO_ 257 1;
+BA_ "GenMsgILSupport" BO_ 273 1;
+BA_ "GenMsgILSupport" BO_ 256 1;
+BA_ "GenMsgILSupport" BO_ 288 1;
+BA_ "GenMsgILSupport" BO_ 320 1;
+BA_ "GenMsgILSupport" BO_ 1697 1;
+BA_ "GenMsgILSupport" BO_ 2047 1;
+BA_ "GenMsgILSupport" BO_ 1953 1;
+BA_ "GenMsgILSupport" BO_ 272 1;
+BA_ "GenMsgILSupport" BO_ 304 1;
+BA_ "GenMsgILSupport" BO_ 336 1;
+BA_ "GenMsgILSupport" BO_ 400 1;
+BA_ "GenMsgILSupport" BO_ 368 1;
+BA_ "GenMsgILSupport" BO_ 1284 0;
+BA_ "NmAsrMessage" BO_ 1282 1;
+BA_ "NmAsrMessage" BO_ 257 0;
+BA_ "NmAsrMessage" BO_ 273 0;
+BA_ "NmAsrMessage" BO_ 256 0;
+BA_ "NmAsrMessage" BO_ 288 0;
+BA_ "NmAsrMessage" BO_ 320 0;
+BA_ "NmAsrMessage" BO_ 1697 0;
+BA_ "NmAsrMessage" BO_ 2047 0;
+BA_ "NmAsrMessage" BO_ 1953 0;
+BA_ "NmAsrMessage" BO_ 272 0;
+BA_ "NmAsrMessage" BO_ 304 0;
+BA_ "NmAsrMessage" BO_ 336 0;
+BA_ "NmAsrMessage" BO_ 400 0;
+BA_ "NmAsrMessage" BO_ 368 0;
+BA_ "NmAsrMessage" BO_ 1284 1;
+BA_ "GenSigSendType" SG_ 256 AbsCtrlActv 0;
+BA_ "GenSigStartValue" SG_ 256 AbsCtrlActv 0;
+BA_ "GenSigSendType" SG_ 256 AbsCtrlActvForWhlFrntLe 0;
+BA_ "GenSigStartValue" SG_ 256 AbsCtrlActvForWhlFrntLe 0;
+BA_ "GenSigSendType" SG_ 256 AbsCtrlActvForWhlFrntRi 0;
+BA_ "GenSigStartValue" SG_ 256 AbsCtrlActvForWhlFrntRi 0;
+BA_ "GenSigSendType" SG_ 256 AbsCtrlActvForWhlReLe 0;
+BA_ "GenSigStartValue" SG_ 256 AbsCtrlActvForWhlReLe 0;
+BA_ "GenSigSendType" SG_ 256 AbsCtrlActvForWhlReRi 0;
+BA_ "GenSigStartValue" SG_ 256 AbsCtrlActvForWhlReRi 0;
+BA_ "GenSigDataID" SG_ 273 AbsCtrlActvForWhlSafe2Chks "0x948";
+BA_ "GenSigFuncType" SG_ 273 AbsCtrlActvForWhlSafe2Chks 21;
+BA_ "GenSigSendType" SG_ 273 AbsCtrlActvForWhlSafe2Chks 0;
+BA_ "GenSigStartValue" SG_ 273 AbsCtrlActvForWhlSafe2Chks 0;
+BA_ "GenSigFuncType" SG_ 273 AbsCtrlActvForWhlSafe2Cntr 20;
+BA_ "GenSigSendType" SG_ 273 AbsCtrlActvForWhlSafe2Cntr 0;
+BA_ "GenSigStartValue" SG_ 273 AbsCtrlActvForWhlSafe2Cntr 0;
+BA_ "GenSigSendType" SG_ 273 AbsCtrlActvForWhlSafe2FrntLe 0;
+BA_ "GenSigStartValue" SG_ 273 AbsCtrlActvForWhlSafe2FrntLe 0;
+BA_ "GenSigSendType" SG_ 273 AbsCtrlActvForWhlSafe2FrntRi 0;
+BA_ "GenSigStartValue" SG_ 273 AbsCtrlActvForWhlSafe2FrntRi 0;
+BA_ "GenSigSendType" SG_ 273 AbsCtrlActvForWhlSafe2Qf 0;
+BA_ "GenSigStartValue" SG_ 273 AbsCtrlActvForWhlSafe2Qf 1;
+BA_ "GenSigSendType" SG_ 273 AbsCtrlActvForWhlSafe2ReLe 0;
+BA_ "GenSigStartValue" SG_ 273 AbsCtrlActvForWhlSafe2ReLe 0;
+BA_ "GenSigSendType" SG_ 273 AbsCtrlActvForWhlSafe2ReRi 0;
+BA_ "GenSigStartValue" SG_ 273 AbsCtrlActvForWhlSafe2ReRi 0;
+BA_ "GenSigSendType" SG_ 257 ActvBrkFctIdGrpActvBrkFctId 0;
+BA_ "GenSigStartValue" SG_ 257 ActvBrkFctIdGrpActvBrkFctId 0;
+BA_ "GenSigDataID" SG_ 257 ActvBrkFctIdGrpActvBrkFctIdChks "0xA48";
+BA_ "GenSigFuncType" SG_ 257 ActvBrkFctIdGrpActvBrkFctIdChks 21;
+BA_ "GenSigSendType" SG_ 257 ActvBrkFctIdGrpActvBrkFctIdChks 0;
+BA_ "GenSigStartValue" SG_ 257 ActvBrkFctIdGrpActvBrkFctIdChks 0;
+BA_ "GenSigFuncType" SG_ 257 ActvBrkFctIdGrpActvBrkFctIdCntr 20;
+BA_ "GenSigSendType" SG_ 257 ActvBrkFctIdGrpActvBrkFctIdCntr 0;
+BA_ "GenSigStartValue" SG_ 257 ActvBrkFctIdGrpActvBrkFctIdCntr 0;
+BA_ "GenSigSendType" SG_ 304 AdPrimBrkActvnGroupSafe1ActvnReq 0;
+BA_ "GenSigStartValue" SG_ 304 AdPrimBrkActvnGroupSafe1ActvnReq 0;
+BA_ "GenSigDataID" SG_ 304 AdPrimBrkActvnGroupSafe1Chks "0x949";
+BA_ "GenSigFuncType" SG_ 304 AdPrimBrkActvnGroupSafe1Chks 21;
+BA_ "GenSigSendType" SG_ 304 AdPrimBrkActvnGroupSafe1Chks 0;
+BA_ "GenSigStartValue" SG_ 304 AdPrimBrkActvnGroupSafe1Chks 0;
+BA_ "GenSigFuncType" SG_ 304 AdPrimBrkActvnGroupSafe1Cntr 20;
+BA_ "GenSigSendType" SG_ 304 AdPrimBrkActvnGroupSafe1Cntr 0;
+BA_ "GenSigStartValue" SG_ 304 AdPrimBrkActvnGroupSafe1Cntr 0;
+BA_ "GenSigSendType" SG_ 304 AdPrimBrkActvnGroupSafe1DeactvnReq 0;
+BA_ "GenSigStartValue" SG_ 304 AdPrimBrkActvnGroupSafe1DeactvnReq 0;
+BA_ "GenSigSendType" SG_ 304 AdPrimBrkActvnGroupSafe1LoSpdActvnReq 0;
+BA_ "GenSigStartValue" SG_ 304 AdPrimBrkActvnGroupSafe1LoSpdActvnReq 0;
+BA_ "GenSigSendType" SG_ 304 AdPrimBrkActvnGroupSafe1LoSpdDeactvnReq 0;
+BA_ "GenSigStartValue" SG_ 304 AdPrimBrkActvnGroupSafe1LoSpdDeactvnReq 0;
+BA_ "GenSigSendType" SG_ 256 AxleSlipRelAct 0;
+BA_ "GenSigStartValue" SG_ 256 AxleSlipRelAct 0;
+BA_ "GenSigDataID" SG_ 320 BrkDegraded3Chks "0x950";
+BA_ "GenSigFuncType" SG_ 320 BrkDegraded3Chks 21;
+BA_ "GenSigSendType" SG_ 320 BrkDegraded3Chks 0;
+BA_ "GenSigStartValue" SG_ 320 BrkDegraded3Chks 0;
+BA_ "GenSigFuncType" SG_ 320 BrkDegraded3Cntr 20;
+BA_ "GenSigSendType" SG_ 320 BrkDegraded3Cntr 0;
+BA_ "GenSigStartValue" SG_ 320 BrkDegraded3Cntr 0;
+BA_ "GenSigSendType" SG_ 320 BrkDegraded3Sts 0;
+BA_ "GenSigStartValue" SG_ 320 BrkDegraded3Sts 0;
+BA_ "GenSigSendType" SG_ 256 BrkFDistbnElectcAct 0;
+BA_ "GenSigStartValue" SG_ 256 BrkFDistbnElectcAct 0;
+BA_ "GenSigDataID" SG_ 320 BrkFldLeakPrim1Chks "0x843";
+BA_ "GenSigFuncType" SG_ 320 BrkFldLeakPrim1Chks 21;
+BA_ "GenSigSendType" SG_ 320 BrkFldLeakPrim1Chks 0;
+BA_ "GenSigStartValue" SG_ 320 BrkFldLeakPrim1Chks 0;
+BA_ "GenSigFuncType" SG_ 320 BrkFldLeakPrim1Cntr 20;
+BA_ "GenSigSendType" SG_ 320 BrkFldLeakPrim1Cntr 0;
+BA_ "GenSigStartValue" SG_ 320 BrkFldLeakPrim1Cntr 0;
+BA_ "GenSigSendType" SG_ 320 BrkFldLeakPrim1Detd 0;
+BA_ "GenSigStartValue" SG_ 320 BrkFldLeakPrim1Detd 0;
+BA_ "GenSigSendType" SG_ 273 BrkFricTqAtVehActBrkFricTqAtVehAct 0;
+BA_ "GenSigStartValue" SG_ 273 BrkFricTqAtVehActBrkFricTqAtVehAct 0;
+BA_ "GenSigDataID" SG_ 273 BrkFricTqAtVehActChks "0xC86";
+BA_ "GenSigFuncType" SG_ 273 BrkFricTqAtVehActChks 21;
+BA_ "GenSigSendType" SG_ 273 BrkFricTqAtVehActChks 0;
+BA_ "GenSigStartValue" SG_ 273 BrkFricTqAtVehActChks 0;
+BA_ "GenSigFuncType" SG_ 273 BrkFricTqAtVehActCntr 20;
+BA_ "GenSigSendType" SG_ 273 BrkFricTqAtVehActCntr 0;
+BA_ "GenSigStartValue" SG_ 273 BrkFricTqAtVehActCntr 0;
+BA_ "GenSigSendType" SG_ 273 BrkFricTqAtVehActStabyCtrlActvAtVeh 0;
+BA_ "GenSigStartValue" SG_ 273 BrkFricTqAtVehActStabyCtrlActvAtVeh 0;
+BA_ "GenSigSendType" SG_ 272 BrkModMngtCarModStsForBrk 0;
+BA_ "GenSigStartValue" SG_ 272 BrkModMngtCarModStsForBrk 0;
+BA_ "GenSigDataID" SG_ 272 BrkModMngtChks "0xA36";
+BA_ "GenSigFuncType" SG_ 272 BrkModMngtChks 21;
+BA_ "GenSigSendType" SG_ 272 BrkModMngtChks 0;
+BA_ "GenSigStartValue" SG_ 272 BrkModMngtChks 0;
+BA_ "GenSigFuncType" SG_ 272 BrkModMngtCntr 20;
+BA_ "GenSigSendType" SG_ 272 BrkModMngtCntr 0;
+BA_ "GenSigStartValue" SG_ 272 BrkModMngtCntr 0;
+BA_ "GenSigSendType" SG_ 272 BrkModMngtUsgModStsForBrk 0;
+BA_ "GenSigStartValue" SG_ 272 BrkModMngtUsgModStsForBrk 0;
+BA_ "GenSigSendType" SG_ 320 BrkPadWearIndcnFrntAxle 0;
+BA_ "GenSigStartValue" SG_ 320 BrkPadWearIndcnFrntAxle 0;
+BA_ "GenSigSendType" SG_ 320 BrkPadWearIndcnReAxle 0;
+BA_ "GenSigStartValue" SG_ 320 BrkPadWearIndcnReAxle 0;
+BA_ "GenSigSendType" SG_ 257 BrkPedlPsd3BrkPedlNotPsdSafe 0;
+BA_ "GenSigStartValue" SG_ 257 BrkPedlPsd3BrkPedlNotPsdSafe 1;
+BA_ "GenSigSendType" SG_ 257 BrkPedlPsd3BrkPedlPsd 0;
+BA_ "GenSigStartValue" SG_ 257 BrkPedlPsd3BrkPedlPsd 0;
+BA_ "GenSigDataID" SG_ 257 BrkPedlPsd3BrkPedlPsdChks "0x864";
+BA_ "GenSigFuncType" SG_ 257 BrkPedlPsd3BrkPedlPsdChks 21;
+BA_ "GenSigSendType" SG_ 257 BrkPedlPsd3BrkPedlPsdChks 0;
+BA_ "GenSigStartValue" SG_ 257 BrkPedlPsd3BrkPedlPsdChks 0;
+BA_ "GenSigFuncType" SG_ 257 BrkPedlPsd3BrkPedlPsdCntr 20;
+BA_ "GenSigSendType" SG_ 257 BrkPedlPsd3BrkPedlPsdCntr 0;
+BA_ "GenSigStartValue" SG_ 257 BrkPedlPsd3BrkPedlPsdCntr 0;
+BA_ "GenSigSendType" SG_ 257 BrkPedlPsd3BrkPedlPsdQf 0;
+BA_ "GenSigStartValue" SG_ 257 BrkPedlPsd3BrkPedlPsdQf 1;
+BA_ "GenSigSendType" SG_ 256 BrkPedlrRat 0;
+BA_ "GenSigStartValue" SG_ 256 BrkPedlrRat 0;
+BA_ "GenSigSendType" SG_ 273 BrkSysRespBrkDegradedSt 0;
+BA_ "GenSigStartValue" SG_ 273 BrkSysRespBrkDegradedSt 1;
+BA_ "GenSigSendType" SG_ 273 BrkSysRespBrkSysDegradedSts 0;
+BA_ "GenSigStartValue" SG_ 273 BrkSysRespBrkSysDegradedSts 0;
+BA_ "GenSigSendType" SG_ 273 BrkSysRespBrkTqReqAvl 0;
+BA_ "GenSigStartValue" SG_ 273 BrkSysRespBrkTqReqAvl 0;
+BA_ "GenSigSendType" SG_ 273 BrkSysRespBrkTqReqInCtrl 0;
+BA_ "GenSigStartValue" SG_ 273 BrkSysRespBrkTqReqInCtrl 0;
+BA_ "GenSigDataID" SG_ 273 BrkSysRespChks "0xC83";
+BA_ "GenSigFuncType" SG_ 273 BrkSysRespChks 21;
+BA_ "GenSigSendType" SG_ 273 BrkSysRespChks 0;
+BA_ "GenSigStartValue" SG_ 273 BrkSysRespChks 0;
+BA_ "GenSigFuncType" SG_ 273 BrkSysRespCntr 20;
+BA_ "GenSigSendType" SG_ 273 BrkSysRespCntr 0;
+BA_ "GenSigStartValue" SG_ 273 BrkSysRespCntr 0;
+BA_ "GenSigSendType" SG_ 273 BrkSysRespLocalStopEnad 0;
+BA_ "GenSigStartValue" SG_ 273 BrkSysRespLocalStopEnad 0;
+BA_ "GenSigSendType" SG_ 256 BrkTqAtWhlsReq 0;
+BA_ "GenSigStartValue" SG_ 256 BrkTqAtWhlsReq 0;
+BA_ "GenSigSendType" SG_ 304 BrkTqMinReq2BrkActrCtrlModForMinTqReq 0;
+BA_ "GenSigStartValue" SG_ 304 BrkTqMinReq2BrkActrCtrlModForMinTqReq 0;
+BA_ "GenSigSendType" SG_ 304 BrkTqMinReq2BrkTqGrdtNegMinReq 0;
+BA_ "GenSigStartValue" SG_ 304 BrkTqMinReq2BrkTqGrdtNegMinReq 1023;
+BA_ "GenSigSendType" SG_ 304 BrkTqMinReq2BrkTqGrdtPosMinReq 0;
+BA_ "GenSigStartValue" SG_ 304 BrkTqMinReq2BrkTqGrdtPosMinReq 1023;
+BA_ "GenSigSendType" SG_ 304 BrkTqMinReq2BrkTqMinReq 0;
+BA_ "GenSigStartValue" SG_ 304 BrkTqMinReq2BrkTqMinReq 0;
+BA_ "GenSigDataID" SG_ 304 BrkTqMinReq2BrkTqMinReqChks "0x955";
+BA_ "GenSigFuncType" SG_ 304 BrkTqMinReq2BrkTqMinReqChks 21;
+BA_ "GenSigSendType" SG_ 304 BrkTqMinReq2BrkTqMinReqChks 0;
+BA_ "GenSigStartValue" SG_ 304 BrkTqMinReq2BrkTqMinReqChks 0;
+BA_ "GenSigFuncType" SG_ 304 BrkTqMinReq2BrkTqMinReqCntr 20;
+BA_ "GenSigSendType" SG_ 304 BrkTqMinReq2BrkTqMinReqCntr 0;
+BA_ "GenSigStartValue" SG_ 304 BrkTqMinReq2BrkTqMinReqCntr 0;
+BA_ "GenSigSendType" SG_ 368 BrkTqReqSafeBrkTqReqSafe 0;
+BA_ "GenSigStartValue" SG_ 368 BrkTqReqSafeBrkTqReqSafe 0;
+BA_ "GenSigDataID" SG_ 368 BrkTqReqSafeChks "0x9E7";
+BA_ "GenSigFuncType" SG_ 368 BrkTqReqSafeChks 21;
+BA_ "GenSigSendType" SG_ 368 BrkTqReqSafeChks 0;
+BA_ "GenSigStartValue" SG_ 368 BrkTqReqSafeChks 0;
+BA_ "GenSigFuncType" SG_ 368 BrkTqReqSafeCntr 20;
+BA_ "GenSigSendType" SG_ 368 BrkTqReqSafeCntr 0;
+BA_ "GenSigStartValue" SG_ 368 BrkTqReqSafeCntr 0;
+BA_ "GenSigSendType" SG_ 368 BrkTqReqSafeQf 0;
+BA_ "GenSigStartValue" SG_ 368 BrkTqReqSafeQf 1;
+BA_ "GenSigSendType" SG_ 368 BrkTqReqdCtrlrBrkTqReqdCtrlr 0;
+BA_ "GenSigStartValue" SG_ 368 BrkTqReqdCtrlrBrkTqReqdCtrlr 0;
+BA_ "GenSigDataID" SG_ 368 BrkTqReqdCtrlrChks "0xC7F";
+BA_ "GenSigFuncType" SG_ 368 BrkTqReqdCtrlrChks 21;
+BA_ "GenSigSendType" SG_ 368 BrkTqReqdCtrlrChks 0;
+BA_ "GenSigStartValue" SG_ 368 BrkTqReqdCtrlrChks 0;
+BA_ "GenSigFuncType" SG_ 368 BrkTqReqdCtrlrCntr 20;
+BA_ "GenSigSendType" SG_ 368 BrkTqReqdCtrlrCntr 0;
+BA_ "GenSigStartValue" SG_ 368 BrkTqReqdCtrlrCntr 0;
+BA_ "GenSigSendType" SG_ 257 BrkTracCtrlActv 0;
+BA_ "GenSigStartValue" SG_ 257 BrkTracCtrlActv 0;
+BA_ "GenSigSendType" SG_ 257 BrkTracCtrlActvForWhlFrntLe 0;
+BA_ "GenSigStartValue" SG_ 257 BrkTracCtrlActvForWhlFrntLe 0;
+BA_ "GenSigSendType" SG_ 257 BrkTracCtrlActvForWhlFrntRi 0;
+BA_ "GenSigStartValue" SG_ 257 BrkTracCtrlActvForWhlFrntRi 0;
+BA_ "GenSigSendType" SG_ 257 BrkTracCtrlActvForWhlReLe 0;
+BA_ "GenSigStartValue" SG_ 257 BrkTracCtrlActvForWhlReLe 0;
+BA_ "GenSigSendType" SG_ 257 BrkTracCtrlActvForWhlReRi 0;
+BA_ "GenSigStartValue" SG_ 257 BrkTracCtrlActvForWhlReRi 0;
+BA_ "GenSigSendType" SG_ 400 BrkVehCfgBlk1 1;
+BA_ "GenSigStartValue" SG_ 400 BrkVehCfgBlk1 0;
+BA_ "GenSigSendType" SG_ 400 BrkVehCfgBlk2 1;
+BA_ "GenSigStartValue" SG_ 400 BrkVehCfgBlk2 0;
+BA_ "GenSigSendType" SG_ 304 CrsCtrlrSts 0;
+BA_ "GenSigStartValue" SG_ 304 CrsCtrlrSts 1;
+BA_ "GenSigDataID" SG_ 256 DrvrBrkTqAtWhlsGrdtReqdChks "0xA4B";
+BA_ "GenSigFuncType" SG_ 256 DrvrBrkTqAtWhlsGrdtReqdChks 21;
+BA_ "GenSigSendType" SG_ 256 DrvrBrkTqAtWhlsGrdtReqdChks 0;
+BA_ "GenSigStartValue" SG_ 256 DrvrBrkTqAtWhlsGrdtReqdChks 0;
+BA_ "GenSigFuncType" SG_ 256 DrvrBrkTqAtWhlsGrdtReqdCntr 20;
+BA_ "GenSigSendType" SG_ 256 DrvrBrkTqAtWhlsGrdtReqdCntr 0;
+BA_ "GenSigStartValue" SG_ 256 DrvrBrkTqAtWhlsGrdtReqdCntr 0;
+BA_ "GenSigSendType" SG_ 256 DrvrBrkTqAtWhlsGrdtReqdDrvrBrkTqAtWhlsGrdtReqd 0;
+BA_ "GenSigStartValue" SG_ 256 DrvrBrkTqAtWhlsGrdtReqdDrvrBrkTqAtWhlsGrdtReqd 0;
+BA_ "GenSigDataID" SG_ 257 DrvrBrkTqReqdTotChks "0xA4A";
+BA_ "GenSigFuncType" SG_ 257 DrvrBrkTqReqdTotChks 21;
+BA_ "GenSigSendType" SG_ 257 DrvrBrkTqReqdTotChks 0;
+BA_ "GenSigStartValue" SG_ 257 DrvrBrkTqReqdTotChks 0;
+BA_ "GenSigFuncType" SG_ 257 DrvrBrkTqReqdTotCntr 20;
+BA_ "GenSigSendType" SG_ 257 DrvrBrkTqReqdTotCntr 0;
+BA_ "GenSigStartValue" SG_ 257 DrvrBrkTqReqdTotCntr 0;
+BA_ "GenSigSendType" SG_ 257 DrvrBrkTqReqdTotDrvrBrkTqAtWhlsReqd 0;
+BA_ "GenSigStartValue" SG_ 257 DrvrBrkTqReqdTotDrvrBrkTqAtWhlsReqd 0;
+BA_ "GenSigSendType" SG_ 257 DrvrBrkTqReqdTotDrvrBrkTqAtWhlsReqdQf 0;
+BA_ "GenSigStartValue" SG_ 257 DrvrBrkTqReqdTotDrvrBrkTqAtWhlsReqdQf 1;
+BA_ "GenSigSendType" SG_ 304 DrvrPrsntSts3DrvrPrsnt 0;
+BA_ "GenSigStartValue" SG_ 304 DrvrPrsntSts3DrvrPrsnt 1;
+BA_ "GenSigDataID" SG_ 304 DrvrPrsntSts3DrvrPrsntChks "0x850";
+BA_ "GenSigFuncType" SG_ 304 DrvrPrsntSts3DrvrPrsntChks 21;
+BA_ "GenSigSendType" SG_ 304 DrvrPrsntSts3DrvrPrsntChks 0;
+BA_ "GenSigStartValue" SG_ 304 DrvrPrsntSts3DrvrPrsntChks 0;
+BA_ "GenSigFuncType" SG_ 304 DrvrPrsntSts3DrvrPrsntCntr 20;
+BA_ "GenSigSendType" SG_ 304 DrvrPrsntSts3DrvrPrsntCntr 0;
+BA_ "GenSigStartValue" SG_ 304 DrvrPrsntSts3DrvrPrsntCntr 0;
+BA_ "GenSigSendType" SG_ 304 DrvrPrsntSts3DrvrPrsntQf 0;
+BA_ "GenSigStartValue" SG_ 304 DrvrPrsntSts3DrvrPrsntQf 1;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinCtrlKdPid 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinCtrlKdPid 0;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinCtrlKiPid 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinCtrlKiPid 0;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinCtrlKpPid 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinCtrlKpPid 0;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinCtrlNRateLimGain 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinCtrlNRateLimGain 0;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinCtrlNRateLimMax 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinCtrlNRateLimMax 255;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinCtrlNRateLimMin 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinCtrlNRateLimMin 0;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinCtrlNRateLimModReq 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinCtrlNRateLimModReq 0;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinNLimMax 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinNLimMax 3000;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinNLimMin 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinNLimMin 200;
+BA_ "GenSigSendType" SG_ 336 EmAntiSpinNLimModReq 0;
+BA_ "GenSigStartValue" SG_ 336 EmAntiSpinNLimModReq 0;
+BA_ "GenSigSendType" SG_ 336 EmModSts 0;
+BA_ "GenSigStartValue" SG_ 336 EmModSts 0;
+BA_ "GenSigSendType" SG_ 257 EngTracCtrlActvFrntMax 0;
+BA_ "GenSigStartValue" SG_ 257 EngTracCtrlActvFrntMax 0;
+BA_ "GenSigSendType" SG_ 257 EngTracCtrlActvFrntMin 0;
+BA_ "GenSigStartValue" SG_ 257 EngTracCtrlActvFrntMin 0;
+BA_ "GenSigSendType" SG_ 257 EngTracCtrlActvReMax 0;
+BA_ "GenSigStartValue" SG_ 257 EngTracCtrlActvReMax 0;
+BA_ "GenSigSendType" SG_ 257 EngTracCtrlActvReMin 0;
+BA_ "GenSigStartValue" SG_ 257 EngTracCtrlActvReMin 0;
+BA_ "GenSigDataID" SG_ 320 EscCtrlIndcnSrcChks "0xB55";
+BA_ "GenSigFuncType" SG_ 320 EscCtrlIndcnSrcChks 21;
+BA_ "GenSigSendType" SG_ 320 EscCtrlIndcnSrcChks 0;
+BA_ "GenSigStartValue" SG_ 320 EscCtrlIndcnSrcChks 0;
+BA_ "GenSigFuncType" SG_ 320 EscCtrlIndcnSrcCntr 20;
+BA_ "GenSigSendType" SG_ 320 EscCtrlIndcnSrcCntr 0;
+BA_ "GenSigStartValue" SG_ 320 EscCtrlIndcnSrcCntr 0;
+BA_ "GenSigSendType" SG_ 320 EscCtrlIndcnSrcEscCtrlIndcnSrc 0;
+BA_ "GenSigStartValue" SG_ 320 EscCtrlIndcnSrcEscCtrlIndcnSrc 0;
+BA_ "GenSigSendType" SG_ 256 EscDamprReq 0;
+BA_ "GenSigStartValue" SG_ 256 EscDamprReq 0;
+BA_ "GenSigSendType" SG_ 256 EscLatCtrlMod 0;
+BA_ "GenSigStartValue" SG_ 256 EscLatCtrlMod 0;
+BA_ "GenSigSendType" SG_ 256 EscSteerTqReq 0;
+BA_ "GenSigStartValue" SG_ 256 EscSteerTqReq 0;
+BA_ "GenSigDataID" SG_ 257 FailSafeFlgOTRGrpChks "0xB67";
+BA_ "GenSigFuncType" SG_ 257 FailSafeFlgOTRGrpChks 21;
+BA_ "GenSigSendType" SG_ 257 FailSafeFlgOTRGrpChks 0;
+BA_ "GenSigStartValue" SG_ 257 FailSafeFlgOTRGrpChks 0;
+BA_ "GenSigFuncType" SG_ 257 FailSafeFlgOTRGrpCntr 20;
+BA_ "GenSigSendType" SG_ 257 FailSafeFlgOTRGrpCntr 0;
+BA_ "GenSigStartValue" SG_ 257 FailSafeFlgOTRGrpCntr 0;
+BA_ "GenSigSendType" SG_ 257 FailSafeFlgOTRGrpFailSafeFlgOTR 0;
+BA_ "GenSigStartValue" SG_ 257 FailSafeFlgOTRGrpFailSafeFlgOTR 15;
+BA_ "GenSigSendType" SG_ 272 FricEstimnFromVehDynFricEstimnFromVehDyn 0;
+BA_ "GenSigStartValue" SG_ 272 FricEstimnFromVehDynFricEstimnFromVehDyn 0;
+BA_ "GenSigSendType" SG_ 272 FricEstimnFromVehDynQly 0;
+BA_ "GenSigStartValue" SG_ 272 FricEstimnFromVehDynQly 1;
+BA_ "GenSigDataID" SG_ 304 IMUProcessedData1Chks "0xC2E";
+BA_ "GenSigFuncType" SG_ 304 IMUProcessedData1Chks 21;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1Chks 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1Chks 0;
+BA_ "GenSigFuncType" SG_ 304 IMUProcessedData1Cntr 20;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1Cntr 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1Cntr 0;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1PitchRateComp 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1PitchRateComp 32768;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1PitchRateCompQf 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1PitchRateCompQf 0;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1PitchRateDiff 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1PitchRateDiff 32768;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1RollRateComp 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1RollRateComp 32768;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1RollRateCompQf 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1RollRateCompQf 0;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1RollRateDiff 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1RollRateDiff 32768;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1YawRateComp 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1YawRateComp 32768;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1YawRateCompQf 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1YawRateCompQf 0;
+BA_ "GenSigSendType" SG_ 304 IMUProcessedData1YawRateDiff 0;
+BA_ "GenSigStartValue" SG_ 304 IMUProcessedData1YawRateDiff 32768;
+BA_ "GenSigDataID" SG_ 304 IMURawData1Chks "0xC2F";
+BA_ "GenSigFuncType" SG_ 304 IMURawData1Chks 21;
+BA_ "GenSigSendType" SG_ 304 IMURawData1Chks 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1Chks 0;
+BA_ "GenSigFuncType" SG_ 304 IMURawData1Cntr 20;
+BA_ "GenSigSendType" SG_ 304 IMURawData1Cntr 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1Cntr 0;
+BA_ "GenSigSendType" SG_ 304 IMURawData1LatAccRaw 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1LatAccRaw 32768;
+BA_ "GenSigSendType" SG_ 304 IMURawData1LatAccRawQf 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1LatAccRawQf 0;
+BA_ "GenSigSendType" SG_ 304 IMURawData1LongAccRaw 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1LongAccRaw 32768;
+BA_ "GenSigSendType" SG_ 304 IMURawData1LongAccRawQf 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1LongAccRawQf 0;
+BA_ "GenSigSendType" SG_ 304 IMURawData1PitchRateRaw 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1PitchRateRaw 32768;
+BA_ "GenSigSendType" SG_ 304 IMURawData1PitchRateRawQf 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1PitchRateRawQf 0;
+BA_ "GenSigSendType" SG_ 304 IMURawData1RollRateRaw 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1RollRateRaw 32768;
+BA_ "GenSigSendType" SG_ 304 IMURawData1RollRateRawQf 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1RollRateRawQf 0;
+BA_ "GenSigSendType" SG_ 304 IMURawData1VertAccRaw 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1VertAccRaw 32768;
+BA_ "GenSigSendType" SG_ 304 IMURawData1VertAccRawQf 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1VertAccRawQf 0;
+BA_ "GenSigSendType" SG_ 304 IMURawData1YawRateRaw 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1YawRateRaw 32768;
+BA_ "GenSigSendType" SG_ 304 IMURawData1YawRateRawQf 0;
+BA_ "GenSigStartValue" SG_ 304 IMURawData1YawRateRawQf 0;
+BA_ "GenSigSendType" SG_ 400 JIDByte0 1;
+BA_ "GenSigStartValue" SG_ 400 JIDByte0 0;
+BA_ "GenSigSendType" SG_ 400 JIDByte1 1;
+BA_ "GenSigStartValue" SG_ 400 JIDByte1 0;
+BA_ "GenSigSendType" SG_ 400 JIDByte2 1;
+BA_ "GenSigStartValue" SG_ 400 JIDByte2 0;
+BA_ "GenSigSendType" SG_ 400 JIDByte3 1;
+BA_ "GenSigStartValue" SG_ 400 JIDByte3 0;
+BA_ "GenSigSendType" SG_ 400 JIDByte4 1;
+BA_ "GenSigStartValue" SG_ 400 JIDByte4 0;
+BA_ "GenSigSendType" SG_ 400 JIDByte5 1;
+BA_ "GenSigStartValue" SG_ 400 JIDByte5 0;
+BA_ "GenSigSendType" SG_ 400 JIDByte6 1;
+BA_ "GenSigStartValue" SG_ 400 JIDByte6 0;
+BA_ "GenSigSendType" SG_ 400 JIDByte7 1;
+BA_ "GenSigStartValue" SG_ 400 JIDByte7 0;
+BA_ "GenSigDataID" SG_ 368 LocalStopEnaReqChks "0xC81";
+BA_ "GenSigFuncType" SG_ 368 LocalStopEnaReqChks 21;
+BA_ "GenSigSendType" SG_ 368 LocalStopEnaReqChks 0;
+BA_ "GenSigStartValue" SG_ 368 LocalStopEnaReqChks 0;
+BA_ "GenSigFuncType" SG_ 368 LocalStopEnaReqCntr 20;
+BA_ "GenSigSendType" SG_ 368 LocalStopEnaReqCntr 0;
+BA_ "GenSigStartValue" SG_ 368 LocalStopEnaReqCntr 0;
+BA_ "GenSigSendType" SG_ 368 LocalStopEnaReqLocalStopEnaReq 0;
+BA_ "GenSigStartValue" SG_ 368 LocalStopEnaReqLocalStopEnaReq 0;
+BA_ "GenSigSendType" SG_ 320 ObdSlaveAbsMilReq 0;
+BA_ "GenSigStartValue" SG_ 320 ObdSlaveAbsMilReq 0;
+BA_ "GenSigSendType" SG_ 320 ObdSlaveSlaveAlvCntr 0;
+BA_ "GenSigStartValue" SG_ 320 ObdSlaveSlaveAlvCntr 15;
+BA_ "GenSigSendType" SG_ 304 ParkByDrvrWhlsFrnt 0;
+BA_ "GenSigStartValue" SG_ 304 ParkByDrvrWhlsFrnt 0;
+BA_ "GenSigDataID" SG_ 304 ParkByDrvrWhlsFrntSafe1Chks "0x960";
+BA_ "GenSigFuncType" SG_ 304 ParkByDrvrWhlsFrntSafe1Chks 21;
+BA_ "GenSigSendType" SG_ 304 ParkByDrvrWhlsFrntSafe1Chks 0;
+BA_ "GenSigStartValue" SG_ 304 ParkByDrvrWhlsFrntSafe1Chks 0;
+BA_ "GenSigFuncType" SG_ 304 ParkByDrvrWhlsFrntSafe1Cntr 20;
+BA_ "GenSigSendType" SG_ 304 ParkByDrvrWhlsFrntSafe1Cntr 0;
+BA_ "GenSigStartValue" SG_ 304 ParkByDrvrWhlsFrntSafe1Cntr 0;
+BA_ "GenSigSendType" SG_ 304 ParkByDrvrWhlsFrntSafe1Sts 0;
+BA_ "GenSigStartValue" SG_ 304 ParkByDrvrWhlsFrntSafe1Sts 0;
+BA_ "GenSigSendType" SG_ 304 ParkCtrl 0;
+BA_ "GenSigStartValue" SG_ 304 ParkCtrl 0;
+BA_ "GenSigDataID" SG_ 288 PbcInChks "0xB84";
+BA_ "GenSigFuncType" SG_ 288 PbcInChks 21;
+BA_ "GenSigSendType" SG_ 288 PbcInChks 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInChks 0;
+BA_ "GenSigFuncType" SG_ 288 PbcInCntr 20;
+BA_ "GenSigSendType" SG_ 288 PbcInCntr 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInCntr 0;
+BA_ "GenSigSendType" SG_ 288 PbcInHostAvailabilityLeft 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInHostAvailabilityLeft 0;
+BA_ "GenSigSendType" SG_ 288 PbcInHostAvailabilityRight 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInHostAvailabilityRight 0;
+BA_ "GenSigSendType" SG_ 288 PbcInMotorCurrentLeft 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInMotorCurrentLeft 0;
+BA_ "GenSigSendType" SG_ 288 PbcInMotorCurrentRight 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInMotorCurrentRight 0;
+BA_ "GenSigSendType" SG_ 288 PbcInMotorDriverStateLeft 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInMotorDriverStateLeft 0;
+BA_ "GenSigSendType" SG_ 288 PbcInMotorDriverStateRight 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInMotorDriverStateRight 0;
+BA_ "GenSigSendType" SG_ 288 PbcInMotorVoltageLeft 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInMotorVoltageLeft 0;
+BA_ "GenSigSendType" SG_ 288 PbcInMotorVoltageRight 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInMotorVoltageRight 0;
+BA_ "GenSigSendType" SG_ 288 PbcInPowerSupplyState 0;
+BA_ "GenSigStartValue" SG_ 288 PbcInPowerSupplyState 0;
+BA_ "GenSigSendType" SG_ 272 PrpsnTqFrntReq 0;
+BA_ "GenSigStartValue" SG_ 272 PrpsnTqFrntReq 0;
+BA_ "GenSigSendType" SG_ 272 PrpsnTqReReq 0;
+BA_ "GenSigStartValue" SG_ 272 PrpsnTqReReq 0;
+BA_ "GenSigSendType" SG_ 256 PtActrReModReq 0;
+BA_ "GenSigStartValue" SG_ 256 PtActrReModReq 0;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddFrntReq 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddFrntReq 0;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReReq 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReReq 0;
+BA_ "GenSigDataID" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReqChks "0x85B";
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReqChks 21;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReqChks 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReqChks 0;
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReqCntr 20;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReqCntr 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleAddReq1PtTqAtAxleAddReqCntr 0;
+BA_ "GenSigSendType" SG_ 272 PtTqAtAxleAvlFrntMax 0;
+BA_ "GenSigStartValue" SG_ 272 PtTqAtAxleAvlFrntMax 0;
+BA_ "GenSigSendType" SG_ 272 PtTqAtAxleAvlReMax 0;
+BA_ "GenSigStartValue" SG_ 272 PtTqAtAxleAvlReMax 0;
+BA_ "GenSigSendType" SG_ 272 PtTqAtAxleAvlReMin 0;
+BA_ "GenSigStartValue" SG_ 272 PtTqAtAxleAvlReMin 0;
+BA_ "GenSigDataID" SG_ 257 PtTqAtAxleFrntMaxReq1Chks "0x9ED";
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleFrntMaxReq1Chks 21;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleFrntMaxReq1Chks 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleFrntMaxReq1Chks 0;
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleFrntMaxReq1Cntr 20;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleFrntMaxReq1Cntr 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleFrntMaxReq1Cntr 0;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleFrntMaxReq1PtTqAtAxleFrntMaxReq 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleFrntMaxReq1PtTqAtAxleFrntMaxReq 20000;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReq 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReq -20000;
+BA_ "GenSigDataID" SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqChks "0x85D";
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqChks 21;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqChks 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqChks 0;
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqCntr 20;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqCntr 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqCntr 0;
+BA_ "GenSigDataID" SG_ 257 PtTqAtAxleReMaxReq2Chks "0x9EE";
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleReMaxReq2Chks 21;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleReMaxReq2Chks 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleReMaxReq2Chks 0;
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleReMaxReq2Cntr 20;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleReMaxReq2Cntr 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleReMaxReq2Cntr 0;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleReMaxReq2PtTqAtAxleReMaxReq1 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleReMaxReq2PtTqAtAxleReMaxReq1 20000;
+BA_ "GenSigDataID" SG_ 257 PtTqAtAxleReMinReqChks "0x57";
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleReMinReqChks 21;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleReMinReqChks 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleReMinReqChks 0;
+BA_ "GenSigFuncType" SG_ 257 PtTqAtAxleReMinReqCntr 20;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleReMinReqCntr 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleReMinReqCntr 0;
+BA_ "GenSigSendType" SG_ 257 PtTqAtAxleReMinReqPtTqAtAxleReMinReq 0;
+BA_ "GenSigStartValue" SG_ 257 PtTqAtAxleReMinReqPtTqAtAxleReMinReq -20000;
+BA_ "GenSigSendType" SG_ 336 PtTqAtWhlFrntActPtTqAtAxleFrntAct 0;
+BA_ "GenSigStartValue" SG_ 336 PtTqAtWhlFrntActPtTqAtAxleFrntAct 0;
+BA_ "GenSigSendType" SG_ 336 PtTqAtWhlFrntActPtTqAtWhlFrntLeAct 0;
+BA_ "GenSigStartValue" SG_ 336 PtTqAtWhlFrntActPtTqAtWhlFrntLeAct 0;
+BA_ "GenSigSendType" SG_ 336 PtTqAtWhlFrntActPtTqAtWhlFrntRiAct 0;
+BA_ "GenSigStartValue" SG_ 336 PtTqAtWhlFrntActPtTqAtWhlFrntRiAct 0;
+BA_ "GenSigSendType" SG_ 336 PtTqAtWhlFrntActPtTqAtWhlsFrntQly 0;
+BA_ "GenSigStartValue" SG_ 336 PtTqAtWhlFrntActPtTqAtWhlsFrntQly 0;
+BA_ "GenSigSendType" SG_ 336 PtTqAtWhlReActPtTqAtAxleReAct 0;
+BA_ "GenSigStartValue" SG_ 336 PtTqAtWhlReActPtTqAtAxleReAct 0;
+BA_ "GenSigSendType" SG_ 336 PtTqAtWhlReActPtTqAtWhlReLeAct 0;
+BA_ "GenSigStartValue" SG_ 336 PtTqAtWhlReActPtTqAtWhlReLeAct 0;
+BA_ "GenSigSendType" SG_ 336 PtTqAtWhlReActPtTqAtWhlReRiAct 0;
+BA_ "GenSigStartValue" SG_ 336 PtTqAtWhlReActPtTqAtWhlReRiAct 0;
+BA_ "GenSigSendType" SG_ 336 PtTqAtWhlReActPtTqAtWhlsReQly 0;
+BA_ "GenSigStartValue" SG_ 336 PtTqAtWhlReActPtTqAtWhlsReQly 0;
+BA_ "GenSigSendType" SG_ 256 RcwmBrkActvd 0;
+BA_ "GenSigStartValue" SG_ 256 RcwmBrkActvd 0;
+BA_ "GenSigSendType" SG_ 257 RscCtrlActvAtWhlFrntLe 0;
+BA_ "GenSigStartValue" SG_ 257 RscCtrlActvAtWhlFrntLe 0;
+BA_ "GenSigSendType" SG_ 257 RscCtrlActvAtWhlFrntRi 0;
+BA_ "GenSigStartValue" SG_ 257 RscCtrlActvAtWhlFrntRi 0;
+BA_ "GenSigSendType" SG_ 257 RscCtrlActvAtWhlReLe 0;
+BA_ "GenSigStartValue" SG_ 257 RscCtrlActvAtWhlReLe 0;
+BA_ "GenSigSendType" SG_ 257 RscCtrlActvAtWhlReRi 0;
+BA_ "GenSigStartValue" SG_ 257 RscCtrlActvAtWhlReRi 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl1 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl1 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl10 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl10 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl2 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl2 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl3 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl3 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl4 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl4 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl5 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl5 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl6 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl6 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl7 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl7 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl8 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl8 0;
+BA_ "GenSigSendType" SG_ 273 RscResdSigToVehDynCtrl9 0;
+BA_ "GenSigStartValue" SG_ 273 RscResdSigToVehDynCtrl9 0;
+BA_ "GenSigDataID" SG_ 256 SpdLimFrntMaxReq1Chks "0xB56";
+BA_ "GenSigFuncType" SG_ 256 SpdLimFrntMaxReq1Chks 21;
+BA_ "GenSigSendType" SG_ 256 SpdLimFrntMaxReq1Chks 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimFrntMaxReq1Chks 0;
+BA_ "GenSigFuncType" SG_ 256 SpdLimFrntMaxReq1Cntr 20;
+BA_ "GenSigSendType" SG_ 256 SpdLimFrntMaxReq1Cntr 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimFrntMaxReq1Cntr 0;
+BA_ "GenSigSendType" SG_ 256 SpdLimFrntMaxReq1SpdLimFrntMaxReq 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimFrntMaxReq1SpdLimFrntMaxReq 0;
+BA_ "GenSigDataID" SG_ 256 SpdLimFrntMinReq1Chks "0xB58";
+BA_ "GenSigFuncType" SG_ 256 SpdLimFrntMinReq1Chks 21;
+BA_ "GenSigSendType" SG_ 256 SpdLimFrntMinReq1Chks 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimFrntMinReq1Chks 0;
+BA_ "GenSigFuncType" SG_ 256 SpdLimFrntMinReq1Cntr 20;
+BA_ "GenSigSendType" SG_ 256 SpdLimFrntMinReq1Cntr 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimFrntMinReq1Cntr 0;
+BA_ "GenSigSendType" SG_ 256 SpdLimFrntMinReq1SpdLimFrntMinReq 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimFrntMinReq1SpdLimFrntMinReq 0;
+BA_ "GenSigDataID" SG_ 256 SpdLimReMaxReq1Chks "0xB57";
+BA_ "GenSigFuncType" SG_ 256 SpdLimReMaxReq1Chks 21;
+BA_ "GenSigSendType" SG_ 256 SpdLimReMaxReq1Chks 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimReMaxReq1Chks 0;
+BA_ "GenSigFuncType" SG_ 256 SpdLimReMaxReq1Cntr 20;
+BA_ "GenSigSendType" SG_ 256 SpdLimReMaxReq1Cntr 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimReMaxReq1Cntr 0;
+BA_ "GenSigSendType" SG_ 256 SpdLimReMaxReq1SpdLimReMaxReq 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimReMaxReq1SpdLimReMaxReq 0;
+BA_ "GenSigDataID" SG_ 256 SpdLimReMinReq1Chks "0xB59";
+BA_ "GenSigFuncType" SG_ 256 SpdLimReMinReq1Chks 21;
+BA_ "GenSigSendType" SG_ 256 SpdLimReMinReq1Chks 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimReMinReq1Chks 0;
+BA_ "GenSigFuncType" SG_ 256 SpdLimReMinReq1Cntr 20;
+BA_ "GenSigSendType" SG_ 256 SpdLimReMinReq1Cntr 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimReMinReq1Cntr 0;
+BA_ "GenSigSendType" SG_ 256 SpdLimReMinReq1SpdLimReMinReq 0;
+BA_ "GenSigStartValue" SG_ 256 SpdLimReMinReq1SpdLimReMinReq 0;
+BA_ "GenSigSendType" SG_ 304 SpdTarForHillDwnCtrl 0;
+BA_ "GenSigStartValue" SG_ 304 SpdTarForHillDwnCtrl 1000;
+BA_ "GenSigSendType" SG_ 256 SteerAngleRefFromRscSafe 0;
+BA_ "GenSigStartValue" SG_ 256 SteerAngleRefFromRscSafe 0;
+BA_ "GenSigSendType" SG_ 368 SteerWhlSnsrSafe2SteerWhlAg 0;
+BA_ "GenSigStartValue" SG_ 368 SteerWhlSnsrSafe2SteerWhlAg 0;
+BA_ "GenSigSendType" SG_ 368 SteerWhlSnsrSafe2SteerWhlAgSpd 0;
+BA_ "GenSigStartValue" SG_ 368 SteerWhlSnsrSafe2SteerWhlAgSpd 0;
+BA_ "GenSigDataID" SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrChks "0x85F";
+BA_ "GenSigFuncType" SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrChks 21;
+BA_ "GenSigSendType" SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrChks 0;
+BA_ "GenSigStartValue" SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrChks 0;
+BA_ "GenSigFuncType" SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrCntr 20;
+BA_ "GenSigSendType" SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrCntr 0;
+BA_ "GenSigStartValue" SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrCntr 0;
+BA_ "GenSigSendType" SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrQf 0;
+BA_ "GenSigStartValue" SG_ 368 SteerWhlSnsrSafe2SteerWhlSnsrQf 1;
+BA_ "GenSigDataID" SG_ 368 SteerWhlTq1Chks "0xC17";
+BA_ "GenSigFuncType" SG_ 368 SteerWhlTq1Chks 21;
+BA_ "GenSigSendType" SG_ 368 SteerWhlTq1Chks 0;
+BA_ "GenSigStartValue" SG_ 368 SteerWhlTq1Chks 0;
+BA_ "GenSigFuncType" SG_ 368 SteerWhlTq1Cntr 20;
+BA_ "GenSigSendType" SG_ 368 SteerWhlTq1Cntr 0;
+BA_ "GenSigStartValue" SG_ 368 SteerWhlTq1Cntr 0;
+BA_ "GenSigSendType" SG_ 368 SteerWhlTq1Qf 0;
+BA_ "GenSigStartValue" SG_ 368 SteerWhlTq1Qf 1;
+BA_ "GenSigSendType" SG_ 368 SteerWhlTq1SteerWhlTq 0;
+BA_ "GenSigStartValue" SG_ 368 SteerWhlTq1SteerWhlTq 0;
+BA_ "GenSigSendType" SG_ 304 SteerWhlTqAddlWdSteerWhlTqAddl 0;
+BA_ "GenSigStartValue" SG_ 304 SteerWhlTqAddlWdSteerWhlTqAddl 0;
+BA_ "GenSigSendType" SG_ 272 TiDrvgCycOff 0;
+BA_ "GenSigStartValue" SG_ 272 TiDrvgCycOff 0;
+BA_ "GenSigDataID" SG_ 256 TqDrgCtrlDegraded1Chks "0x96B";
+BA_ "GenSigFuncType" SG_ 256 TqDrgCtrlDegraded1Chks 21;
+BA_ "GenSigSendType" SG_ 256 TqDrgCtrlDegraded1Chks 0;
+BA_ "GenSigStartValue" SG_ 256 TqDrgCtrlDegraded1Chks 0;
+BA_ "GenSigFuncType" SG_ 256 TqDrgCtrlDegraded1Cntr 20;
+BA_ "GenSigSendType" SG_ 256 TqDrgCtrlDegraded1Cntr 0;
+BA_ "GenSigStartValue" SG_ 256 TqDrgCtrlDegraded1Cntr 14;
+BA_ "GenSigSendType" SG_ 256 TqDrgCtrlDegraded1TqDrgCtrlDegraded 0;
+BA_ "GenSigStartValue" SG_ 256 TqDrgCtrlDegraded1TqDrgCtrlDegraded 0;
+BA_ "GenSigDataID" SG_ 257 TqVect2Chks "0x849";
+BA_ "GenSigFuncType" SG_ 257 TqVect2Chks 21;
+BA_ "GenSigSendType" SG_ 257 TqVect2Chks 0;
+BA_ "GenSigStartValue" SG_ 257 TqVect2Chks 0;
+BA_ "GenSigFuncType" SG_ 257 TqVect2Cntr 20;
+BA_ "GenSigSendType" SG_ 257 TqVect2Cntr 0;
+BA_ "GenSigStartValue" SG_ 257 TqVect2Cntr 0;
+BA_ "GenSigSendType" SG_ 257 TqVect2DeltaLe 0;
+BA_ "GenSigStartValue" SG_ 257 TqVect2DeltaLe 0;
+BA_ "GenSigSendType" SG_ 257 TqVect2DeltaRi 0;
+BA_ "GenSigStartValue" SG_ 257 TqVect2DeltaRi 0;
+BA_ "GenSigSendType" SG_ 257 TqVect2TqVectOvrLckReq 0;
+BA_ "GenSigStartValue" SG_ 257 TqVect2TqVectOvrLckReq 0;
+BA_ "GenSigDataID" SG_ 336 TqVectAvlMaxChks "0xCB8";
+BA_ "GenSigFuncType" SG_ 336 TqVectAvlMaxChks 21;
+BA_ "GenSigSendType" SG_ 336 TqVectAvlMaxChks 0;
+BA_ "GenSigStartValue" SG_ 336 TqVectAvlMaxChks 0;
+BA_ "GenSigFuncType" SG_ 336 TqVectAvlMaxCntr 20;
+BA_ "GenSigSendType" SG_ 336 TqVectAvlMaxCntr 0;
+BA_ "GenSigStartValue" SG_ 336 TqVectAvlMaxCntr 0;
+BA_ "GenSigSendType" SG_ 336 TqVectAvlMaxTqVectAvlMax 0;
+BA_ "GenSigStartValue" SG_ 336 TqVectAvlMaxTqVectAvlMax 0;
+BA_ "GenSigSendType" SG_ 256 TrlrStabyActv 0;
+BA_ "GenSigStartValue" SG_ 256 TrlrStabyActv 0;
+BA_ "GenSigDataID" SG_ 368 VcuBrkLiGrpVcuBrkLiChks "0xC2B";
+BA_ "GenSigFuncType" SG_ 368 VcuBrkLiGrpVcuBrkLiChks 21;
+BA_ "GenSigSendType" SG_ 368 VcuBrkLiGrpVcuBrkLiChks 0;
+BA_ "GenSigStartValue" SG_ 368 VcuBrkLiGrpVcuBrkLiChks 0;
+BA_ "GenSigFuncType" SG_ 368 VcuBrkLiGrpVcuBrkLiCntr 20;
+BA_ "GenSigSendType" SG_ 368 VcuBrkLiGrpVcuBrkLiCntr 0;
+BA_ "GenSigStartValue" SG_ 368 VcuBrkLiGrpVcuBrkLiCntr 0;
+BA_ "GenSigSendType" SG_ 368 VcuBrkLiGrpVcuBrkLiReq 0;
+BA_ "GenSigStartValue" SG_ 368 VcuBrkLiGrpVcuBrkLiReq 1;
+BA_ "GenSigSendType" SG_ 256 WhlAgVRawFrntLe 0;
+BA_ "GenSigStartValue" SG_ 256 WhlAgVRawFrntLe 0;
+BA_ "GenSigSendType" SG_ 256 WhlAgVRawFrntLeQf 0;
+BA_ "GenSigStartValue" SG_ 256 WhlAgVRawFrntLeQf 3;
+BA_ "GenSigSendType" SG_ 256 WhlAgVRawFrntRi 0;
+BA_ "GenSigStartValue" SG_ 256 WhlAgVRawFrntRi 0;
+BA_ "GenSigSendType" SG_ 256 WhlAgVRawFrntRiQf 0;
+BA_ "GenSigStartValue" SG_ 256 WhlAgVRawFrntRiQf 3;
+BA_ "GenSigSendType" SG_ 256 WhlAgVRawReLe 0;
+BA_ "GenSigStartValue" SG_ 256 WhlAgVRawReLe 0;
+BA_ "GenSigSendType" SG_ 256 WhlAgVRawReLeQf 0;
+BA_ "GenSigStartValue" SG_ 256 WhlAgVRawReLeQf 3;
+BA_ "GenSigSendType" SG_ 256 WhlAgVRawReRi 0;
+BA_ "GenSigStartValue" SG_ 256 WhlAgVRawReRi 0;
+BA_ "GenSigSendType" SG_ 256 WhlAgVRawReRiQf 0;
+BA_ "GenSigStartValue" SG_ 256 WhlAgVRawReRiQf 3;
+BA_ "GenSigSendType" SG_ 320 WhlBrkOvrheatd 0;
+BA_ "GenSigStartValue" SG_ 320 WhlBrkOvrheatd 0;
+BA_ "GenSigSendType" SG_ 256 WhlBrkPEstimdMax 0;
+BA_ "GenSigStartValue" SG_ 256 WhlBrkPEstimdMax 0;
+BA_ "GenSigSendType" SG_ 257 WhlBrkRotorTFrntLe 0;
+BA_ "GenSigStartValue" SG_ 257 WhlBrkRotorTFrntLe 0;
+BA_ "GenSigSendType" SG_ 257 WhlBrkRotorTFrntRi 0;
+BA_ "GenSigStartValue" SG_ 257 WhlBrkRotorTFrntRi 0;
+BA_ "GenSigSendType" SG_ 257 WhlBrkRotorTReLe 0;
+BA_ "GenSigStartValue" SG_ 257 WhlBrkRotorTReLe 0;
+BA_ "GenSigSendType" SG_ 257 WhlBrkRotorTReRi 0;
+BA_ "GenSigStartValue" SG_ 257 WhlBrkRotorTReRi 0;
+BA_ "GenSigSendType" SG_ 320 WhlBrkWrm 0;
+BA_ "GenSigStartValue" SG_ 320 WhlBrkWrm 0;
+BA_ "GenSigDataID" SG_ 368 WhlMotAxleAgrSpdChks "0xCC1";
+BA_ "GenSigFuncType" SG_ 368 WhlMotAxleAgrSpdChks 21;
+BA_ "GenSigSendType" SG_ 368 WhlMotAxleAgrSpdChks 0;
+BA_ "GenSigStartValue" SG_ 368 WhlMotAxleAgrSpdChks 0;
+BA_ "GenSigFuncType" SG_ 368 WhlMotAxleAgrSpdCntr 20;
+BA_ "GenSigSendType" SG_ 368 WhlMotAxleAgrSpdCntr 0;
+BA_ "GenSigStartValue" SG_ 368 WhlMotAxleAgrSpdCntr 0;
+BA_ "GenSigSendType" SG_ 368 WhlMotAxleAgrSpdFrntAxle 0;
+BA_ "GenSigStartValue" SG_ 368 WhlMotAxleAgrSpdFrntAxle 0;
+BA_ "GenSigSendType" SG_ 368 WhlMotAxleAgrSpdQFFrnt 0;
+BA_ "GenSigStartValue" SG_ 368 WhlMotAxleAgrSpdQFFrnt 0;
+BA_ "GenSigSendType" SG_ 368 WhlMotAxleAgrSpdQFRear 0;
+BA_ "GenSigStartValue" SG_ 368 WhlMotAxleAgrSpdQFRear 0;
+BA_ "GenSigSendType" SG_ 368 WhlMotAxleAgrSpdReAxle 0;
+BA_ "GenSigStartValue" SG_ 368 WhlMotAxleAgrSpdReAxle 0;
+BA_ "GenSigSendType" SG_ 256 YawRateRefFromRscSafe 0;
+BA_ "GenSigStartValue" SG_ 256 YawRateRefFromRscSafe 0;
+BA_ "GenSigSendType" SG_ 256 YawRateReqdByDrvr 0;
+BA_ "GenSigStartValue" SG_ 256 YawRateReqdByDrvr 0;
+BA_ "GenSigSendType" SG_ 256 YawStabyCtrlActv 0;
+BA_ "GenSigStartValue" SG_ 256 YawStabyCtrlActv 0;
+BA_ "GenSigDataID" SG_ 256 YawTqStsSafeGroup1Chks "0x84B";
+BA_ "GenSigFuncType" SG_ 256 YawTqStsSafeGroup1Chks 21;
+BA_ "GenSigSendType" SG_ 256 YawTqStsSafeGroup1Chks 0;
+BA_ "GenSigStartValue" SG_ 256 YawTqStsSafeGroup1Chks 0;
+BA_ "GenSigFuncType" SG_ 256 YawTqStsSafeGroup1Cntr 20;
+BA_ "GenSigSendType" SG_ 256 YawTqStsSafeGroup1Cntr 0;
+BA_ "GenSigStartValue" SG_ 256 YawTqStsSafeGroup1Cntr 0;
+BA_ "GenSigSendType" SG_ 256 YawTqStsSafeGroup1Sts 0;
+BA_ "GenSigStartValue" SG_ 256 YawTqStsSafeGroup1Sts 0;
+
+VAL_ 257 BrkPedlPsd3BrkPedlNotPsdSafe 0 "NoYes1_No" 1 "NoYes1_Yes";
+VAL_ 257 BrkPedlPsd3BrkPedlPsd 0 "NoYes1_No" 1 "NoYes1_Yes";
+VAL_ 257 BrkPedlPsd3BrkPedlPsdQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 257 BrkTracCtrlActv 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 BrkTracCtrlActvForWhlFrntLe 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 BrkTracCtrlActvForWhlFrntRi 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 BrkTracCtrlActvForWhlReLe 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 BrkTracCtrlActvForWhlReRi 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 DrvrBrkTqReqdTotDrvrBrkTqAtWhlsReqdQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 257 EngTracCtrlActvFrntMax 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 EngTracCtrlActvFrntMin 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 EngTracCtrlActvReMax 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 EngTracCtrlActvReMin 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 RscCtrlActvAtWhlFrntLe 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 RscCtrlActvAtWhlFrntRi 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 RscCtrlActvAtWhlReLe 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 257 RscCtrlActvAtWhlReRi 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 273 AbsCtrlActvForWhlSafe2FrntLe 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 273 AbsCtrlActvForWhlSafe2FrntRi 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 273 AbsCtrlActvForWhlSafe2Qf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 273 AbsCtrlActvForWhlSafe2ReLe 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 273 AbsCtrlActvForWhlSafe2ReRi 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 273 BrkFricTqAtVehActStabyCtrlActvAtVeh 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 273 BrkSysRespBrkDegradedSt 0 "BrkDegradedSt_Disabled" 1 "BrkDegradedSt_Normal" 2 "BrkDegradedSt_Primary" 3 "BrkDegradedSt_Cooperative" 4 "BrkDegradedSt_Redundant";
+VAL_ 273 BrkSysRespBrkSysDegradedSts 0 "BrkSysDegradedSts_Normal" 1 "BrkSysDegradedSts_Reduced" 2 "BrkSysDegradedSts_Degraded" 3 "BrkSysDegradedSts_Disabled";
+VAL_ 273 BrkSysRespBrkTqReqAvl 0 "BrkTqReqAvl_None" 1 "BrkTqReqAvl_One" 2 "BrkTqReqAvl_Both";
+VAL_ 273 BrkSysRespLocalStopEnad 0 "LocalStopEnad_Disable" 1 "LocalStopEnad_Enable";
+VAL_ 256 AbsCtrlActv 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 256 AbsCtrlActvForWhlFrntLe 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 256 AbsCtrlActvForWhlFrntRi 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 256 AbsCtrlActvForWhlReLe 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 256 AbsCtrlActvForWhlReRi 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 256 BrkFDistbnElectcAct 0 "Boolean_FALSE" 1 "Boolean_TRUE";
+VAL_ 256 EscDamprReq 0 "DamprChartc_NoReq" 1 "DamprChartc_DamprChartcForHndlg" 2 "DamprChartc_DamprChartcForBrkTrig" 3 "DamprChartc_DamprChartcForBrkGrip";
+VAL_ 256 EscLatCtrlMod 0 "LatCtrlMod4_NoReq" 1 "LatCtrlMod4_TrfcJamAssi" 2 "LatCtrlMod4_EmgyLaneKeepAidForObjRe" 3 "LatCtrlMod4_EmgyLaneKeepAidForStat" 4 "LatCtrlMod4_SftyLaneKeepAid" 5 "LatCtrlMod4_SteerAssc" 6 "LatCtrlMod4_DsrOversteer" 7 "LatCtrlMod4_DsrMueSplit" 8 "LatCtrlMod4_DsrTrlrStaby" 9 "LatCtrlMod4_EmgyManvAssi" 10 "LatCtrlMod4_ADLvl2" 11 "LatCtrlMod4_PrkgAut";
+VAL_ 256 PtActrReModReq 0 "PtActrMod1_NoReq" 1 "PtActrMod1_ActrMod1" 2 "PtActrMod1_ActrMod2" 3 "PtActrMod1_ActrMod3";
+VAL_ 256 RcwmBrkActvd 0 "NoYes1_No" 1 "NoYes1_Yes";
+VAL_ 256 TqDrgCtrlDegraded1TqDrgCtrlDegraded 0 "Boolean_FALSE" 1 "Boolean_TRUE";
+VAL_ 256 TrlrStabyActv 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 256 WhlAgVRawFrntLeQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 256 WhlAgVRawFrntRiQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 256 WhlAgVRawReLeQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 256 WhlAgVRawReRiQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 256 YawStabyCtrlActv 0 "CtrlSts1_NoCtrl" 1 "CtrlSts1_InCtrl";
+VAL_ 256 YawTqStsSafeGroup1Sts 0 "YawTqStsType_Ukwn" 1 "YawTqStsType_Deactvd" 2 "YawTqStsType_Limd" 3 "YawTqStsType_Norm";
+VAL_ 288 PbcInHostAvailabilityLeft 0 "PbcInHostAvailability_None" 1 "PbcInHostAvailability_Apply" 2 "PbcInHostAvailability_Release" 3 "PbcInHostAvailability_ApplyAndRelease";
+VAL_ 288 PbcInHostAvailabilityRight 0 "PbcInHostAvailability_None" 1 "PbcInHostAvailability_Apply" 2 "PbcInHostAvailability_Release" 3 "PbcInHostAvailability_ApplyAndRelease";
+VAL_ 288 PbcInMotorDriverStateLeft 0 "PbcInMotorDriverState_None" 1 "PbcInMotorDriverState_Apply" 2 "PbcInMotorDriverState_Release" 3 "PbcInMotorDriverState_Stop" 4 "PbcInMotorDriverState_FreeRun";
+VAL_ 288 PbcInMotorDriverStateRight 0 "PbcInMotorDriverState_None" 1 "PbcInMotorDriverState_Apply" 2 "PbcInMotorDriverState_Release" 3 "PbcInMotorDriverState_Stop" 4 "PbcInMotorDriverState_FreeRun";
+VAL_ 288 PbcInPowerSupplyState 0 "PowerSupplyState_Normal" 1 "PowerSupplyState_Limited";
+VAL_ 320 BrkFldLeakPrim1Detd 0 "BrkFldLeakPrimDetd_BrakeFluidLevelOk" 1 "BrkFldLeakPrimDetd_BrakeFluidLevelLowSP1" 2 "BrkFldLeakPrimDetd_BrakeFluidLevelLowSP2";
+VAL_ 320 BrkPadWearIndcnFrntAxle 0 "BrkPadWear_NoPadWear" 1 "BrkPadWear_PadWornDownTo7mm" 2 "BrkPadWear_PadWornDownTo2mm" 3 "BrkPadWear_SensorFailure" 4 "BrkPadWear_ElectricalFailure";
+VAL_ 320 BrkPadWearIndcnReAxle 0 "BrkPadWear_NoPadWear" 1 "BrkPadWear_PadWornDownTo7mm" 2 "BrkPadWear_PadWornDownTo2mm" 3 "BrkPadWear_SensorFailure" 4 "BrkPadWear_ElectricalFailure";
+VAL_ 320 EscCtrlIndcnSrcEscCtrlIndcnSrc 0 "EscCtrlIndcn_NoControl" 1 "EscCtrlIndcn_BrakeSlipCtrlActive" 2 "EscCtrlIndcn_TractionCtrlActive" 3 "EscCtrlIndcn_StabilityInterventions" 4 "EscCtrlIndcn_TrailerStabilityActive" 5 "EscCtrlIndcn_Reserved5" 6 "EscCtrlIndcn_Reserved6" 7 "EscCtrlIndcn_Reserved7";
+VAL_ 320 ObdSlaveAbsMilReq 0 "Boolean_FALSE" 1 "Boolean_TRUE";
+VAL_ 320 WhlBrkOvrheatd 0 "TSts1_Norm" 1 "TSts1_Ovrheatd";
+VAL_ 320 WhlBrkWrm 0 "NoYes1_No" 1 "NoYes1_Yes";
+VAL_ 272 BrkModMngtCarModStsForBrk 0 "CarModStsForBrk_EndCustomer" 1 "CarModStsForBrk_Transport" 2 "CarModStsForBrk_Factory" 3 "CarModStsForBrk_Crash" 4 "CarModStsForBrk_Show" 5 "CarModStsForBrk_Dyno4WD" 6 "CarModStsForBrk_Dyno2WD" 7 "CarModStsForBrk_Workshop";
+VAL_ 272 BrkModMngtUsgModStsForBrk 0 "UsgModStsForBrk_DeepSleepAllowed" 1 "UsgModStsForBrk_Rsvd1" 2 "UsgModStsForBrk_OutputCommsOnly" 3 "UsgModStsForBrk_Rsvd2" 4 "UsgModStsForBrk_SsmMonitor" 5 "UsgModStsForBrk_Rsvd3" 6 "UsgModStsForBrk_Rsvd4" 7 "UsgModStsForBrk_Nominal";
+VAL_ 272 FricEstimnFromVehDynQly 0 "Qly3_De0" 1 "Qly3_De1" 2 "Qly3_De2" 3 "Qly3_De3" 4 "Qly3_De4" 5 "Qly3_De5" 6 "Qly3_De6" 7 "Qly3_De7";
+VAL_ 304 AdPrimBrkActvnGroupSafe1ActvnReq 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 304 AdPrimBrkActvnGroupSafe1DeactvnReq 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 304 AdPrimBrkActvnGroupSafe1LoSpdActvnReq 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 304 AdPrimBrkActvnGroupSafe1LoSpdDeactvnReq 0 "OnOff1_Off" 1 "OnOff1_On";
+VAL_ 304 BrkTqMinReq2BrkActrCtrlModForMinTqReq 0 "BrkActrCtrlMod1_Norm" 1 "BrkActrCtrlMod1_Cmft" 2 "BrkActrCtrlMod1_Sfty" 3 "BrkActrCtrlMod1_VldForAd";
+VAL_ 304 CrsCtrlrSts 1 "CrsCtrlrSts1_Off" 2 "CrsCtrlrSts1_Stb" 3 "CrsCtrlrSts1_Actv";
+VAL_ 304 DrvrPrsntSts3DrvrPrsnt 0 "NoYesCrit1_NotVld1" 1 "NoYesCrit1_No" 2 "NoYesCrit1_Yes" 3 "NoYesCrit1_NotVld2";
+VAL_ 304 DrvrPrsntSts3DrvrPrsntQf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 304 IMUProcessedData1PitchRateCompQf 0 "QF3bit_CmpSigInvld" 1 "QF3bit_Init" 2 "QF3bit_LvlOfQly1" 3 "QF3bit_LvlOfQly2" 4 "QF3bit_LvlOfQly3" 5 "QF3bit_LvlOfQly4" 6 "QF3bit_LvlOfQly5" 7 "QF3bit_LvlOfQly6";
+VAL_ 304 IMUProcessedData1RollRateCompQf 0 "QF3bit_CmpSigInvld" 1 "QF3bit_Init" 2 "QF3bit_LvlOfQly1" 3 "QF3bit_LvlOfQly2" 4 "QF3bit_LvlOfQly3" 5 "QF3bit_LvlOfQly4" 6 "QF3bit_LvlOfQly5" 7 "QF3bit_LvlOfQly6";
+VAL_ 304 IMUProcessedData1YawRateCompQf 0 "QF3bit_CmpSigInvld" 1 "QF3bit_Init" 2 "QF3bit_LvlOfQly1" 3 "QF3bit_LvlOfQly2" 4 "QF3bit_LvlOfQly3" 5 "QF3bit_LvlOfQly4" 6 "QF3bit_LvlOfQly5" 7 "QF3bit_LvlOfQly6";
+VAL_ 304 IMURawData1LatAccRawQf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 304 IMURawData1LongAccRawQf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 304 IMURawData1PitchRateRawQf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 304 IMURawData1RollRateRawQf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 304 IMURawData1VertAccRawQf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 304 IMURawData1YawRateRawQf 0 "Qf1_DevOfDataUndefd" 1 "Qf1_DataTmpUndefdAndEvlnInProgs" 2 "Qf1_DevOfDataNotWithinRngAllwd" 3 "Qf1_DataCalcdWithDevDefd";
+VAL_ 304 ParkByDrvrWhlsFrnt 0 "Flg1_Rst" 1 "Flg1_Set";
+VAL_ 304 ParkByDrvrWhlsFrntSafe1Sts 0 "Flg1_Rst" 1 "Flg1_Set";
+VAL_ 304 ParkCtrl 0 "ParkCtrl_NoReq" 1 "ParkCtrl_ApplyReqd" 2 "ParkCtrl_RelsReqd" 3 "ParkCtrl_Reserved";
+VAL_ 336 EmAntiSpinCtrlNRateLimModReq 0 "NoReqOn1_NoReq" 1 "NoReqOn1_On";
+VAL_ 336 EmAntiSpinNLimModReq 0 "NoReqOn1_NoReq" 1 "NoReqOn1_On";
+VAL_ 336 EmModSts 0 "WhlMotSysModStsTyp1_Inin" 1 "WhlMotSysModStsTyp1_Stb" 2 "WhlMotSysModStsTyp1_TqCtrl" 3 "WhlMotSysModStsTyp1_SpdCtrlIdle" 4 "WhlMotSysModStsTyp1_CluOper" 5 "WhlMotSysModStsTyp1_PreChrg" 6 "WhlMotSysModStsTyp1_PwrDwn" 7 "WhlMotSysModStsTyp1_Flt";
+VAL_ 336 PtTqAtWhlFrntActPtTqAtWhlsFrntQly 0 "Qly3_De0" 1 "Qly3_De1" 2 "Qly3_De2" 3 "Qly3_De3" 4 "Qly3_De4" 5 "Qly3_De5" 6 "Qly3_De6" 7 "Qly3_De7";
+VAL_ 336 PtTqAtWhlReActPtTqAtWhlsReQly 0 "Qly3_De0" 1 "Qly3_De1" 2 "Qly3_De2" 3 "Qly3_De3" 4 "Qly3_De4" 5 "Qly3_De5" 6 "Qly3_De6" 7 "Qly3_De7";
+VAL_ 368 BrkTqReqdCtrlrBrkTqReqdCtrlr 0 "BrkPrimRdnt_None" 1 "BrkPrimRdnt_PrimSrc" 2 "BrkPrimRdnt_RdntSrc";
+VAL_ 368 BrkTqReqSafeQf 0 "QfBrk_Invalid" 1 "QfBrk_Valid1" 2 "QfBrk_Valid2" 3 "QfBrk_Valid3" 4 "QfBrk_Valid4" 5 "QfBrk_Valid5" 6 "QfBrk_Valid6" 7 "QfBrk_Valid7";
+VAL_ 368 LocalStopEnaReqLocalStopEnaReq 0 "DisableEnable_Disable" 1 "DisableEnable_Enable";
+VAL_ 368 SteerWhlSnsrSafe2SteerWhlSnsrQf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 368 SteerWhlTq1Qf 0 "GenQf1_UndefindDataAccur" 1 "GenQf1_TmpUndefdData" 2 "GenQf1_DataAccurNotWithinSpcn" 3 "GenQf1_AccurData";
+VAL_ 368 VcuBrkLiGrpVcuBrkLiReq 0 "BrkLiSts_NotVld1" 1 "BrkLiSts_Off" 2 "BrkLiSts_On" 3 "BrkLiSts_NotVld2";
+VAL_ 368 WhlMotAxleAgrSpdQFFrnt 0 "QFgeneral_Faulty" 1 "QFgeneral_NoDataExists" 2 "QFgeneral_NotWithinSpec" 3 "QFgeneral_OK";
+VAL_ 368 WhlMotAxleAgrSpdQFRear 0 "QFgeneral_Faulty" 1 "QFgeneral_NoDataExists" 2 "QFgeneral_NotWithinSpec" 3 "QFgeneral_OK";
+SIG_GROUP_ 256 AbsCtrlActvForWhl 1 : AbsCtrlActvForWhlFrntLe AbsCtrlActvForWhlFrntRi AbsCtrlActvForWhlReLe AbsCtrlActvForWhlReRi;
+SIG_GROUP_ 273 AbsCtrlActvForWhlSafe2 1 : AbsCtrlActvForWhlSafe2Chks AbsCtrlActvForWhlSafe2Cntr AbsCtrlActvForWhlSafe2FrntLe AbsCtrlActvForWhlSafe2FrntRi AbsCtrlActvForWhlSafe2Qf AbsCtrlActvForWhlSafe2ReLe AbsCtrlActvForWhlSafe2ReRi;
+SIG_GROUP_ 257 ActvBrkFctIdGrp 1 : ActvBrkFctIdGrpActvBrkFctId ActvBrkFctIdGrpActvBrkFctIdChks ActvBrkFctIdGrpActvBrkFctIdCntr;
+SIG_GROUP_ 304 AdPrimBrkActvnGroupSafe1 1 : AdPrimBrkActvnGroupSafe1ActvnReq AdPrimBrkActvnGroupSafe1Chks AdPrimBrkActvnGroupSafe1Cntr AdPrimBrkActvnGroupSafe1DeactvnReq AdPrimBrkActvnGroupSafe1LoSpdActvnReq AdPrimBrkActvnGroupSafe1LoSpdDeactvnReq;
+SIG_GROUP_ 320 BrkDegraded3 1 : BrkDegraded3Chks BrkDegraded3Cntr BrkDegraded3Sts;
+SIG_GROUP_ 320 BrkFldLeakPrim1 1 : BrkFldLeakPrim1Chks BrkFldLeakPrim1Cntr BrkFldLeakPrim1Detd;
+SIG_GROUP_ 273 BrkFricTqAtVehAct 1 : BrkFricTqAtVehActBrkFricTqAtVehAct BrkFricTqAtVehActChks BrkFricTqAtVehActCntr BrkFricTqAtVehActStabyCtrlActvAtVeh;
+SIG_GROUP_ 272 BrkModMngt 1 : BrkModMngtCarModStsForBrk BrkModMngtChks BrkModMngtCntr BrkModMngtUsgModStsForBrk;
+SIG_GROUP_ 320 BrkPadWearIndcn 1 : BrkPadWearIndcnFrntAxle BrkPadWearIndcnReAxle;
+SIG_GROUP_ 257 BrkPedlPsd3 1 : BrkPedlPsd3BrkPedlNotPsdSafe BrkPedlPsd3BrkPedlPsd BrkPedlPsd3BrkPedlPsdChks BrkPedlPsd3BrkPedlPsdCntr BrkPedlPsd3BrkPedlPsdQf;
+SIG_GROUP_ 273 BrkSysResp 1 : BrkSysRespBrkDegradedSt BrkSysRespBrkSysDegradedSts BrkSysRespBrkTqReqAvl BrkSysRespBrkTqReqInCtrl BrkSysRespChks BrkSysRespCntr BrkSysRespLocalStopEnad;
+SIG_GROUP_ 304 BrkTqMinReq2 1 : BrkTqMinReq2BrkActrCtrlModForMinTqReq BrkTqMinReq2BrkTqGrdtNegMinReq BrkTqMinReq2BrkTqGrdtPosMinReq BrkTqMinReq2BrkTqMinReq BrkTqMinReq2BrkTqMinReqChks BrkTqMinReq2BrkTqMinReqCntr;
+SIG_GROUP_ 368 BrkTqReqdCtrlr 1 : BrkTqReqdCtrlrBrkTqReqdCtrlr BrkTqReqdCtrlrChks BrkTqReqdCtrlrCntr;
+SIG_GROUP_ 368 BrkTqReqSafe 1 : BrkTqReqSafeBrkTqReqSafe BrkTqReqSafeChks BrkTqReqSafeCntr BrkTqReqSafeQf;
+SIG_GROUP_ 400 BrkVehCfg 1 : BrkVehCfgBlk1 BrkVehCfgBlk2;
+SIG_GROUP_ 256 DrvrBrkTqAtWhlsGrdtReqd 1 : DrvrBrkTqAtWhlsGrdtReqdChks DrvrBrkTqAtWhlsGrdtReqdCntr DrvrBrkTqAtWhlsGrdtReqdDrvrBrkTqAtWhlsGrdtReqd;
+SIG_GROUP_ 257 DrvrBrkTqReqdTot 1 : DrvrBrkTqReqdTotChks DrvrBrkTqReqdTotCntr DrvrBrkTqReqdTotDrvrBrkTqAtWhlsReqd DrvrBrkTqReqdTotDrvrBrkTqAtWhlsReqdQf;
+SIG_GROUP_ 304 DrvrPrsntSts3 1 : DrvrPrsntSts3DrvrPrsnt DrvrPrsntSts3DrvrPrsntChks DrvrPrsntSts3DrvrPrsntCntr DrvrPrsntSts3DrvrPrsntQf;
+SIG_GROUP_ 336 EmAntiSpinCtrl 1 : EmAntiSpinCtrlKdPid EmAntiSpinCtrlKiPid EmAntiSpinCtrlKpPid EmAntiSpinCtrlNRateLimGain EmAntiSpinCtrlNRateLimMax EmAntiSpinCtrlNRateLimMin EmAntiSpinCtrlNRateLimModReq;
+SIG_GROUP_ 336 EmAntiSpinNLim 1 : EmAntiSpinNLimMax EmAntiSpinNLimMin EmAntiSpinNLimModReq;
+SIG_GROUP_ 320 EscCtrlIndcnSrc 1 : EscCtrlIndcnSrcChks EscCtrlIndcnSrcCntr EscCtrlIndcnSrcEscCtrlIndcnSrc;
+SIG_GROUP_ 257 FailSafeFlgOTRGrp 1 : FailSafeFlgOTRGrpChks FailSafeFlgOTRGrpCntr FailSafeFlgOTRGrpFailSafeFlgOTR;
+SIG_GROUP_ 272 FricEstimnFromVehDyn 1 : FricEstimnFromVehDynFricEstimnFromVehDyn FricEstimnFromVehDynQly;
+SIG_GROUP_ 304 IMUProcessedData1 1 : IMUProcessedData1Chks IMUProcessedData1Cntr IMUProcessedData1PitchRateComp IMUProcessedData1PitchRateCompQf IMUProcessedData1PitchRateDiff IMUProcessedData1RollRateComp IMUProcessedData1RollRateCompQf IMUProcessedData1RollRateDiff IMUProcessedData1YawRateComp IMUProcessedData1YawRateCompQf IMUProcessedData1YawRateDiff;
+SIG_GROUP_ 304 IMURawData1 1 : IMURawData1Chks IMURawData1Cntr IMURawData1LatAccRaw IMURawData1LatAccRawQf IMURawData1LongAccRaw IMURawData1LongAccRawQf IMURawData1PitchRateRaw IMURawData1PitchRateRawQf IMURawData1RollRateRaw IMURawData1RollRateRawQf IMURawData1VertAccRaw IMURawData1VertAccRawQf IMURawData1YawRateRaw IMURawData1YawRateRawQf;
+SIG_GROUP_ 400 JID 1 : JIDByte0 JIDByte1 JIDByte2 JIDByte3 JIDByte4 JIDByte5 JIDByte6 JIDByte7;
+SIG_GROUP_ 368 LocalStopEnaReq 1 : LocalStopEnaReqChks LocalStopEnaReqCntr LocalStopEnaReqLocalStopEnaReq;
+SIG_GROUP_ 320 ObdSlave 1 : ObdSlaveAbsMilReq ObdSlaveSlaveAlvCntr;
+SIG_GROUP_ 304 ParkByDrvrWhlsFrntSafe1 1 : ParkByDrvrWhlsFrntSafe1Chks ParkByDrvrWhlsFrntSafe1Cntr ParkByDrvrWhlsFrntSafe1Sts;
+SIG_GROUP_ 288 PbcIn 1 : PbcInChks PbcInCntr PbcInHostAvailabilityLeft PbcInHostAvailabilityRight PbcInMotorCurrentLeft PbcInMotorCurrentRight PbcInMotorDriverStateLeft PbcInMotorDriverStateRight PbcInMotorVoltageLeft PbcInMotorVoltageRight PbcInPowerSupplyState;
+SIG_GROUP_ 257 PtTqAtAxleAddReq1 1 : PtTqAtAxleAddReq1PtTqAtAxleAddFrntReq PtTqAtAxleAddReq1PtTqAtAxleAddReqChks PtTqAtAxleAddReq1PtTqAtAxleAddReqCntr PtTqAtAxleAddReq1PtTqAtAxleAddReReq;
+SIG_GROUP_ 257 PtTqAtAxleFrntMaxReq1 1 : PtTqAtAxleFrntMaxReq1Chks PtTqAtAxleFrntMaxReq1Cntr PtTqAtAxleFrntMaxReq1PtTqAtAxleFrntMaxReq;
+SIG_GROUP_ 257 PtTqAtAxleFrntMinReq1 1 : PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReq PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqChks PtTqAtAxleFrntMinReq1PtTqAtAxleFrntMinReqCntr;
+SIG_GROUP_ 257 PtTqAtAxleReMaxReq2 1 : PtTqAtAxleReMaxReq2Chks PtTqAtAxleReMaxReq2Cntr PtTqAtAxleReMaxReq2PtTqAtAxleReMaxReq1;
+SIG_GROUP_ 257 PtTqAtAxleReMinReq 1 : PtTqAtAxleReMinReqChks PtTqAtAxleReMinReqCntr PtTqAtAxleReMinReqPtTqAtAxleReMinReq;
+SIG_GROUP_ 336 PtTqAtWhlFrntAct 1 : PtTqAtWhlFrntActPtTqAtAxleFrntAct PtTqAtWhlFrntActPtTqAtWhlFrntLeAct PtTqAtWhlFrntActPtTqAtWhlFrntRiAct PtTqAtWhlFrntActPtTqAtWhlsFrntQly;
+SIG_GROUP_ 336 PtTqAtWhlReAct 1 : PtTqAtWhlReActPtTqAtAxleReAct PtTqAtWhlReActPtTqAtWhlReLeAct PtTqAtWhlReActPtTqAtWhlReRiAct PtTqAtWhlReActPtTqAtWhlsReQly;
+SIG_GROUP_ 256 SpdLimFrntMaxReq1 1 : SpdLimFrntMaxReq1Chks SpdLimFrntMaxReq1Cntr SpdLimFrntMaxReq1SpdLimFrntMaxReq;
+SIG_GROUP_ 256 SpdLimFrntMinReq1 1 : SpdLimFrntMinReq1Chks SpdLimFrntMinReq1Cntr SpdLimFrntMinReq1SpdLimFrntMinReq;
+SIG_GROUP_ 256 SpdLimReMaxReq1 1 : SpdLimReMaxReq1Chks SpdLimReMaxReq1Cntr SpdLimReMaxReq1SpdLimReMaxReq;
+SIG_GROUP_ 256 SpdLimReMinReq1 1 : SpdLimReMinReq1Chks SpdLimReMinReq1Cntr SpdLimReMinReq1SpdLimReMinReq;
+SIG_GROUP_ 368 SteerWhlSnsrSafe2 1 : SteerWhlSnsrSafe2SteerWhlAg SteerWhlSnsrSafe2SteerWhlAgSpd SteerWhlSnsrSafe2SteerWhlSnsrChks SteerWhlSnsrSafe2SteerWhlSnsrCntr SteerWhlSnsrSafe2SteerWhlSnsrQf;
+SIG_GROUP_ 368 SteerWhlTq1 1 : SteerWhlTq1Chks SteerWhlTq1Cntr SteerWhlTq1Qf SteerWhlTq1SteerWhlTq;
+SIG_GROUP_ 256 TqDrgCtrlDegraded1 1 : TqDrgCtrlDegraded1Chks TqDrgCtrlDegraded1Cntr TqDrgCtrlDegraded1TqDrgCtrlDegraded;
+SIG_GROUP_ 257 TqVect2 1 : TqVect2Chks TqVect2Cntr TqVect2DeltaLe TqVect2DeltaRi TqVect2TqVectOvrLckReq;
+SIG_GROUP_ 336 TqVectAvlMax 1 : TqVectAvlMaxChks TqVectAvlMaxCntr TqVectAvlMaxTqVectAvlMax;
+SIG_GROUP_ 368 VcuBrkLiGrp 1 : VcuBrkLiGrpVcuBrkLiChks VcuBrkLiGrpVcuBrkLiCntr VcuBrkLiGrpVcuBrkLiReq;
+SIG_GROUP_ 256 WhlAgVRawFrnt 1 : WhlAgVRawFrntLe WhlAgVRawFrntLeQf WhlAgVRawFrntRi WhlAgVRawFrntRiQf;
+SIG_GROUP_ 256 WhlAgVRawRe 1 : WhlAgVRawReLe WhlAgVRawReLeQf WhlAgVRawReRi WhlAgVRawReRiQf;
+SIG_GROUP_ 257 WhlBrkRotorT 1 : WhlBrkRotorTFrntLe WhlBrkRotorTFrntRi WhlBrkRotorTReLe WhlBrkRotorTReRi;
+SIG_GROUP_ 368 WhlMotAxleAgrSpd 1 : WhlMotAxleAgrSpdChks WhlMotAxleAgrSpdCntr WhlMotAxleAgrSpdFrntAxle WhlMotAxleAgrSpdQFFrnt WhlMotAxleAgrSpdQFRear WhlMotAxleAgrSpdReAxle;
+SIG_GROUP_ 256 YawTqStsSafeGroup1 1 : YawTqStsSafeGroup1Chks YawTqStsSafeGroup1Cntr YawTqStsSafeGroup1Sts;
+
+
